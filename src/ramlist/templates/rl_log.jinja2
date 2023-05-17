@@ -1,0 +1,16 @@
+{% include "rl_header.jinja2" %}
+    <body>
+<!-- end header -->
+<!-- start content -->
+        <div class="nopix">
+            <h1>RAMList - {{ pageinfo["title"] }}</h1>
+            <p><a href="..">Back to menu</a></p>{% for entry in content %}
+            <h2>{{ entry["date"] }}</h2>
+            {{ entry["content"]|safe }}
+            {% endfor %}
+        </div>
+<!-- end content -->
+<!-- start footer -->
+        <br>
+{% include "rl_footer.jinja2" %}
+<!-- end footer -->

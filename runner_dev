@@ -1,0 +1,5 @@
+#!/bin/bash
+
+find . -name "__pycache__" -exec rm -r "{}" \;
+export FLASK_DEBUG=1
+python3 -B -m flask run
