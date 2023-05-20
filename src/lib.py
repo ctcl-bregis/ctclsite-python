@@ -1,8 +1,10 @@
 # ctclsite-python - CTCL 2023
-# May 15, 2023 - May 16, 2023
+# May 15, 2023 - May 20, 2023
 # Purpose: Commonly used functions
 
 import csv
+import markdown2 as markdown
+from datetime import datetime
 
 def csvfile2list(path):
     with open(path) as f:
@@ -35,11 +37,18 @@ def getpageinfo(subindex, page):
     else:
         raise Exception(f"{page} does not exist in {subindex_path}")
     
-    with open("config/styling.css") as f:
-        # TODO: Add CSS Minimizer
+    with open("config/styling.min.css") as f:
         styling = f.read()
-        pageinfo["css"] = styling.replace("{{ color }}", pageinfo["color"])
+        pageinfo["css"] = styling.replace("{{color}}", pageinfo["color"])
         
     pageinfo["subindex"] = subindex
     
     return pageinfo
+
+def md2html(path):
+    with open(path) as f:
+        html = markdown.markdown(f.read())
+        
+    return html
+        
+

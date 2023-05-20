@@ -1,11 +1,10 @@
 # ctclsite-python - CTCL 2023
-# May 15, 2023 - May 17, 2023
+# May 15, 2023 - May 19, 2023
 # Purpose: RAMList Flask Blueprint
 
-from flask import Blueprint, render_template, abort
-from src.lib import getpageinfo, csvfile2list
+from flask import Blueprint, render_template, abort, request
+from src.lib import getpageinfo, csvfile2list, md2html
 import csv
-import markdown2 as markdown
 
 rl_bp = Blueprint('rl_bp', __name__, template_folder='templates')
 
@@ -14,7 +13,7 @@ rlcfg = "config/ramlist/lists/"
 rllogcfg = "config/ramlist/log/"
 
 # Global table width
-table_width = "2000pt"
+table_width = "2200pt"
 
 # Load menu and page index on startup instead of every page load
 menu = csvfile2list("config/ramlist/menu.csv")
@@ -56,11 +55,12 @@ for i in lists:
     listscontents[i]["tindex"] = tindex
     listscontents[i]["count"] = count
 
-
+# RAMList menu
 @rl_bp.route("/")
 def index():
     return render_template("rl_menu.jinja2", menu = menu, pageinfo = getpageinfo("ramlist", "root"))
 
+# Everything but the menu
 @rl_bp.route("/<page>/")
 def subpage(page):
     for i in pageindex:
@@ -68,7 +68,7 @@ def subpage(page):
             pagedict = i
             break
     else:
-        raise Exception    
+        abort(404)
     
     if pagedict["type"] == "list":
         listcontents = listscontents[page]
@@ -76,21 +76,16 @@ def subpage(page):
     elif pagedict["type"] == "log":
         posts = csvfile2list(pagedict["content"])
         content = []
-        
         # TODO: Make this more efficient, idea: convert md to html on server startup instead of every page load
         for i in posts:
-            with open(rllogcfg + i["path"]) as f:
-                html = markdown.markdown(f.read())
-            
+            html = md2html(rllogcfg + i["path"])
             post = {"date": i["date"], "content": html}
             content.append(post)
             
         return render_template("rl_log.jinja2", content = content, pageinfo = getpageinfo("ramlist", page))
     elif pagedict["type"] == "markdown":
-        with open(pagedict["content"]) as f:
-            content = markdown.markdown(f.read())
+        content = md2html(pagedict["content"])
             
-            return render_template("rl_about.jinja2", content = content, pageinfo = getpageinfo("ramlist", page))
+        return render_template("rl_about.jinja2", content = content, pageinfo = getpageinfo("ramlist", page))
     else:
         raise Exception("Page type unknown")
-        abort(504)

@@ -1,0 +1,7 @@
+{% include "blog_header.jinja2" %}
+    <div class="nopix">
+        <h2>{{ pageinfo["title"] }}</h2>
+        <hr class="smallhr">
+        {{ content|safe }}
+    </div>    
+{% include "blog_footer.jinja2" %}

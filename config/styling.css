@@ -96,7 +96,7 @@ hr {
     background-color: {{ color }};
     border: 2pt solid;
     border-color: {{ color }};
-    color: #FFFFFF;
+    color: #000000;
     padding: 8pt 8pt;
     text-align: center;
     text-decoration: none;

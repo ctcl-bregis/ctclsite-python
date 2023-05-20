@@ -1,0 +1,18 @@
+{% include "projects_header.jinja2" %}
+    <h2 class="center">Projects</h2>
+    <h3>Software</h3>{% for page in pages %}{% if page["bcat"] == "software" %}
+    <hr class="smallhr">
+    <h4><a href="{{ page["page"] }}/">{{ page["title"] }}</a> - {{ page["subcat"] }}</h4>
+    <p>{{ page["desc"] }}</p>{% endif %}{% endfor %}
+    <hr class="smallhr">
+    <h3>Hardware</h3>{% for page in pages %}{% if page["bcat"] == "hardware" %}
+    <hr class="smallhr">
+    <h4><a href="{{ page["page"] }}/">{{ page["title"] }}</a> - {{ page["subcat"] }}</h4>
+    <p>{{ page["desc"] }}</p>{% endif %}{% endfor %}
+    <hr class="smallhr">
+    <h3>Projects I Worked On</h3>{% for page in pages %}{% if page["bcat"] == "helped" %}
+    <hr class="smallhr">
+    <h4><a href="{{ page["page"] }}/">{{ page["title"] }}</a> - {{ page["subcat"] }}</h4>
+    <p>{{ page["desc"] }}</p>{% endif %}{% endfor %}
+    <hr>
+{% include "projects_footer.jinja2" %}

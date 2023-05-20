@@ -1,0 +1,9 @@
+{% include "blog_header.jinja2" %}
+    <h2 class="center">Blog Posts</h2>{% for post in posts %}{% if post["content"] != "" %}
+    <hr class="smallhr">
+    <div class="blogpost">
+        <h3 class="nopix"><a href="{{ post["page"]}}/">{{ post["title"] }}</a></h2>
+        <h5>Date: {{ post["date"] }} - Category: {{ post["bcat"] }}</h5>
+        <p>{{ post["desc"] }}</p>
+    </div>{% endif %}{% endfor %}
+{% include "blog_footer.jinja2" %}

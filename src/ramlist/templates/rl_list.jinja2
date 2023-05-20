@@ -6,7 +6,7 @@
         <h1><a href="..">RAMList</a> - {{ pageinfo["title"] }}</h1>
         <h4><a href="..">Back to menu</a><br>Entries: {{ listcontents["count"] }}</h4>{% for vendor in listcontents["brands"] %}
         <h2>{{ vendor }}</h2>
-        <table width="{{ table_width }}">
+        <table style="width: {{ table_width }}">
             <tr>{% for header in listcontents["tindex"] %}
                 <th width="{{ header["width"] }}">{{ header["title"] }}</th>{% endfor %}
             </tr>{% for entry in listcontents[vendor] %}

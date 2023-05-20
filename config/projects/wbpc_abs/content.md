@@ -1,6 +1,7 @@
-"Acrylonitrile Butadiene Styrene" is the codename given to the hardware platform that currently serves as WBPC2 for multi-thread high-memory-usage workloads
+"Acrylonitrile Butadiene Styrene" is the codename given to the hardware platform that currently serves as WBPC2 for multi-thread high-memory-usage workloads. It is planned to be succeeded by "Polyethylene Terephthalate v2" as it uses some parts from this build.
 
 Current specifications as of April 16, 2023:
+
 - Motherboard: ASUS KCMA-D8
 - CPU: 2x AMD Opteron 4386
 - Memory: 32GB (4x8GB) Qimonda DDR3-1066 Registered ECC
