@@ -1,5 +1,5 @@
-# ctclsite-python - CTCL 2023
-# May 20, 2023 - May 20, 2023
+# ctclsite-python - CTCL 2020-2023
+# May 20, 2023 - May 25, 2023
 # Purpose: Blog Flask Blueprint
 
 from flask import Blueprint, render_template, abort, request

@@ -1,4 +1,4 @@
-{% include "main_header.jinja2" %}
+{% include "header.jinja2" %}
 {% for section in sections %}
     {% if section["bgimg"] == "" %}
     <section>{% else %}
@@ -7,4 +7,4 @@
     </section>
     <hr>
     {% endfor %}
-{% include "main_footer.jinja2" %}
+{% include "footer.jinja2" %}

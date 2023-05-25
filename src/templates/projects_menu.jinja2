@@ -1,4 +1,4 @@
-{% include "projects_header.jinja2" %}
+{% include "header.jinja2" %}
     <h2 class="center">Projects</h2>
     <h3>Software</h3>{% for page in pages %}{% if page["bcat"] == "software" %}
     <hr class="smallhr">
@@ -14,5 +14,4 @@
     <hr class="smallhr">
     <h4><a href="{{ page["page"] }}/">{{ page["title"] }}</a> - {{ page["subcat"] }}</h4>
     <p>{{ page["desc"] }}</p>{% endif %}{% endfor %}
-    <hr>
-{% include "projects_footer.jinja2" %}
+{% include "footer.jinja2" %}
