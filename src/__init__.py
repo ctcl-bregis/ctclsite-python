@@ -2,12 +2,12 @@
 # May 15, 2023 - May 25, 2023
 # Purpose: App initialization
 
-from flask import Flask, request
+from flask import Flask, request, Response
 from datetime import datetime
 import os, csv, tarfile
 from css_html_js_minify import process_single_css_file
 
-log_header = ["time", "status", "ip", "url", "referrer", "useragent"]
+log_header = ["time", "ip", "url", "referrer", "useragent"]
 log_latest = "log/latest.csv"
 log_dir = "log/"
 log_max_length = 10000

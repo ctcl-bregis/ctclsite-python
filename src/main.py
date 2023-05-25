@@ -2,7 +2,7 @@
 # May 15, 2023 - May 25, 2023
 # Purpose: Main/About Flask Blueprint
 
-from flask import Blueprint, render_template, abort
+from flask import Blueprint, render_template, abort, send_file
 from src.lib import getpageinfo, csvfile2list, md2html
 
 main_bp = Blueprint('main_bp', __name__, template_folder='templates')
@@ -31,3 +31,7 @@ def index():
 @main_bp.route("/privacy/")
 def privacy():
     return render_template("main_privacy.jinja2", pageinfo = getpageinfo("about", "root"), content = pp_content)
+
+@main_bp.route("/robots.txt")
+def robots():
+    return send_file("robots.txt")

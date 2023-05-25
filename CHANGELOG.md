@@ -1,3 +1,13 @@
+## 3.2.1 - May 25, 2023
+
+Additions:
+
+- robots.txt
+
+Fixes:
+
+- Removed "status" from log CSV header
+
 ## 3.2.0 - May 25, 2023
 
 Changes:  
