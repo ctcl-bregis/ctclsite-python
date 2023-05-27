@@ -1,3 +1,10 @@
+## 3.2.2 - May 27, 2023
+
+Fixes:
+
+- Fixed logging strftime string
+- Added more to README.md
+
 ## 3.2.1 - May 25, 2023
 
 Additions:

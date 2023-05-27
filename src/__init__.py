@@ -37,7 +37,7 @@ def mkapp():
     @app.before_request
     def log():
         now = datetime.now()
-        timestr = now.strftime("%b-%m-%Y-%k-%M-%S").lower()
+        timestr = now.strftime("%Y-%b-%d-%k-%M-%S").lower()
         if not os.path.exists(log_latest):
             with open(log_latest, "w", encoding='UTF8', newline='') as f:
                 writer = csv.writer(f)
