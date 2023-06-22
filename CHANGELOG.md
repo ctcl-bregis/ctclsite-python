@@ -1,3 +1,8 @@
+## 3.2.3 - June 21, 2023
+
+Fixes:
+- Project pages now show the name of the project as the title
+
 ## 3.2.2 - May 27, 2023
 
 Fixes:
