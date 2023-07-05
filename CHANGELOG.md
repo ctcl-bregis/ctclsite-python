@@ -1,3 +1,12 @@
+## 3.2.4 - July 4, 2023
+
+Additions:
+
+- Licensing information
+
+Fixes:
+- Fixed missing titles and horizontal rules
+
 ## 3.2.3 - June 21, 2023
 
 Fixes:

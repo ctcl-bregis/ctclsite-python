@@ -1,5 +1,6 @@
 {% include "header.jinja2" %}
     <h2 class="center">Projects</h2>
+    <hr>
     <h3>Software</h3>{% for page in pages %}{% if page["bcat"] == "software" %}
     <hr class="smallhr">
     <h4><a href="{{ page["page"] }}/">{{ page["title"] }}</a> - {{ page["subcat"] }}</h4>

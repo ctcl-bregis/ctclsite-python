@@ -1,5 +1,5 @@
 # ctclsite-python - CTCL 2020-2023
-# May 15, 2023 - May 25, 2023
+# May 15, 2023 - July 4, 2023
 # Purpose: Main/About Flask Blueprint
 
 from flask import Blueprint, render_template, abort, send_file
@@ -18,6 +18,8 @@ for i in subpagemeta:
         sections = csvfile2list(i["content"])
     elif i["page"] == "privacy":
         pp_content = md2html(i["content"])
+    elif i["page"] == "licensing":
+        ls_content = md2html(i["content"])
 
 for i in sections:
     i["rendered"] = md2html(i["content"])
@@ -30,7 +32,12 @@ def index():
 # Privacy Policy
 @main_bp.route("/privacy/")
 def privacy():
-    return render_template("main_privacy.jinja2", pageinfo = getpageinfo("about", "root"), content = pp_content)
+    return render_template("main_markdown.jinja2", pageinfo = getpageinfo("about", "privacy"), content = pp_content)
+
+# Licensing
+@main_bp.route("/licensing/")
+def licensing():
+    return render_template("main_markdown.jinja2", pageinfo = getpageinfo("about", "licensing"), content = ls_content)
 
 @main_bp.route("/robots.txt")
 def robots():

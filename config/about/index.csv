@@ -1,3 +1,4 @@
 content,desc,page,title,color
 config/about/main/sections.csv,Welcome,root,Welcome,#F0D000
 config/about/main_privacy.md,Website privacy policy,privacy,Privacy Policy,#F0D000
+config/about/main_licensing.md,Licensing of CTCL content,licensing,Licensing,#F0D000

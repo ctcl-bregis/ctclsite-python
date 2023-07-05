@@ -1,5 +1,6 @@
 {% include "header.jinja2" %}
-    <h2 class="center">Blog Posts</h2>{% for post in posts %}{% if post["content"] != "" %}
+    <h2 class="center">Blog Posts</h2>
+    <hr>{% for post in posts %}{% if post["content"] != "" %}
     <hr class="smallhr">
     <div class="blogpost">
         <h3 class="nopix"><a href="{{ post["page"]}}/">{{ post["title"] }}</a></h2>

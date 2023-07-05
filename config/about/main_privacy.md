@@ -1,7 +1,6 @@
-## Privacy Policy
-#### Date of last modification: February 26, 2023
+#### Date of last modification: July 4, 2023
 
-This website is optimized for security, privacy, performance and compatibility. To achieve this, the website does not contain or serve any JavaScript, plugins or other tracking technologies.
+This website is optimized for security, privacy, performance and compatibility. To achieve this, the website does not contain or serve any cookies, scripts or plugins.
 
 This website is open source software, see About the Website at [About](/).
 
