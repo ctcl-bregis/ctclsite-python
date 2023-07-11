@@ -10,3 +10,4 @@ config/projects/svcs/content.md,Server system,svcs,SVCS,#F0D000,hardware,Server
 config/projects/wbsd/content.md,Server system,wbsd,WBSD,#F0D000,hardware,Server
 config/projects/router/content.md,Server system,router,ROUTER,#F0D000,hardware,Server
 config/projects/mct1/content.md,Experimental Mobile Device,mct1,MediaCow Touch 1,#F0D000,hardware,Embedded Project
+config/projects/netkart/content.md,Automotive Network Project,netkart,NetKart,#F0D000,hardware,Network
