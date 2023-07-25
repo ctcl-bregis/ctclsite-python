@@ -10,7 +10,7 @@ Current plan as of July 11, 2023:
 - Storage, user: Hitachi UltraStar 1TB SATA HDD 7200RPM  
 - Power Supply: **TBD**
 - CPU Cooler: 2x **TBD**
-- Audio: **TBD**
+- Audio: Integrated
 - Case: **TBD**
 - Case Fan: 3x 120mm Protechnic Magic MGT12012ZB-W25  
 

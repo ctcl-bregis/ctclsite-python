@@ -2,10 +2,12 @@ content,desc,page,title,color,bcat,subcat
 ,Projects that I have worked on,root,Projects,#F0D000,,
 config/projects/ctclsite/content.md,This website,ctclsite,ctclsite-python,#F0D000,software,Webapp
 config/projects/cams/content.md,Inventory Managment System,cams,CAMS Asset Management System,#F0D000,software,Webapp
+config/projects/contactlist/content.md,Contact Management System,contactlist,ContactList,#F0D000,software,Webapp
+config/projects/wbpc_abs/content.md,Desktop computer system,wbpc_abs,“Acrylonitrile Butadiene Styrene”,#F0D000,hardware,Workstation PC
 config/projects/wbpc_pbt/content.md,Desktop computer system,wbpc_pbt,"""Polybutylene Terephthalate""",#F0D000,hardware,Workstation PC
+config/projects/wbpc_pc/content.md,Desktop computer system,wbpc_pc,"""Polycarbonate""",#F0D000,hardware,Workstation PC
 config/projects/wbpc_pet/content.md,Desktop computer system,wbpc_pet,"""Polyethylene Terephthalate""",#F0D000,hardware,Workstation PC
 config/projects/wbpc_pet2/content.md,Desktop computer system,wbpc_pet2,"""Polyethylene Terephthalate v2""",#F0D000,hardware,Workstation PC
-config/projects/wbpc_pc/content.md,Desktop computer system,wbpc_pc,"""Polycarbonate""",#F0D000,hardware,Workstation PC
 config/projects/svcs/content.md,Server system,svcs,SVCS,#F0D000,hardware,Server
 config/projects/wbsd/content.md,Server system,wbsd,WBSD,#F0D000,hardware,Server
 config/projects/router/content.md,Server system,router,ROUTER,#F0D000,hardware,Server
