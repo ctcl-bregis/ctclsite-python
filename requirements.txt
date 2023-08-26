@@ -1,3 +1,0 @@
-Flask
-markdown2
-css-html-js-minify

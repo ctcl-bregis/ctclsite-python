@@ -1,5 +1,0 @@
-content,desc,page,title,color,date,bcat
-,Current Blog Posts,root,Blog Posts,#F0D000,,
-config/blog/blogpost_1/content.md,What has been going on,1,State of Things February 2023,#F0D000,"February 26, 2023",Personal
-config/blog/blogpost_2/content.md,"Rewrote the website, again",2,ctclsite - To Rust and Back,#F0D000,"May 20, 2023",Project
-config/blog/blogpost_3/content.md,Exploring the SP7021 System in Package,3,The SP7021 - Part I,#F0D000,"July 11, 2023",Project
