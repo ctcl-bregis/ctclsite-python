@@ -1,0 +1,10 @@
+#!/bin/bash
+# ctclsite-python - CTCL 2023
+# File: runner_dev
+# Purpose: Linux/BSD script for running the application in development environments
+# Created: August 27, 2023
+# Modified: August 27, 2023
+
+find . -name "__pycache__" -exec rm -r "{}" 2> /dev/null \;
+
+python3 -B manage.py runserver

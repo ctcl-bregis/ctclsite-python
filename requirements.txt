@@ -1,0 +1,2 @@
+csscompressor
+django==4.2

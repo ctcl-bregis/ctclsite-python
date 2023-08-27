@@ -1,0 +1,23 @@
+{"config": {
+    "ddr3": {
+        "title": "RAMList - DDR3",
+        "theme": "#990000",
+        "buttonfg": "#000000",
+        "buttonbg": "#990000"
+    },
+    "ddr4": {
+        "title": "RAMList - DDR4",
+        "theme": "#009999",
+        "buttonfg": "#000000",
+        "buttonbg": "#009999"
+    },
+    "ddr5": {
+        "title": "RAMList - DDR5",
+        "theme": "#990099",
+        "buttonfg": "#000000",
+        "buttonbg": "#990099",
+        "content": [
+            {"brand": "Corsair", "content": "ramlist/ddr5/corsair.md"}
+        ]
+    }
+}}
