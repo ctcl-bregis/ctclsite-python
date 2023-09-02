@@ -1,0 +1,12 @@
+{"config": {
+    "homepage": {
+        "fgcolor": "#FFFFFF",
+        "bgcolor": "#000000",
+        "sections": [
+            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""}
+        ]
+    },
+    "privacy": {
+        "content": "about/content/privacy.md"
+    }
+}}

@@ -2,7 +2,7 @@
 # File: settings.py
 # Purpose: Global app settings
 # Created: August 26, 2023
-# Modified: August 27, 2023
+# Modified: August 30, 2023
 
 from pathlib import Path
 
@@ -71,7 +71,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators

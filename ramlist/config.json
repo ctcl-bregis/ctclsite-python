@@ -17,7 +17,7 @@
         "buttonfg": "#000000",
         "buttonbg": "#990099",
         "content": [
-            {"brand": "Corsair", "content": "ramlist/ddr5/corsair.md"}
+            {"brand": "Corsair", "content": "ramlist/ddr5/corsair.md", "table": ""}
         ]
     }
 }}

@@ -3,16 +3,14 @@
 # File: manage.py
 # Purpose: Management command interface
 # Created: August 26, 2023
-# Modified: August 27, 2023
+# Modified: August 30, 2023
 
-"""Django's command-line utility for administrative tasks."""
 import os
 import sys
 
-
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ctclsite_django.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
