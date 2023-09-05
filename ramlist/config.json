@@ -1,23 +1,62 @@
 {"config": {
+    "sdram": {
+        "enabled": "False",
+        "title": "RAMList - SDRAM",
+        "theme": "#996600",
+        "buttonfg": "#000000",
+        "buttonbg": "#996600",
+        "buttontext": "SDRAM Memory Modules",
+        "buttonlink": "content/sdram/",
+        "content": "ramlist/content/sdram.md"
+    },
+    "ddr": {
+        "enabled": "False",
+        "title": "RAMList - DDR",
+        "theme": "#000099",
+        "buttonfg": "#000000",
+        "buttonbg": "#000099",
+        "buttontext": "DDR Memory Modules",
+        "buttonlink": "content/ddr/",
+        "content": "ramlist/content/ddr.md"
+    },
+    "ddr2": {
+        "enabled": "False",
+        "title": "RAMList - DDR2",
+        "theme": "#999900",
+        "buttonfg": "#000000",
+        "buttonbg": "#999900",
+        "buttontext": "DDR2 Memory Modules",
+        "buttonlink": "content/ddr2/",
+        "content": "ramlist/content/ddr2.md"
+    },
     "ddr3": {
+        "enabled": "False",
         "title": "RAMList - DDR3",
         "theme": "#990000",
         "buttonfg": "#000000",
-        "buttonbg": "#990000"
+        "buttonbg": "#990000",
+        "buttontext": "DDR3 Memory Modules",
+        "buttonlink": "content/ddr3/",
+        "content": "ramlist/content/ddr3.md"
     },
     "ddr4": {
+        "enabled": "True",
         "title": "RAMList - DDR4",
         "theme": "#009999",
         "buttonfg": "#000000",
-        "buttonbg": "#009999"
+        "buttonbg": "#009999",
+        "buttontext": "DDR4 Memory Modules",
+        "buttonlink": "content/ddr4/",
+        "content": "ramlist/content/ddr4.md"
     },
     "ddr5": {
+        "enabled": "True",
         "title": "RAMList - DDR5",
         "theme": "#990099",
         "buttonfg": "#000000",
         "buttonbg": "#990099",
-        "content": [
-            {"brand": "Corsair", "content": "ramlist/ddr5/corsair.md", "table": ""}
-        ]
+        "buttontext": "DDR5 Memory Modules",
+        "buttonlink": "content/ddr5/",
+        "content": "ramlist/content/ddr5.md"
     }
 }}

@@ -9,7 +9,7 @@ from django.urls import path
 
 urlpatterns = [
     #path('admin/', admin.site.urls),
-    path("ramlist/<str:page>/", views.list),
+    path("ramlist/content/<str:page>/", views.content),
     path("ramlist/about/", views.about),
     path("ramlist/log/", views.log),
 ]

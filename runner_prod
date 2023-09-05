@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Use the full path in case ~/.local/bin is not on PATH
+# 1 vCPU = 3 workers according to https://docs.gunicorn.org/en/stable/design.html#how-many-workers
+~/.local/bin/gunicorn -w 3 -b 127.0.0.1:5000 "wsgi:app"

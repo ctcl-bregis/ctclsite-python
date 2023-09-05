@@ -6,9 +6,10 @@
 
 from django.contrib import admin
 from django.urls import include, path
-from .about import views
+from . import views
 
 urlpatterns = [
     path("/", views.main),
-    path("/privacy/", views.pp)
+    path("/privacy/", views.pp),
+    path("/licensing/", views.licensing)
 ]

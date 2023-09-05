@@ -3,6 +3,12 @@
         "fgcolor": "#FFFFFF",
         "bgcolor": "#000000",
         "sections": [
+            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
+            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
+            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
+            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
+            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
+            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
             {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""}
         ]
     },

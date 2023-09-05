@@ -3,7 +3,7 @@
 # File: manage.py
 # Purpose: Management command interface
 # Created: August 26, 2023
-# Modified: August 30, 2023
+# Modified: September 2, 2023
 
 import os
 import sys
@@ -20,7 +20,6 @@ def main():
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
-
 
 if __name__ == '__main__':
     main()

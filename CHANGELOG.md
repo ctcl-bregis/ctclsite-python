@@ -6,4 +6,8 @@ Initial release
 
 Total rewrite of the CTCL website now using the Django web framework.
 
-All configuration files that were CSV and were not table-based are now JSON. 
+All CSV-based configuration files were replaced by JSON
+
+### RAMList
+
+RAMList no longer "lists" memory modules and is now more of an identification guide. Each memory generation uses a single markdown file for content. 

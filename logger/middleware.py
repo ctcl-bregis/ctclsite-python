@@ -2,7 +2,7 @@
 # File: middleware.py
 # Purpose: Logging middleware for Django
 # Created: August 30, 2023
-# Modified: August 31, 2023
+# Modified: September 2, 2023
 
 import os, csv
 
