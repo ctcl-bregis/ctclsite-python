@@ -2,14 +2,14 @@
 # File: urls.py
 # Purpose: RAMList URLs
 # Created: August 27, 2023
-# Modified: August 30, 2023
+# Modified: September 11, 2023
 
 from django.contrib import admin
 from django.urls import path
+from . import views
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    path("ramlist/content/<str:page>/", views.content),
-    path("ramlist/about/", views.about),
-    path("ramlist/log/", views.log),
+    path("", views.content),
+    path("<str:page>/", views.content),
+    path("log/", views.log),
 ]

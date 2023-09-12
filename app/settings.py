@@ -2,7 +2,7 @@
 # File: settings.py
 # Purpose: Global app settings
 # Created: August 26, 2023
-# Modified: August 30, 2023
+# Modified: September 11, 2023
 
 from pathlib import Path
 
@@ -18,7 +18,7 @@ SECRET_KEY = 'django-insecure-ly-!1fzv&sji5gs5g34(451!61=^!u-h7^nks58s4ej$z2y0gj
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["ctcl-tech.com", "www.ctcl-tech.com"]
+ALLOWED_HOSTS = ["127.0.0.1", "ctcl-tech.com", "www.ctcl-tech.com"]
 
 # Application definition
 
@@ -65,12 +65,8 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# ctclsite-python is just a static site generator, databases should not be used nor created
+DATABASES =  {}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -96,7 +92,6 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/

@@ -13,6 +13,11 @@
         ]
     },
     "privacy": {
+        "title": "Privacy Policy",
+        "content": "about/content/privacy.md"
+    },
+    "licensing": {
+        "title": "Licensing",
         "content": "about/content/privacy.md"
     }
 }}
