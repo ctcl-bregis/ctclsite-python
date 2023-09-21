@@ -12,3 +12,9 @@ from app.lib import loadjson
 def menu(request):
 
     return HttpResponse
+
+def post(request):
+
+    template = loader.get_template("rl_content.html")
+
+    return HttpResponse

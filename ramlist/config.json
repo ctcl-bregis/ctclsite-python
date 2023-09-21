@@ -1,4 +1,9 @@
 {"config": {
+    "menupage": {
+        "title": "RAMList",
+        "theme": "#009900",
+        "content": ""
+    },
     "content": {
         "root": [
             {

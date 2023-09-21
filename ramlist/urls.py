@@ -5,11 +5,10 @@
 # Modified: September 11, 2023
 
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
 from . import views
 
 urlpatterns = [
-    path("", views.content),
-    path("<str:page>/", views.content),
+    re_path("(?P<path>.*)$", views.content),
     path("log/", views.log),
 ]

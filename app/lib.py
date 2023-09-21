@@ -2,10 +2,13 @@
 # File: lib.py
 # Purpose: Commonly used functions used across the app. Similar to lib.rs in Rust.
 # Created: September 11, 2023
-# Modified: September 11, 2023
+# Modified: September 21, 2023
 
 import json
 import os
+
+with open("app/styling.css") as f:
+    globalcss = f.read()
 
 # Function that catches any exception from trying to use print() while headless
 def printe(text):
@@ -27,7 +30,18 @@ def loadjson(path):
         filecontent = f.read()
 
     try:
-        json.loads(filecontent)
+        jsoncontent = json.loads(filecontent)
     except Exception as err:
         printe(f"lib.py ERROR: Exception {err} raised")
         return None
+
+    return jsoncontent
+
+def mkcontext(themecolor, title):
+    context = {}
+
+    context["color"] = themecolor
+    context["title"] = title
+    context["styling"] = globalcss
+
+    return context

@@ -3,33 +3,44 @@
     <head lang="en">
         <!-- Windows meta tags -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="msapplication-TileColor" content="{{ pageinfo["color"] }}">
+        <meta name="msapplication-TileColor" content="{{ color }}">
         <!-- Main tags -->
         <meta charset="UTF-8">
-        <title>{{ pageinfo["title"] }}</title>
+        <title>{{ title }}</title>
         <meta name="generator" content="ctclsite-python">
         <meta name="author" content="CTCL">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta name="description" content="{{ pageinfo["desc"] }} - CTCL">
+        <meta name="description" content="{{ desc }} - CTCL">
         <!-- OpenGraph meta tags -->
         <meta property="og:url" content="https://www.ctcl-tech.com">
         <meta property="og:site_name" content="CTCL">
-        <meta property="og:title" content="{{ pageinfo["title"] }}">
+        <meta property="og:title" content="{{ title }}">
         <meta property="og:locale" content="en_US">
-        <meta name="theme-color" content="{{ pageinfo["color"] }}">
-        <meta property="og:description" content="{{ pageinfo["desc"] }} - CTCL">
+        <meta name="theme-color" content="{{ color }}">
+        <meta property="og:description" content="{{ desc }} - CTCL">
         <!-- Include CSS here -->
         <style>
-{{ pageinfo["css"]|safe }}
+{{ styling|safe }}
+.btn-group-rlmenu button, .navbar li a, .navbar li, ::selection, ::-moz-selection, ::-o-selection, ::-ms-selection, ::-webkit-selection {
+    background-color: {{ color }};
+}
+
+hr, .navbar .active, a, li::marker {
+    color: {{ color }};
+}
+
+hr {
+    border-top: 2pt solid {{ color }};
+}
         </style>
     </head>
     <body>
         <div class="navbar">
             <ul>
-                {% if pageinfo["subindex"] == "about" %}<li><a class="active" href="/">About</a></li>{% elif pageinfo["subindex"] != "about" %}<li><a href="/">About</a></li>{% endif %}
-                {% if pageinfo["subindex"] == "blog" %}<li><a class="active" href="/blog/">Blog</a></li>{% elif pageinfo["subindex"] != "blog" %}<li><a href="/blog/">Blog</a></li>{% endif %}
-                {% if pageinfo["subindex"] == "projects" %}<li><a class="active" href="/projects/">Projects</a></li>{% elif pageinfo["subindex"] != "projects" %}<li><a href="/projects/">Projects</a></li>{% endif %}
-                {% if pageinfo["subindex"] == "ramlist" %}<li style="float:right"><a class="active" href="/ramlist/">RAMList</a></li>{% elif pageinfo["subindex"] != "ramlist" %}<li style="float:right"><a href="/ramlist/">RAMList</a></li>{% endif %}
+                {% if subindex == "about" %}<li><a class="active" href="/">About</a></li>{% elif subindex != "about" %}<li><a href="/">About</a></li>{% endif %}
+                {% if subindex == "blog" %}<li><a class="active" href="/blog/">Blog</a></li>{% elif subindex != "blog" %}<li><a href="/blog/">Blog</a></li>{% endif %}
+                {% if subindex == "projects" %}<li><a class="active" href="/projects/">Projects</a></li>{% elif subindex != "projects" %}<li><a href="/projects/">Projects</a></li>{% endif %}
+                {% if subindex == "ramlist" %}<li style="float:right"><a class="active" href="/ramlist/">RAMList</a></li>{% elif subindex != "ramlist" %}<li style="float:right"><a href="/ramlist/">RAMList</a></li>{% endif %}
            </ul>
         </div>

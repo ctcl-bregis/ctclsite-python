@@ -2,10 +2,9 @@
 # File: middleware.py
 # Purpose: Logging middleware for Django
 # Created: August 30, 2023
-# Modified: September 2, 2023
+# Modified: September 15, 2023
 
 import os, csv
-
 
 class LoggerMiddleware:
     def __init__(self, get_response):
@@ -25,6 +24,5 @@ class LoggerMiddleware:
         with open("logger/logs/latest.csv", "a") as f:
             writer = csv.writer(f)
             writer.writerow(entry)
-
 
         return response

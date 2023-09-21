@@ -26,11 +26,9 @@ SK hynix, also known as SK Hynix or Hynix, is a South Korean manufacturer of DRA
 These DRAM vendors do not produce DDR5 just yet and may have plans to introduce their own DDR5 silicon.
 
 #### Nanya Technology
-Nanya Technology, a Taiwanese manufacturer of DRAM. The company is a division of Formosa Plastics Group[^fpg_nanya].
+Nanya Technology, a Taiwanese manufacturer of DRAM. The company is a subsidiary of Formosa Plastics Group[^fpg_nanya].
 
-As of September 2023, Nanya Technology has not put DDR5 in production but has plans to do so.[^nanya_2022pb]
-
-According to the 2022 Product Brochure, 16 Gbit DDR5 is planned for release into production in Quarter 1, 2024.[^nanya_2022pb]
+As of September 2023, Nanya Technology has not put DDR5 in production but has plans to do so.[^nanya_2022pb] According to the 2022 Product Brochure, 16 Gbit DDR5 is planned for release into production in Quarter 1, 2024.[^nanya_2022pb]
 
 ### Sources
 [^micron_sp]: https://www.micron.com/support/spectek-support

@@ -1,22 +1,23 @@
 {"config": {
-    "homepage": {
-        "fgcolor": "#FFFFFF",
-        "bgcolor": "#000000",
+    "root": {
+        "themecolor": "#F0D000",
         "sections": [
-            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
-            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
-            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
-            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
-            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
-            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""},
-            {"title": "Welcome to the website", "content": "about/content/welcome.md", "bgimage": ""}
+            {"title": "Welcome", "content": "about/content/welcome.md", "bgimage": ""},
+            {"title": "Who I am", "content": "about/content/whoami.md", "bgimage": ""},
+            {"title": "Work Experience", "content": "about/content/workexp.md", "bgimage": ""},
+            {"title": "Education", "content": "about/content/education.md", "bgimage": ""},
+            {"title": "Website Info", "content": "about/content/techinfo.md", "bgimage": ""},
+            {"title": "Contact", "content": "about/content/contact.md", "bgimage": ""},
+            {"title": "Friends' Websites", "content": "about/content/friends.md", "bgimage": ""}
         ]
     },
     "privacy": {
+        "themecolor": "#F0D000",
         "title": "Privacy Policy",
         "content": "about/content/privacy.md"
     },
     "licensing": {
+        "themecolor": "#F0D000",
         "title": "Licensing",
         "content": "about/content/privacy.md"
     }

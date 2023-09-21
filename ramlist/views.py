@@ -2,20 +2,21 @@
 # File: views.py
 # Purpose: RAMList views
 # Created: August 31, 2023
-# Modified: September 11, 2023
+# Modified: September 19, 2023
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.template import loader
-from app.lib import loadjson
+from app import lib
 
-ramlist_cfg = loadjson("ramlist/config.json")
+ramlist_cfg = lib.loadjson("ramlist/config.json")["config"]
 
 # Any content page
-def content(request):
+def content(request, path = ""):
     template = loader.get_template("rl_content.html")
 
     print(ramlist_cfg)
+    context = lib.mkcontext(ramlist_cfg["menupage"]["theme"], ramlist_cfg["menupage"]["title"])
 
     return HttpResponse(template.render(context, request))
 

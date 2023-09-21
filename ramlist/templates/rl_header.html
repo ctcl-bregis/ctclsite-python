@@ -9,20 +9,32 @@
         <meta charset="UTF-8">
         <title>{{ title }}</title>
         <meta name="generator" content="CTCL Website Backend">
-        <meta name="author" content="CTCl">
+        <meta name="author" content="CTCL">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta name="description" content="{{ desc }} - CTCl">
+        <meta name="description" content="{{ desc }} - CTCL">
         <!-- OpenGraph meta tags -->
         <meta property="og:url" content="https://www.ctcl-tech.com/ramlist/">
         <meta property="og:site_name" content="CTCL">
         <meta property="og:title" content="RAMList">
         <meta property="og:locale" content="en_US">
         <meta name="theme-color" content="{{ color }}">
-        <meta property="og:description" content="{{ desc }} - CTCl">
+        <meta property="og:description" content="{{ desc }} - CTCL">
         <!-- Include CSS here -->
         <style>
 {{ css|safe }}
+
+.btn-group-rlmenu button, .navbar li a, .navbar ul, ::selection, ::-moz-selection, ::-o-selection, ::-ms-selection, ::-webkit-selection {
+    background-color: {{ color }};
+}
+
+hr, .navbar .active, a, li::marker {
+    color: {{ color }};
+}
+
+hr {
+    border-top: 2pt solid {{ color }};
+}
         </style>
     </head>
     <body>
