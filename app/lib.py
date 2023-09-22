@@ -7,15 +7,23 @@
 import json
 import os
 
-with open("app/styling.css") as f:
-    globalcss = f.read()
-
 # Function that catches any exception from trying to use print() while headless
 def printe(text):
     try:
         print(text)
     except:
         pass
+
+with open("mgmt/config.json") as f:
+    global_cfg = json.loads(f.read())["config"]
+
+# Load compiled SCSS file if it exists
+if os.path.exists(global_cfg["scss_comp"]):
+    with open(global_cfg["scss_comp"]) as f:
+        global_css = f.read()
+else:
+    printe(f"lib.py WARNING: Compiled CSS file {global_cfg['scss_comp']} does not exist")
+    global_css = ""
 
 # Load JSON file and return the loaded data
 def loadjson(path):
