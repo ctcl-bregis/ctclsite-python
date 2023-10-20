@@ -1,3 +1,4 @@
 csscompressor
 django==4.2
+markdown
 pyscss

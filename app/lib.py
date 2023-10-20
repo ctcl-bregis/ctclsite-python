@@ -2,7 +2,7 @@
 # File: lib.py
 # Purpose: Commonly used functions used across the app. Similar to lib.rs in Rust.
 # Created: September 11, 2023
-# Modified: September 21, 2023
+# Modified: October 7, 2023
 
 import json
 import os
@@ -14,10 +14,10 @@ def printe(text):
     except:
         pass
 
+# Global configuration
 with open("mgmt/config.json") as f:
     global_cfg = json.loads(f.read())["config"]
 
-# Load compiled SCSS file if it exists
 if os.path.exists(global_cfg["scss_comp"]):
     with open(global_cfg["scss_comp"]) as f:
         global_css = f.read()
@@ -38,18 +38,17 @@ def loadjson(path):
         filecontent = f.read()
 
     try:
-        jsoncontent = json.loads(filecontent)
+        jsoncontent = json.loads(filecontent)["config"]
     except Exception as err:
         printe(f"lib.py ERROR: Exception {err} raised")
         return None
 
     return jsoncontent
 
-def mkcontext(themecolor, title):
-    context = {}
+# Function for pre-filling a dictionary used as the context for templates
+def mkcontext(subpageindex):
 
-    context["color"] = themecolor
-    context["title"] = title
-    context["styling"] = globalcss
+    context = subpageindex
+    context["styling"] = global_css
 
     return context

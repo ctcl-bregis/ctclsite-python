@@ -32,9 +32,10 @@ INSTALLED_APPS = [
     # Non-content app
     'mgmt',
     # Website "apps"
-    'about',
-    'blog',
-    'ramlist'
+    'pages.about',
+    'pages.blog',
+    #'pages.ramlist',
+    'pages.projects'
 ]
 
 MIDDLEWARE = [
@@ -45,6 +46,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'mgmt.middleware.LoggerMiddleware'
 ]
 
 ROOT_URLCONF = 'app.urls'

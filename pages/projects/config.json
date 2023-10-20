@@ -1,0 +1,31 @@
+{"config": {
+    "menu": {
+        "themecolor": "#F0D000",
+        "title": "Projects"
+    },
+    "cats": {
+        "software": {
+            "title": "Software",
+            "subpages": [
+                {"link": "ctclsite", "content": "ctclsite/content.md", "themecolor": "#F0D000", "title": "ctclsite-python", "desc": "The website itself"},
+                {"link": "cams", "content": "cams/content.md", "themecolor": "#F0D000", "title": "CAMS Asset Management System", "desc": "Fully custom inventory management software"},
+                {"link": "contactlist", "content": "contactlist/content.md", "themecolor": "#F0D000", "title": "ContactList", "desc": "Browser-based contact manager"}
+            ]
+        },
+        "hardware": {
+            "title": "Hardware Design",
+            "subpages": [
+                {"link": "mct_1", "content": "mct_1/content.md", "themecolor": "#F0D000", "title": "MediaCow Touch 1", "desc": "Android tablet experiment"}
+            ]
+        },
+        "pchardware": {
+            "title": "PC Hardware",
+            "subpages": [
+                {"link": "pc_pbt", "content": "pc_pbt/content.md", "themecolor": "#F0D000", "title": "WBPC - \"Polybutylene Terephthalate\"", "desc": "General-purpose desktop computer system"},
+                {"link": "pc_amp", "content": "srv_amp/content.md", "themecolor": "#F0D000", "title": "SVCS", "desc": "Series of server systems for use with service hosting"},
+                {"link": "pc_prm", "content": "srv_prm/content.md", "themecolor": "#F0D000", "title": "WBSD", "desc": "Dedicated storage server"},
+                {"link": "pc_dxm", "content": "srv_dxm/content.md", "themecolor": "#F0D000", "title": "ROUTER", "desc": "Router and firewall server"}
+            ]
+        }
+    }
+}}

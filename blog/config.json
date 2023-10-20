@@ -1,8 +1,0 @@
-{"config": {
-    "posts": [
-        {"content": "blogpost_3/content.md", "title": "SP7021 Part 1", "cat": "Software", "date": "July 2023", "desc": "My work with the SP7021 SIP"},
-        {"content": "blogpost_2/content.md", "title": "ctclsite: To Rust and Back", "cat": "Software", "date": "2023", "desc": "Yet another rewrite"},
-        {"content": "blogpost_1/content.md", "title": "ctclsite-rust", "cat": "Software", "date": "2023", "desc": "ctclsite-rust Rust rewrite"}
-    ]
-
-}}

@@ -1,0 +1,7 @@
+{% include "about_header.html" %}{% for section in sections %}{% if section.bgimg == "" %}
+    <section>{% else %}
+    <section style="background-image:url({{ section.bgimg }})">{% endif %}
+         {{ section.rendered|safe }}
+    </section>
+    <hr>{% endfor %}
+{% include "about_footer.html" %}

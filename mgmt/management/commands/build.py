@@ -2,11 +2,12 @@
 # File: build.py
 # Purpose: Creates various files used by the software
 # Created: September 21, 2023
-# Modified: September 21, 2023
+# Modified: October 4, 2023
 
 import os, json, sys
 from django.core.management.base import BaseCommand, CommandError
 from scss import Compiler
+from csscompressor import compress
 
 # Function that keeps error messages consistent
 def perror(func, message):
@@ -25,10 +26,15 @@ def compilescss(path):
         scss_src = f.read()
 
     try:
-        theme["css"] = Compiler().compile_string(theme["scss"])
+        css = Compiler().compile_string(scss_src)
     except Exception as err:
-        pwarn("configthemes", f"Sass compilation error while processing {path}: {err}")
+        perror("configthemes", f"Sass compilation error while processing {path}: {err}")
 
+    try:
+        css_comp = compress(css)
+        return css_comp
+    except Exception as err:
+        perror("configthemes", f"CSS minimization error while processing {path}: {err}")
 
 class Command(BaseCommand):
     help = "Generates all of the needed files for the application."
