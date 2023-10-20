@@ -3,13 +3,12 @@
 # File: manage.py
 # Purpose: Management command interface
 # Created: August 26, 2023
-# Modified: September 2, 2023
+# Modified: October 20, 2023
 
 import os
 import sys
 
 def main():
-    """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'app.settings')
     try:
         from django.core.management import execute_from_command_line

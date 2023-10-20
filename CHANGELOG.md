@@ -1,6 +1,4 @@
-# 4.0.0 - [UNRELEASED]
-
-Initial release
+# 4.1.0 - October 20, 2023
 
 ## What's different from 3.2.4
 
@@ -8,7 +6,4 @@ Initial release
 - All CSV-based configuration files were replaced by JSON
 - Images are now in the WEBP format instead of PNG to save bandwidth usage
 - SCSS support added for styling
-
-### RAMList
-
-RAMList no longer "lists" memory modules and is now more of an identification guide. Each memory generation uses a single markdown file for content. 
+- The RAMList page is disabled for this release
