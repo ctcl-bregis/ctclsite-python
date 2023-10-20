@@ -2,7 +2,7 @@
 # File: views.py
 # Purpose: Views for blog
 # Created: September 11, 2023
-# Modified: October 19, 2023
+# Modified: October 20, 2023
 
 from django.http import HttpResponse, HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render
@@ -32,6 +32,6 @@ def post(request, postid):
     with open(content_dir + page_cfg["posts"][postid]["content"]) as f:
         mdsource = f.read()
 
-    context["content"] = markdown(mdsource)
+    context["rendered"] = markdown(mdsource)
 
     return HttpResponse(template.render(context, request))
