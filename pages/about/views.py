@@ -43,12 +43,12 @@ def pp(request):
             mdsource = f.read()
 
         try:
-            context["content"] = markdown(mdsource)
+            context["rendered"] = markdown(mdsource)
         except Exception as err:
-            context["content"] = f"<i>Markdown rendering failed: {err}</i>"
+            context["rendered"] = f"<i>Markdown rendering failed: {err}</i>"
 
     except Exception as err:
-        context["content"] = f"<i>File operation error when opening {page_cfg['privacy']['content']}</i>"
+        context["rendered"] = f"<i>File operation error when opening {page_cfg['licensing']['content']}</i>"
 
     return HttpResponse(template.render(context, request))
 
@@ -61,11 +61,11 @@ def licensing(request):
             mdsource = f.read()
 
         try:
-            context["content"] = markdown(mdsource)
+            context["rendered"] = markdown(mdsource)
         except Exception as err:
-            context["content"] = f"<i>Markdown rendering failed: {err}</i>"
+            context["rendered"] = f"<i>Markdown rendering failed: {err}</i>"
 
     except Exception as err:
-        context["content"] = f"<i>File operation error when opening {page_cfg['licensing']['content']}</i>"
+        context["rendered"] = f"<i>File operation error when opening {page_cfg['licensing']['content']}</i>"
 
     return HttpResponse(template.render(context, request))

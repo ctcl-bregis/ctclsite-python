@@ -4,9 +4,10 @@ I have experience with multiple jobs in different fields.
 So far I have been employed by these companies.
 
 ### 2nd Life Inc.
-Employed: July 2020 - April 2023
-Website: [2ndlifeinc.com](https://2ndlifeinc.com)  
-Location: Richmond, Virginia, United States  
+
+- Employed: July 2020 - April 2023  
+- Website: [2ndlifeinc.com](https://2ndlifeinc.com)  
+- Location: Richmond, Virginia, United States  
 
 Responsibilities:
 
@@ -15,9 +16,9 @@ Responsibilities:
 - Use and configuration of embedded/non-embedded operating systems including Microsoft Windows, Apple macOS, Linux, FreeBSD, Android and Cisco IOS
 
 ### Atlantic Estimating
-Employed: November 2022 - Present  
-Website: [GGG](https://www.ggg-ai.com/)  
-Location: Baltimore, Maryland, United States  
+- Employed: November 2022 - Present  
+- Website: [GGG](https://www.ggg-ai.com/)  
+- Location: Baltimore, Maryland, United States  
 
 Main responsibility: Assist with building consulting when needed
 
