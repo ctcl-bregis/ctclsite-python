@@ -2,7 +2,7 @@
 # File: settings.py
 # Purpose: Global app settings
 # Created: August 26, 2023
-# Modified: September 11, 2023
+# Modified: November 21, 2023
 
 from pathlib import Path
 
@@ -13,9 +13,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
+# TODO: In production mode, have this key generated with --build
 SECRET_KEY = 'django-insecure-ly-!1fzv&sji5gs5g34(451!61=^!u-h7^nks58s4ej$z2y0gj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# TODO: read from the environment variable
 DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", "ctcl-tech.com", "www.ctcl-tech.com"]
@@ -32,10 +34,8 @@ INSTALLED_APPS = [
     # Non-content app
     'mgmt',
     # Website "apps"
-    'pages.about',
-    'pages.blog',
-    #'pages.ramlist',
-    'pages.projects'
+    'lite',
+    'main'
 ]
 
 MIDDLEWARE = [
@@ -104,7 +104,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_ROOT = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "app/static/"
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
