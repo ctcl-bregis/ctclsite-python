@@ -2,7 +2,7 @@
 # File: lib.py
 # Purpose: Commonly used functions used across the app. Similar to lib.rs in Rust.
 # Created: September 11, 2023
-# Modified: October 7, 2023
+# Modified: November 23, 2023
 
 import json
 import os
@@ -47,7 +47,6 @@ def loadjson(path):
 
 # Function for pre-filling a dictionary used as the context for templates
 def mkcontext(subpageindex):
-
     context = subpageindex
     context["styling"] = global_css
 

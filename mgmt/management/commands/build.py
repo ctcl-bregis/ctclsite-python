@@ -2,10 +2,11 @@
 # File: build.py
 # Purpose: Creates various files used by the software
 # Created: September 21, 2023
-# Modified: October 4, 2023
+# Modified: November 23, 2023
 
 import os, json, sys
 from django.core.management.base import BaseCommand, CommandError
+from django.core.management.utils import get_random_secret_key
 from scss import Compiler
 from csscompressor import compress
 
@@ -41,6 +42,13 @@ class Command(BaseCommand):
     cwd = os.getcwd()
 
     def handle(self, *args, **options):
+        # CS_DEBUG should be something other than "False" when running in production, the key should be generated then
+        if os.environ["CS_DEBUG"] != "False":
+            django_key = get_random_secret_key()
+            
+            with open("key.txt", "w") as f:
+                f.write(django_key)
+
         # Get global config
         try:
             with open("mgmt/config.json") as f:

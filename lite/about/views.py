@@ -2,7 +2,7 @@
 # File: views.py
 # Purpose: Views for "about"
 # Created: August 30, 2023
-# Modified: October 3, 2023
+# Modified: November 23, 2023
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -10,11 +10,11 @@ from django.template import loader
 from app import lib
 from markdown import markdown
 
-page_cfg = lib.loadjson("pages/about/config.json")
-content_dir = "pages/about/content/"
+page_cfg = lib.loadjson("config/about/config.json")
+content_dir = "config/about/content/"
 
 def main(request):
-    template = loader.get_template("about_main.html")
+    template = loader.get_template("lite/about_main.html")
     context = lib.mkcontext(page_cfg["root"])
 
     context["sections"] = page_cfg["root"]["sections"]
@@ -35,7 +35,7 @@ def main(request):
     return HttpResponse(template.render(context, request))
 
 def pp(request):
-    template = loader.get_template("about_md.html")
+    template = loader.get_template("lite/about_md.html")
     context = lib.mkcontext(page_cfg["privacy"])
 
     try:
@@ -53,7 +53,7 @@ def pp(request):
     return HttpResponse(template.render(context, request))
 
 def licensing(request):
-    template = loader.get_template("about_md.html")
+    template = loader.get_template("lite/about_md.html")
     context = lib.mkcontext(page_cfg["licensing"])
 
     try:

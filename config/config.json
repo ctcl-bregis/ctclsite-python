@@ -1,0 +1,7 @@
+{"config": {
+    "navbar": [
+        {"app": "about", "title": "ABOUT", "link": "/", "float": "left"},
+        {"app": "blog", "title": "BLOG", "link": "/", "float": "left"},
+        {"app": "projects", "title": "PROJECTS", "link": "", "float": "left"}
+    ]
+}}

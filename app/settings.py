@@ -2,9 +2,11 @@
 # File: settings.py
 # Purpose: Global app settings
 # Created: August 26, 2023
-# Modified: November 21, 2023
+# Modified: November 23, 2023
 
+from django.core.management.utils import get_random_secret_key
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,11 +16,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # TODO: In production mode, have this key generated with --build
-SECRET_KEY = 'django-insecure-ly-!1fzv&sji5gs5g34(451!61=^!u-h7^nks58s4ej$z2y0gj'
+if os.path.exists("key.txt"):
+    with open("key.txt") as f:
+        SECRET_KEY = f.read()
+else:
+    print("settings.py WARNING: key.txt does not exist, generating key now")
+    SECRET_KEY = get_random_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # TODO: read from the environment variable
-DEBUG = True
+if os.environ["CS_DEBUG"] == "False":
+    DEBUG = False
+else:
+    DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1", "ctcl-tech.com", "www.ctcl-tech.com"]
 
@@ -35,7 +45,7 @@ INSTALLED_APPS = [
     'mgmt',
     # Website "apps"
     'lite',
-    'main'
+    #'main'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +64,7 @@ ROOT_URLCONF = 'app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'app/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -74,7 +84,7 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 # ctclsite-python is just a static site generator, databases should not be used nor created
-DATABASES =  {}
+DATABASES = {}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -106,9 +116,7 @@ USE_TZ = True
 
 STATIC_ROOT = 'static/'
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "app/static/"
-]
+STATICFILES_DIRS = [BASE_DIR / "app/static/"]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

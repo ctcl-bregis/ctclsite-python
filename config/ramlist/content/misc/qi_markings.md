@@ -71,13 +71,16 @@ The current theory is that the diffusion location is represented by the second a
 - "UU" - Italy
 - "VV" - Sandston, Virginia, United States (near Richmond, Virginia), VV likely for Virginia
 - "WW" - Sandston, Virginia, United States (near Richmond, Virginia), WW likely for White Oak; the name of the tech park that the plant resides in
-- "65" or similar - Diffused by **Nanya Technology*- either in China or Taiwan under the Inotera joint venture
+- "65" or similar - Diffused by *Nanya Technology* either in China or Taiwan under the Inotera joint venture
 
 Like the old die code scheme seen on Siemens and early Infineon parts, the US location is represented by either "V" or "W". It is unknown why there is two different codes for one location, though it is likely that W and V differentiate between the 300mm fab and the 200mm fab on each side of the facility. For example, "W" could have two meanings: "White Oak" and "West".
 
 From what is seen for Infineon and Qimonda parts shown on Xbox 360 motherboard pictures at the XenonLibrary wiki and a teardown done by CTCL, all of the die codes have "VV" for the second and third character. It is likely possible that Microsoft specified the use of United States-made DRAM in the Xbox 360 series.
 
 How to determine the packaging location from the die code is unknown, this is likely because the die code is to describe the silicon die and not the packaged device itself. It appears that DRAM packaged by Qimonda Portugal has a unique "clipped edge" package. This seemed to be the case for another DRAM part from a different DRAM vendor using Qimonda Portugal's packaging service, such as a Winbond W641GG2JB-14 with the location code "PRT" for Portugal.[^x360_wb]
+
+
+
 
 ## Sources
 [^x360_it]: https://xenonlibrary.com/wiki/Infineon_RAM

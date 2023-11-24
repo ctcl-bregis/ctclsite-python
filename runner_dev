@@ -3,11 +3,11 @@
 # File: runner_prod
 # Purpose: Linux/BSD script for running the application in development environments
 # Created: September 21, 2023
-# Modified: November 21, 2023
+# Modified: November 23, 2023
 
 find . -name "__pycache__" -exec rm -r "{}" 2> /dev/null \;
 
-export CL_DEBUG="True"
+export CS_DEBUG="True"
 
 function showerror {
     echo "runner_dev ERROR: Management command \"$1\" failed!"

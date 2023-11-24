@@ -2,7 +2,7 @@
 # File: views.py
 # Purpose: Views for Projects page
 # Created: October 3, 2023
-# Modified: October 20, 2023
+# Modified: November 24, 2023
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -10,8 +10,8 @@ from django.template import loader
 from app import lib
 from markdown import markdown
 
-page_cfg = lib.loadjson("pages/projects/config.json")
-content_dir = "pages/projects/content/"
+page_cfg = lib.loadjson("config/projects/config.json")
+content_dir = "config/projects/content/"
 
 pages = {}
 for cat in page_cfg["cats"].keys():
@@ -26,7 +26,7 @@ def menu(request):
     return HttpResponse(template.render(context, request))
 
 def subpage(request, subpagename):
-    template = loader.get_template("projects_content.html")
+    template = loader.get_template("lite/projects_content.html")
     context = lib.mkcontext(pages[subpagename])
     with open(content_dir + pages[subpagename]["content"]) as f:
         context["rendered"] = markdown(f.read())
