@@ -115,14 +115,21 @@ class LoggerMiddleware:
                 writer.writerow(log_header)
 
         entry["time"] = timestr
-        entry["ip"] = request.META["REMOTE_ADDR"]
         entry["port"] = request.META["SERVER_PORT"]
         entry["url"] = request.path
 
         # Keep log from being filled by extremely long fields usually from malicious users
         for key, value in httpheaders.items():
-            if len(value) > 512:
+            if len(value) > 256:
                 httpheaders[key] = f"!! {key} too long !!"
+
+        try:
+            entry["ip"] = httpheaders["X-Forwarded-For"]
+        except:
+            try:
+                entry["ip"] = request.META["REMOTE_ADDR"]
+            except:
+                entry["ip"] = ""
 
         try:
             entry["refer"] = httpheaders["Referer"]
