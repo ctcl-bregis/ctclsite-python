@@ -124,8 +124,6 @@ class LoggerMiddleware:
             if len(value) > 512:
                 httpheaders[key] = f"!! {key} too long !!"
 
-        print(httpheaders)
-
         try:
             entry["refer"] = httpheaders["Referer"]
         except:
