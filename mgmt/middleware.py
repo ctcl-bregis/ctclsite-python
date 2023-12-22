@@ -2,7 +2,7 @@
 # File: middleware.py
 # Purpose: Logging middleware for Django
 # Created: August 30, 2023
-# Modified: December 16, 2023
+# Modified: December 22, 2023
 
 import os, csv, tarfile
 from datetime import datetime
@@ -123,6 +123,18 @@ class LoggerMiddleware:
         for key, value in httpheaders.items():
             if len(value) > 512:
                 httpheaders[key] = f"!! {key} too long !!"
+
+        print(httpheaders)
+
+        try:
+            entry["refer"] = httpheaders["Referer"]
+        except:
+            entry["refer"] = ""
+
+        try:
+            entry["useragent"] = httpheaders["User-Agent"]
+        except:
+            entry["useragent"] = ""
 
         try:
             entry["contentlength"] = httpheaders["Content-Length"]
