@@ -59,12 +59,7 @@ MIDDLEWARE = [
 ]
 
 # Do not load the logger if the app is in debug mode
-#if os.environ["CS_DEBUG"] == "True":
-#    pass
-#else:
-#    MIDDLEWARE.append('mgmt.middleware.LoggerMiddleware')
-
-if os.environ["CS_DEBUG"] == "False":
+if os.environ["CS_DEBUG"] == "True":
     pass
 else:
     MIDDLEWARE.append('mgmt.middleware.LoggerMiddleware')
