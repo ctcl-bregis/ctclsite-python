@@ -20,50 +20,7 @@
         <meta property="og:description" content="{{ desc }} - CTCL">
         <style>
 {{ styling|safe }}
-/* page-specific overrides */
-.btn-group-rlmenu button {
-    background-color: {{ themecolor }};
-}
-
-::selection {
-    background-color: {{ themecolor }};
-}
-
-::-moz-selection {
-    background-color: {{ themecolor }};
-}
-
-::-o-selection {
-    background-color: {{ themecolor }};
-}
-
-::-ms-selection {
-    background-color: {{ themecolor }};
-}
-
-::-webkit-selection {
-    background-color: {{ themecolor }};
-}
-
-.navbar li a, .navbar li, .navbar ul {
-    border-color: {{ themecolor }};
-    background-color: {{ themecolor }};
-}
-
-hr, .navbar .active, a, li::marker {
-    color: {{ themecolor }};
-}
-
-hr {
-    border-top: 2pt solid {{ themecolor }};
-}
         </style>
     </head>
     <body>
-        <div class="navbar">
-            <ul>
-                <li><a href="/">About</a></li>
-                <li><a href="/blog/">Blog</a></li>
-                <li><a class="active" href="/projects/">Projects</a></li>
-            </ul>
-        </div>
+{% include "lite/navbar.html" %}

@@ -1,8 +1,8 @@
 # ctclsite-python - CTCL 2020-2023
 # File: views.py
 # Purpose: Views for blog
-# Created: September 11, 2023
-# Modified: November 24, 2023
+# Created: December 21, 2023
+# Modified: December 22, 2023
 
 from django.http import HttpResponse, HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render
@@ -16,7 +16,7 @@ page_cfg = lib.loadjson("config/blog/config.json")
 
 def menu(request):
     template = loader.get_template("lite/blog_menu.html")
-    context = lib.mkcontext(page_cfg["menu"])
+    context = lib.mkcontext(page_cfg["menu"], lite = True)
     context["posts"] = page_cfg["posts"]
 
     return HttpResponse(template.render(context, request))
@@ -25,7 +25,7 @@ def post(request, postid):
     template = loader.get_template("lite/blog_post.html")
 
     if postid in page_cfg["posts"]:
-        context = lib.mkcontext(page_cfg["posts"][postid])
+        context = lib.mkcontext(page_cfg["posts"][postid], lite = True)
     else:
         return HttpResponseNotFound()
 

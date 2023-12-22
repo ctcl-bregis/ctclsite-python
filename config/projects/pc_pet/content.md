@@ -1,4 +1,6 @@
-"Polyethylene Terephthalate" is a desktop system that I put together in late 2021. It served as the "main" desktop for all of 2022. It had a variety of workloads such as running PC games, virtualization, EDA and running the Xactimate estimating software. All computer-bound work I have completed surrounding Fort Myers Beach island was done on this system.
+"Polyethylene Terephthalate" is a desktop system that I put together in late 2021. It served as the "main" desktop for all of 2022. It had a variety of workloads such as running PC games, virtualization, EDA and running the Xactimate estimating software.
+
+## Configuration
 
 Configuration from May 25, 2022 to January 13, 2023:
 Note: From December 4, 2021 to May 25, 2022, the system used an Intel Xeon E5-2643, other than that, the configuration was the same.
@@ -16,5 +18,13 @@ Note: From December 4, 2021 to May 25, 2022, the system used an Intel Xeon E5-26
 - Case Fan: 3x Included RGB fans
 
 From December 4, 2021 to sometime in May 2022, it had both Windows 10 and Debian 11 installed
-From sometime in May 2022 to January, 2023, it had both Windows 10 and Linux Mint 20.3 installed
+From sometime in May 2022 to January 2023, it had both Windows 10 and Linux Mint 20.3 installed
 
+## Legacy
+All computer-bound work I have completed surrounding Fort Myers Beach island was done on this system.
+
+In January 2023, the successor "Polybutylene Terephthalate" was built, replacing "Polyethylene Terephthalate" as my "main" desktop PC.
+
+On June 1, 2023, the system was permanently decomissioned after discovering that it damaged eight memory modules for unknown reasons. 
+
+During 2023, I started the plan for ["Polyethylene Terephthalate v2"](../pc_pet2), a redo of "Polyethylene Terephthalate". 

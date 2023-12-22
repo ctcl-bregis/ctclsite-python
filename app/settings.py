@@ -2,7 +2,7 @@
 # File: settings.py
 # Purpose: Global app settings
 # Created: August 26, 2023
-# Modified: November 23, 2023
+# Modified: December 22, 2023
 
 from django.core.management.utils import get_random_secret_key
 from pathlib import Path
@@ -15,7 +15,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# TODO: In production mode, have this key generated with --build
 if os.path.exists("key.txt"):
     with open("key.txt") as f:
         SECRET_KEY = f.read()
@@ -24,13 +23,12 @@ else:
     SECRET_KEY = get_random_secret_key()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# TODO: read from the environment variable
 if os.environ["CS_DEBUG"] == "False":
     DEBUG = False
+    ALLOWED_HOSTS = ["127.0.0.1", "ctcl-tech.com", "www.ctcl-tech.com"]
 else:
     DEBUG = True
-
-ALLOWED_HOSTS = ["127.0.0.1", "ctcl-tech.com", "www.ctcl-tech.com"]
+    ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -43,9 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Non-content app
     'mgmt',
+    # Incoming log app
+    'inlog',
     # Website "apps"
     'lite',
-    #'main'
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -56,8 +56,19 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'mgmt.middleware.LoggerMiddleware'
 ]
+
+# Do not load the logger if the app is in debug mode
+#if os.environ["CS_DEBUG"] == "True":
+#    pass
+#else:
+#    MIDDLEWARE.append('mgmt.middleware.LoggerMiddleware')
+
+if os.environ["CS_DEBUG"] == "False":
+    pass
+else:
+    MIDDLEWARE.append('mgmt.middleware.LoggerMiddleware')
+
 
 ROOT_URLCONF = 'app.urls'
 
@@ -114,9 +125,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_ROOT = 'static/'
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "app/static/"]
+# The app will not serve static files if DEBUG is False, blame Django
+# Must copy all of the static files to whatever directory in the proxy web server to have the proxy server serve the files instead
+
+STATIC_ROOT = "static/"
+STATIC_URL = "/static/"
+STATICFILES_DIRS = [os.path.join("app", "static")]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

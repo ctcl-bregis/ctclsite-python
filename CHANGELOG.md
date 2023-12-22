@@ -1,15 +1,28 @@
-# 4.2.0 - [UNRELEASED]
+# 5.0.0 - [UNRELEASED]
+Yet another total rewrite of the website, finally adding client-side scripts for mainly cosmetic features.
 
 ## Additions
 
 - Significant improvement to the front-end part of the website, adding content using JavaScript
+- Compatability version of the website that does not use JavaScript and advanced CSS features
 - Current website Django "app" renamed to lite and is now the more accessible version of the website
 - Content is now defined under the "config" directory
+- Significant upgrade to the logger
+- Tested on Django 5.0
 
 ## Fixes
 
 - Fixed Debug mode being enabled in production
 - Link color on some browsers, first observed with Steam's implementation of Chromium
+
+## Changes
+
+- Minor changes to the pix5x5 font used throughout the website
+- The "Play" font is now used for body instead of Arial
+
+## Removals
+
+- RAMList was removed indefinitely, except for its configuration files
 
 # 4.1.1 - October 26, 2023
 

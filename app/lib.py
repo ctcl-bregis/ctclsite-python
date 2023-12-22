@@ -2,7 +2,7 @@
 # File: lib.py
 # Purpose: Commonly used functions used across the app. Similar to lib.rs in Rust.
 # Created: September 11, 2023
-# Modified: November 23, 2023
+# Modified: December 14, 2023
 
 import json
 import os
@@ -15,15 +15,22 @@ def printe(text):
         pass
 
 # Global configuration
-with open("mgmt/config.json") as f:
+with open("config/config.json") as f:
     global_cfg = json.loads(f.read())["config"]
 
-if os.path.exists(global_cfg["scss_comp"]):
-    with open(global_cfg["scss_comp"]) as f:
-        global_css = f.read()
+if os.path.exists(global_cfg["main_scss_comp"]):
+    with open(global_cfg["main_scss_comp"]) as f:
+        main_css = json.loads(f.read())
 else:
-    printe(f"lib.py WARNING: Compiled CSS file {global_cfg['scss_comp']} does not exist")
-    global_css = ""
+    printe(f"lib.py WARNING: Compiled CSS file {global_cfg['main_scss_comp']} does not exist")
+    main_css = ""
+
+if os.path.exists(global_cfg["lite_scss_comp"]):
+    with open(global_cfg["lite_scss_comp"]) as f:
+        lite_css = json.loads(f.read())
+else:
+    printe(f"lib.py WARNING: Compiled CSS file {global_cfg['lite_scss_comp']} does not exist")
+    lite_css = ""
 
 # Load JSON file and return the loaded data
 def loadjson(path):
@@ -46,8 +53,29 @@ def loadjson(path):
     return jsoncontent
 
 # Function for pre-filling a dictionary used as the context for templates
-def mkcontext(subpageindex):
+def mkcontext(subpageindex, lite = False):
     context = subpageindex
-    context["styling"] = global_css
+    theme = subpageindex["theme"]
+    if lite:
+        try:
+            context["styling"] = lite_css[theme]
+        except:
+            printe(f"lib.py WARNING: Theme \"{theme}\" not found, defaulting to \"gold\"")
+            context["styling"] = lite_css["gold"]
+    else:
+        try:
+            context["styling"] = main_css[subpageindex["theme"]]
+        except:
+            printe(f"lib.py WARNING: Theme \"{theme}\" not found, defaulting to \"gold\"")
+            context["styling"] = main_css["gold"]
 
     return context
+
+def getthemecolors():
+    colors = {}
+    fgcolors = {}
+    for key, value in global_cfg["styling_colors"].items():
+        colors[key] = value["color"]
+        fgcolors[key] = value["fgcolor"]
+
+    return (colors, fgcolors)

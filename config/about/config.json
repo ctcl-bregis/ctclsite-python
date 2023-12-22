@@ -1,28 +1,26 @@
 {"config": {
     "root": {
-        "themecolor": "#F0D000",
+        "theme": "gold",
         "title": "Welcome",
         "description": "Welcome to the website",
         "sections": [
-            {"title": "Welcome", "content": "config/about/sections/welcome.md", "bgimg": ""},
-            {"title": "Who I am", "content": "config/about/sections/whoami.md", "bgimg": "/static/bgimg/aboutme.webp"},
-            {"title": "Work Experience", "content": "config/about/sections/workexp.md", "bgimg": "/static/bgimg/workexp.webp"},
-            {"title": "Education", "content": "config/about/sections/education.md", "bgimg": ""},
-            {"title": "Website Info", "content": "config/about/sections/techinfo.md", "bgimg": "/static/bgimg/techinfo.webp"},
-            {"title": "Contact", "content": "config/about/sections/contact.md", "bgimg": "/static/bgimg/contact.webp"},
-            {"title": "Friends' Websites", "content": "config/about/sections/friends.md", "bgimg": ""}
+            {"title": "About Me", "content": "config/about/sections/whoami.md", "bgvid": "/static/bgimg/whoami.webm", "bgimg": "/static/bgimg/whoami.webp"},
+            {"title": "Work Experience", "content": "config/about/sections/workexp.md", "bgvid": "/static/bgimg/workexp.webm", "bgimg": "/static/bgimg/workexp.webp"},
+            {"title": "Education", "content": "config/about/sections/education.md", "bgvid": "/static/bgimg/education.webm", "bgimg": "/static/bgimg/education.webp"},
+            {"title": "Website Info", "content": "config/about/sections/techinfo.md", "bgvid": "/static/bgimg/techinfo.webm", "bgimg": "/static/bgimg/techinfo.webp"},
+            {"title": "Contact", "content": "config/about/sections/contact.md", "bgvid": "/static/bgimg/contact.webm", "bgimg": "/static/bgimg/contact.webp"}
         ]
     },
     "privacy": {
-        "themecolor": "#F0D000",
+        "theme": "gold",
         "title": "Privacy Policy",
         "description": "Privacy policy of the website",
-        "content": "privacy.md"
+        "content": "config/about/privacy.md"
     },
     "licensing": {
-        "themecolor": "#F0D000",
+        "theme": "gold",
         "title": "Licensing",
         "description": "Licensing information for CTCL content on and off of the website",
-        "content": "licensing.md"
+        "content": "config/about/licensing.md"
     }
 }}

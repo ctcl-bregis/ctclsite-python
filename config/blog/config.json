@@ -1,9 +1,10 @@
 {"config": {
     "menu": {
-        "themecolor": "#F0D000",
+        "theme": "gold",
         "title": "Blog Menu"
     },
     "posts": {
-        "1": {"content": "blogpost_1/content.md", "themecolor": "#F0D000", "title": "SP7021 Part 1", "cat": "Hardware", "date": "July 11, 2023", "desc": "My work with the SP7021 SIP"}
+        "2": {"content": "blogpost_2/content.md", "theme": "gold", "title": "2023 In Review and ctclsite-python v5", "cat": "Personal", "date": "December 22, 2023", "desc": "Overview of my experience during 2023 and yet another new version of the website"},
+        "1": {"content": "blogpost_1/content.md", "theme": "gold", "title": "SP7021 Part 1", "cat": "Hardware", "date": "July 11, 2023", "desc": "My work with the SP7021 SIP"}
     }
 }}

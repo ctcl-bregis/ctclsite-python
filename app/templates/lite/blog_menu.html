@@ -1,10 +1,9 @@
-{% include "blog_header.html" %}
-    <h2 class="center">Blog Posts</h2>{% for key, value in posts.items %}{% if value.content != "" %}
-    <hr class="smallhr">
+{% include "lite/blog_header.html" %}
+    <h2 class="center pix">Blog Posts</h2>{% for key, value in posts.items %}{% if value.content != "" %}
     <div class="blogpost">
         <h3 class="nopix"><a href="{{ key }}/">{{ value.title }}</a></h2>
         <h5>Date: {{ value.date }} - Category: {{ value.cat }}</h5>
         <p>{{ value.desc }}</p>
     </div>{% endif %}{% endfor %}
     <hr>
-{% include "blog_footer.html" %}
+{% include "lite/footer.html" %}

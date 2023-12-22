@@ -1,11 +1,14 @@
-#### Date of last modification: July 4, 2023
+**Date of last modification:** December 20, 2023
 
-This website is optimized for security, privacy, performance and compatibility. To achieve this, the website does not contain or serve any cookies, scripts or plugins.
+## Definitions
 
-This website is open source software, see About the Website at [About](/).
+"CTCL" refers to the operator of this website, Brayden Regis.
 
-### Information that is collected and why it is collected
-Information that is automatically collected when an user visits the webpage consists of:
+## On the Website
+This website is **Open Source Software**, one can review the source code to have a better understanding of what data is collected and how it is collected. See the project page related to the website [here](/projects/ctclsite/).
+
+### Information that is collected
+Information that is automatically collected on the server side when an user visits any webpage consists of:
 
 - Time and date of the request
 - IP address
@@ -13,10 +16,58 @@ Information that is automatically collected when an user visits the webpage cons
 - What page was accessed
 - Browser User Agent
 
+The "main" version of the website uses client side scripts to attempt to collect the following:
+
+- Device time zone
+- Device's external IP address
+- Device's local IP address
+- Device display information: Resolution, color depth and ratio
+- Device GPU information
+- Device CPU core count (what is available to the browser)
+- Device memory (RAM) size (what is available to the browser)
+- Amount of touchscreen points available, if present
+- Device platform (Kernel and CPU architecture)
+- Browser window size
+- Status of the Do Not Track header (the website does not try to track the user anyway so this is ignored)
+- Browser languages
+- Browser "product" (almost always "Gecko")
+- Browser build number (almost always "20030107")
+- Browser User Agent
+- Browser connectivity status
+- PDF viewer availability
+- Browser vendor
+- Hashed HTML canvas fingerprint
+
+The client-side script that collects such data is called "clientinfo.js" and loaded from the path "/static/clientinfo.js". This script is not loaded and is not present in the "lite" compatibility version of the website.
+
 This information may be provided by the web browser or the device and is not collected from any other means.
 
 ### How the information is used
-Data listed above, under "Information that is collected", may be stored indefinitely on servers within the United States of America. Collecting such information helps provide a better understanding of website traffic and to improve security.
+Data listed above, under "Information that is collected", may be stored indefinitely on servers within the United States of America, currently the states of New Jersey and Virginia. This data is not shared with any third party.
+
+Collecting such information is used for, including but not limited to:
+
+- Improving user experience
+- Providing technical support
+- Understanding website traffic
+- Analytics
+- Identification
 
 ### Third Party Websites
 This website may mention other websites or contain links to other websites. CTCL cannot take responsibility for personal information collected on these third party websites, nor does CTCL monitor or accept responsibility for the accuracy or content of these other websites.
+
+## Outside of the Website
+
+### Content Use
+Examples of how CTCL content is used and shared publicly on other platforms may be recorded. This includes but is not limited to: screenshots including messages sent by CTCL, use of source code or designs in other projects,
+
+Once again, this data is not shared with any third party and is instead used to help observe how and if my content is being used and is benefiting others.
+
+### Photography
+Photos taken by CTCL that contain personally identifying information or other persons are not shared or used publicy without consent of any party represented in the photo. However, such photos may be stored on CTCL systems indefinitely.
+
+### Publicly accessible information
+CTCL may retain publicly posted information from other platforms indefinitely, even if the original post was deleted or made unavailable to the public.
+
+### Game Servers and Other CTCL Hosted Services
+Log data and user content from game servers and other public services hosted on CTCL hardware or on a CTCL-managed VPS may be collected and stored indefinitely. This includes IP addresses, usernames and the dates of login.

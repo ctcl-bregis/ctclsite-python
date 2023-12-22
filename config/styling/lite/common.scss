@@ -1,0 +1,330 @@
+
+@font-face {
+    font-family: "pix5x5";
+    src: url(/static/Pixel-5x5.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "play";
+    src: url(/static/Play-Regular.ttf) format("truetype");
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: "play";
+    margin: 0pt;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 8pt;
+    font-weight: bold;
+}
+
+.pix {
+    font-family: "pix5x5";
+    font-weight: normal;
+    margin: 8pt;
+    line-height: 100%;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: 2.66 - (0.33 * $i) + "em";
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+hr {
+    border-color: inherit;
+    display: block;
+    height: 0;
+    border: 0;
+    margin: 0 0;
+    padding: 0;
+    margin-block: 0;
+    border-top: 2pt solid $theme;
+}
+
+.smallhr {
+    color: #7F7F7F;
+    border-color: inherit;
+    display: block;
+    height: 0;
+    border: 0;
+    border-top: 1pt solid #7F7F7F;
+    margin: 0 0;
+    padding: 0;
+    margin-block: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0pt;
+    padding-right: 0pt;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
+    background-color: $theme;
+    color: #000000;
+}
+
+.nav-links {
+    padding: 0;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    padding-left: 2pt;
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    font-family: "pix5x5";
+    font-weight: normal;
+    font-size: 12pt;
+    background-color: $theme;
+    color: #000000;
+    padding: 6pt 6pt;
+}
+
+.menu li a {
+    $btn-height: 16pt;
+
+    text-decoration: none;
+    color: $fgcolor;
+    background-color: $theme;
+}
+
+.btn-group-rlmenu button {
+    /* this is used unless overridden by in-line styling */
+    border: 0.5pt solid #000000;
+    margin: 0pt;
+    color: #FFFFFF;
+    padding: 10px 24px;
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+
+.btn-group-rlmenu a {
+    text-decoration: none;
+}
+
+a {
+    color: $theme;
+}
+
+p {
+    font-size: 12pt;
+    margin: 8pt;
+}
+
+::selection {
+    color: #FFFFFF;
+    background-color: $theme;
+}
+
+::-moz-selection {
+    color: #FFFFFF;
+    background-color: $theme;
+}
+
+::-o-selection {
+    color: #FFFFFF;
+    background-color: $theme;
+}
+
+::-ms-selection {
+    color: #FFFFFF;
+    background-color: $theme;
+}
+
+::-webkit-selection {
+    color: #FFFFFF;
+    background-color: $theme;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin: 8pt;
+}
+
+th, td {
+    padding: 2pt;
+    text-align: left;
+    border-bottom: 1px solid #666666;
+    font-size: 12pt;
+    word-wrap: break-word;
+}
+
+tr:nth-child(even) {
+    background-color: #333333;
+}
+
+li {
+    list-style-type: square;
+}
+
+li::marker {
+    color: $theme;
+}
+
+section {
+    height: 100vh;
+    color: #FFFFFF;
+    background-size: cover;
+    background-position-x: center;
+}
+
+.sectionheader {
+    color: #000000;
+    background-color: $theme;
+    margin-block: 0;
+    margin-left: 0;
+    padding: 6pt;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
+    width: fit-content;
+}
+
+section h3 {
+    margin: 8pt;
+}
+
+section li {
+    color: #FFFFFF;
+    margin: 8pt;
+}
+
+section p {
+    color: #FFFFFF;
+    margin: 8pt;
+}
+
+#banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#bgvid {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.sectioncontent {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.sectioncontent p {
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+}
+
+.sectioncontent ul {
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+}
+
+.sectioncontent ul li {
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+}
+
+.projectitem {
+    margin: 4pt;
+    border-style: solid;
+    border-width: 2pt;
+    border-color: $theme;
+}
+
+.projectitem h5 {
+    background-color: $theme;
+    margin-block: 0;
+    margin-left: 0;
+    padding: 6pt;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
+    width: fit-content;
+}
+
+.projectitem h5 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.blogpost {
+    margin: 4pt;
+    border-style: solid;
+    border-width: 2pt;
+    border-color: $theme;
+}
+
+.blogpost h3 {
+    background-color: $theme;
+    margin-block: 0;
+    margin-left: 0;
+    padding: 6pt;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
+    width: fit-content;
+}
+
+.blogpost h3 a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.content {
+    min-height: 100vh;
+}
+
+.backbutton {
+    height: 32pt;
+    width: 64pt;
+    font-family: "pix5x5";
+
+    border-width: 2pt;
+    border-color: $theme;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 12pt;
+
+    background-color: $theme;
+    color: $fgcolor;
+}
+
+figure {
+    margin: 16pt;
+    padding: 4pt;
+    max-width: 50%;
+    background-color: #333333;
+    border-style: solid;
+    border-width: 1pt;
+    border-color: #999999;
+    align-items: center;
+}
+
+figure img {
+    width: -webkit-fill-available;
+}
+
+figure figcaption {
+    font-size: 10pt;
+}
+

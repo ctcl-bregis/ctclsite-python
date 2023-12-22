@@ -20,4 +20,4 @@ then
     python3 -B manage.py build || showerror "build"
 fi
 
-python3 -B manage.py runserver
+python3 -B manage.py runserver 0.0.0.0:8000

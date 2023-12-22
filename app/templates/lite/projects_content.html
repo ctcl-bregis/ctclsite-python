@@ -1,6 +1,9 @@
 {% include "lite/projects_header.html" %}
-        <div class="nopix"><h2>{{ title }}</h1>
-        <h4><a href="..">Back to menu</a></h4>
+        <h2>{{ title }}</h2>
+        <a href="/lite/projects/"><button class="backbutton">Back</button></a>
+        <hr>
+        <div class="content">
 {{ rendered|safe }}
-        <hr></div>
-{% include "lite/projects_footer.html" %}
+        </div>
+        <hr>
+{% include "lite/footer.html" %}

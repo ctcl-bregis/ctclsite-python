@@ -1,7 +1,9 @@
-{% include "blog_header.html" %}
-    <div class="nopix">
-        <h2>{{ title }}</h2>
-        <hr class="smallhr">
+{% include "lite/blog_header.html" %}
+    <h2>{{ title }}</h2>
+    <a href="/lite/blog/"><button class="backbutton">Back</button></a>
+    <hr>
+    <div class="content">
         {{ rendered|safe }}
     </div>
-{% include "blog_footer.html" %}
+    <hr>
+{% include "lite/footer.html" %}

@@ -1,5 +1,3 @@
-## Work Experience
-
 I have experience with multiple jobs in different fields.
 So far I have been employed by these companies.
 

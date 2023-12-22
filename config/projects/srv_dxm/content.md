@@ -7,3 +7,5 @@ The current hardware platform used for ROUTER is codenamed "Dextromethorphan":
 - Memory: 8GB (4x2GB) ATP Micron Unbuffered ECC DDR3-1333
 - Boot storage: 120GB Intel SATA SSD
 - Chassis: Supermicro CSE-813
+
+The codename for this device along with ["Promethazine"](../pc_prm) are based off the Far East Movement song "Like a G6".

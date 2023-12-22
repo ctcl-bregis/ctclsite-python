@@ -1,8 +1,8 @@
 # ctclsite-python - CTCL 2020-2023
 # File: views.py
 # Purpose: Views for "about"
-# Created: August 30, 2023
-# Modified: November 23, 2023
+# Created: December 21, 2023
+# Modified: December 21, 2023
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -11,11 +11,10 @@ from app import lib
 from markdown import markdown
 
 page_cfg = lib.loadjson("config/about/config.json")
-content_dir = "config/about/content/"
 
 def main(request):
     template = loader.get_template("lite/about_main.html")
-    context = lib.mkcontext(page_cfg["root"])
+    context = lib.mkcontext(page_cfg["root"], lite = True)
 
     context["sections"] = page_cfg["root"]["sections"]
 
@@ -36,10 +35,10 @@ def main(request):
 
 def pp(request):
     template = loader.get_template("lite/about_md.html")
-    context = lib.mkcontext(page_cfg["privacy"])
+    context = lib.mkcontext(page_cfg["privacy"], lite = True)
 
     try:
-        with open(content_dir + page_cfg["privacy"]["content"]) as f:
+        with open(page_cfg["privacy"]["content"]) as f:
             mdsource = f.read()
 
         try:
@@ -54,10 +53,10 @@ def pp(request):
 
 def licensing(request):
     template = loader.get_template("lite/about_md.html")
-    context = lib.mkcontext(page_cfg["licensing"])
+    context = lib.mkcontext(page_cfg["licensing"], lite = True)
 
     try:
-        with open(content_dir + page_cfg["licensing"]["content"]) as f:
+        with open(page_cfg["licensing"]["content"]) as f:
             mdsource = f.read()
 
         try:

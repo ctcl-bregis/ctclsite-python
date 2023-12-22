@@ -21,9 +21,9 @@ Just recently, on July 10, 2023, I have made an EasyEDA footprint and symbol for
 
 The files are available here:
 
-- [EasyEDA footprint](/static/blog/3/PCBLIB_TQFP-176_L20.0-W20.0-P0.40-EP9.6-BL_2023-07-10.json)
-- [EasyEDA symbol](/static/blog/3/SCHLIB_SP7021_2023-07-10.json)
-- [KiCAD symbol](/static/blog/3/SP7021.lib)
+- [EasyEDA footprint](/static/blog/1/PCBLIB_TQFP-176_L20.0-W20.0-P0.40-EP9.6-BL_2023-07-10.json)
+- [EasyEDA symbol](/static/blog/1/SCHLIB_SP7021_2023-07-10.json)
+- [KiCAD symbol](/static/blog/1/SP7021.lib)
 
 ### Banana Pi
 

@@ -2,12 +2,14 @@
 # File: build.py
 # Purpose: Creates various files used by the software
 # Created: September 21, 2023
-# Modified: November 23, 2023
+# Modified: December 14, 2023
 
 import os, json, sys
 from django.core.management.base import BaseCommand, CommandError
 from django.core.management.utils import get_random_secret_key
 from scss import Compiler
+from scss.namespace import Namespace
+from scss.types import String
 from csscompressor import compress
 
 # Function that keeps error messages consistent
@@ -19,7 +21,7 @@ def perror(func, message):
 def pwarn(func, message):
     print(f"build.py {func} WARNING: {message}")
 
-def compilescss(path):
+def compilescss(path, namespace):
     if not os.path.exists(path):
         perror("compilescss", "{path} does not exist")
 
@@ -27,7 +29,7 @@ def compilescss(path):
         scss_src = f.read()
 
     try:
-        css = Compiler().compile_string(scss_src)
+        css = Compiler(namespace = namespace).compile_string(scss_src)
     except Exception as err:
         perror("configthemes", f"Sass compilation error while processing {path}: {err}")
 
@@ -45,20 +47,46 @@ class Command(BaseCommand):
         # CS_DEBUG should be something other than "False" when running in production, the key should be generated then
         if os.environ["CS_DEBUG"] != "False":
             django_key = get_random_secret_key()
-            
             with open("key.txt", "w") as f:
                 f.write(django_key)
 
         # Get global config
         try:
-            with open("mgmt/config.json") as f:
+            with open("config/config.json") as f:
                 configjson = json.loads(f.read())["config"]
         except FileNotFoundError:
             perror("config loader", "config/config.json does not exist. Current working directory is \"{cwd}\".")
         except (json.JSONDecodeError, json.decoder.JSONDecodeError) as e:
             perror("config loader", "Exception \"{e}\" raised by JSON library")
 
-        common_css = compilescss(configjson["scss"])
-        with open(configjson["scss_comp"], "w") as f:
-            f.write(common_css)
+        if not os.path.exists("build/"):
+            os.mkdir("build/")
 
+        main_css = {}
+        lite_css = {}
+        for key, value in configjson["styling_colors"].items():
+            if value["enabled"] == "true":
+                namespace = Namespace()
+                namespace.set_variable("$theme", String(value["color"], quotes=None))
+                # "textcolor" is only for certain text elements that have a background of "theme"
+                namespace.set_variable("$fgcolor", String(value["fgcolor"], quotes=None))
+
+                common_css = compilescss(configjson["main_scss"], namespace)
+                main_css[key] = common_css
+
+                common_css = compilescss(configjson["lite_scss"], namespace)
+                lite_css[key] = common_css
+
+        # Build "main" CSS
+        if not os.path.exists("build/main/"):
+            os.mkdir("build/main/")
+
+        # Build "lite" CSS
+        if not os.path.exists("build/lite/"):
+            os.mkdir("build/lite/")
+
+        with open(configjson["main_scss_comp"], "w") as f:
+            f.write(json.dumps(main_css))
+
+        with open(configjson["lite_scss_comp"], "w") as f:
+            f.write(json.dumps(lite_css))

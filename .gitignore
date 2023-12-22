@@ -159,11 +159,12 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-# Plain CSS files should only be a compiled result
-*.css
+# Files generated with --build 
+build/
 
 # Logger
 logger/
 
 # Production key
 key.txt
+

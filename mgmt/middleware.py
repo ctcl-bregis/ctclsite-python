@@ -2,13 +2,64 @@
 # File: middleware.py
 # Purpose: Logging middleware for Django
 # Created: August 30, 2023
-# Modified: October 7, 2023
+# Modified: December 16, 2023
 
 import os, csv, tarfile
 from datetime import datetime
 
-log_header = ["time", "ip", "port", "url", "refer", "useragent"]
-log_latest = "logger/latest.csv"
+# Guide:
+# time: Timestamp of access
+# ip: Client IP
+# port: Server port accessed
+# url: Webpage requested
+# refer: Referred page
+# useragent: Client user agent
+# contentlength: Content-Length HTTP header
+# contenttype: Content-Type HTTP header
+# host: Server host accessed
+# connection: Connection HTTP header
+# cachecontrol: Cache-Control HTTP header
+# secuabrowser: Sec-Ch-Ua HTTP header for browser version
+# secuamobile: Sec-Ch-Ua-Mobile HTTP header for detecting a mobile browser
+# secuaplatform: Sec-Ch-Ua-Platform HTTP header for detecting browser platform
+# dnt: Is Do Not Track enabled
+# httpsupgrade: Upgrade-Insecure-Requests HTTP header
+# accept: Accepted formats
+# secfetchsite: Sec-Fetch-Site HTTP header
+# secfetchmode: Sec-Fetch-Mode HTTP header
+# secfetchuser: Sec-Fetch-User HTTP header
+# secfetchdest: Sec-Fetch-Dest HTTP header
+# acceptencode: Accept-Encoding header
+# acceptlangs: Accept-Language header
+
+#log_header = ["time", "ip", "port", "url", "refer", "useragent"]
+log_header = [
+    "time",
+    "ip",
+    "port",
+    "url",
+    "refer",
+    "useragent",
+    "contentlength",
+    "contenttype",
+    "host",
+    "connection",
+    "cachecontrol",
+    "secuabrowser",
+    "secuamobile",
+    "secuaplatform",
+    "dnt",
+    "httpsupgrade",
+    "accept",
+    "secfetchsite",
+    "secfetchmode",
+    "secfetchuser",
+    "secfetchdest",
+    "acceptencode",
+    "acceptlangs"
+]
+
+log_latest = "logger/server_latest.csv"
 log_dir = "logger/"
 log_max_length = 10000
 
@@ -25,6 +76,11 @@ class LoggerMiddleware:
         # the view (and later middleware) are called.
         response = self.get_response(request)
         entry = {}
+
+        if request.path.startswith("/inlog/"):
+            return response
+
+        httpheaders = request.headers
 
         now = datetime.now()
         timestr = now.strftime("%Y-%b-%d-%k-%M-%S").lower()
@@ -62,20 +118,105 @@ class LoggerMiddleware:
         entry["ip"] = request.META["REMOTE_ADDR"]
         entry["port"] = request.META["SERVER_PORT"]
         entry["url"] = request.path
-        if "HTTP_REFERER" in request.META:
-            entry["refer"] = request.META["HTTP_REFERER"]
-        else:
-            entry["refer"] = ""
 
-        ua = request.META["HTTP_USER_AGENT"]
-        # Keep log from being filled by extremely long user agents, usually from malicious users
-        if len(ua) > 256:
-            entry["useragent"] = "!! User Agent Too Long !!"
-        else:
-            entry["useragent"] = ua
+        # Keep log from being filled by extremely long fields usually from malicious users
+        for key, value in httpheaders.items():
+            if len(value) > 512:
+                httpheaders[key] = f"!! {key} too long !!"
+
+        try:
+            entry["contentlength"] = httpheaders["Content-Length"]
+        except:
+            entry["contentlength"] = ""
+
+        try:
+            entry["contenttype"] = httpheaders["Content-Type"]
+        except:
+            entry["contenttype"] = ""
+
+        try:
+            entry["host"] = httpheaders["Host"]
+        except:
+            entry["host"] = ""
+
+        try: 
+            entry["connection"] = httpheaders["Connection"]
+        except:
+            entry["connection"] = ""
+
+        try:
+            entry["cachecontrol"] = httpheaders["Cache-Control"]
+        except:
+            entry["cachecontrol"] = ""
+
+        try:
+            entry["secuabrowser"] = httpheaders["Sec-Ch-Ua"]
+        except:
+            entry["secuabrowser"] = ""
+
+        try:
+            entry["secuamobile"] = httpheaders["Sec-Ch-Ua-Mobile"]
+        except:
+            entry["secuamobile"] = ""
+
+        try:
+            entry["secuaplatform"] = httpheaders["Sec-Ch-Ua-Platform"]
+        except:
+            entry["secuaplatform"] = ""
+
+        try:
+            entry["dnt"] = httpheaders["Dnt"]
+        except:
+            entry["dnt"] = ""
+
+        try:
+            entry["httpsupgrade"] = httpheaders["Upgrade-Insecure-Requests"]
+        except:
+            entry["httpsupgrade"] = ""
+
+        try:
+            entry["accept"] = httpheaders["Accept"]
+        except:
+            entry["accept"] = ""
+
+        try:
+            entry["secfetchsite"] = httpheaders["Sec-Fetch-Site"]
+        except:
+            entry["secfetchsite"] = ""
+
+        try:
+            entry["secfetchmode"] = httpheaders["Sec-Fetch-Mode"]
+        except:
+            entry["secfetchmode"] = ""
+
+        try:
+            entry["secfetchuser"] = httpheaders["Sec-Fetch-User"]
+        except:
+            entry["secfetchuser"] = ""
+
+        try:
+            entry["secfetchdest"] = httpheaders["Sec-Fetch-Dest"]
+        except:
+            entry["secfetchdest"] = ""
+
+        try:
+            entry["acceptencode"] = httpheaders["Accept-Encoding"]
+        except:
+            entry["acceptencode"] = ""
+
+        try:
+            entry["acceptencode"] = httpheaders["Accept-Encoding"]
+        except:
+            entry["acceptencode"] = ""
+
+        try:
+            entry["acceptlangs"] = httpheaders["Accept-Language"]
+        except:
+            entry["acceptlangs"] = ""
 
         with open(log_latest, "a") as f:
             writer = csv.DictWriter(f, fieldnames = log_header)
             writer.writerow(entry)
+
 
         return response
