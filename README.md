@@ -2,6 +2,8 @@ ctclsite-python "Apache Trout"
 
 This is the website backend used for the website at ctcl-tech.com, formerly crazyblockstech.com
 
+Due to incompatible code in the dependencies that this app uses, an environment of Python 3.10 must be used.
+
 ## Directory structure
 The "app" directory acts as global configuration data.
 

@@ -1,4 +1,4 @@
-# 5.0.0 - [UNRELEASED]
+# 5.1.0 - December 22, 2023
 Yet another total rewrite of the website, finally adding client-side scripts for mainly cosmetic features.
 
 ## Additions
