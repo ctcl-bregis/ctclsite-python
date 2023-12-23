@@ -1,4 +1,4 @@
-**Date of last modification:** December 20, 2023
+**Date of last modification:** December 23, 2023
 
 ## Definitions
 
@@ -38,7 +38,7 @@ The "main" version of the website uses client side scripts to attempt to collect
 - Browser vendor
 - Hashed HTML canvas fingerprint
 
-The client-side script that collects such data is called "clientinfo.js" and loaded from the path "/static/clientinfo.js". This script is not loaded and is not present in the "lite" compatibility version of the website.
+The client-side script that collects such data is called "clientinfo.js" and is loaded from the path "/static/clientinfo.js". This script is not loaded and is not present in the ["lite" compatibility version of the website](/lite/).
 
 This information may be provided by the web browser or the device and is not collected from any other means.
 
@@ -57,6 +57,7 @@ Collecting such information is used for, including but not limited to:
 This website may mention other websites or contain links to other websites. CTCL cannot take responsibility for personal information collected on these third party websites, nor does CTCL monitor or accept responsibility for the accuracy or content of these other websites.
 
 ## Outside of the Website
+This section covers how data is collected outside of the website, such as on chat services, social media and game servers.
 
 ### Content Use
 Examples of how CTCL content is used and shared publicly on other platforms may be recorded. This includes but is not limited to: screenshots including messages sent by CTCL, use of source code or designs in other projects,
