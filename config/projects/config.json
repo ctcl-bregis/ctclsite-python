@@ -6,6 +6,7 @@
     "cats": {
         "software": {
             "title": "Software",
+            "desc": "Computer software projects such as web applications and desktop applications.",
             "subpages": [
                 {"link": "ctclsite", "content": "ctclsite/content.md", "theme": "gold", "title": "ctclsite", "desc": "The website itself"},
                 {"link": "cams", "content": "cams/content.md", "theme": "red", "title": "CAMS Asset Management System", "desc": "Fully custom inventory management software"},
@@ -15,12 +16,14 @@
         },
         "hardware": {
             "title": "Hardware Design",
+            "desc": "Projects with custom circuit design and firmware.",
             "subpages": [
                 {"link": "mct_1", "content": "mct_1/content.md", "theme": "mediacow", "title": "MediaCow Touch 1", "desc": "Android tablet experiment"}
             ]
         },
         "pchardware": {
             "title": "PC Hardware",
+            "desc": "Computer systems that I use that are assembled from off-the-shelf parts.",
             "subpages": [
                 {"link": "pc_pbt", "content": "pc_pbt/content.md", "theme": "orange", "title": "WBPC - \"Polybutylene Terephthalate\"", "desc": "General-purpose desktop computer system"},
                 {"link": "pc_pc", "content": "pc_pc/content.md", "theme": "orange", "title": "WBPC - \"Polycarbonate\"", "desc": "Workbench desktop computer system"},
@@ -36,12 +39,14 @@
         },
         "automotive": {
             "title": "Automotive and Mechanical",
+            "desc": "Projects that surround the development of automotive, mechanical and mechatronic systems.",
             "subpages": [
                 {"link": "netkart", "content": "netkart/content.md", "theme": "netkart", "title": "NetKart", "desc": "Project surrounding the upgrades and potential computerization of a Go Kart"}
             ]
         },
         "creative": {
             "title": "Creative work",
+            "desc": "My creative work such as game design and photography.",
             "subpages": [
                 {"link": "p2maps", "content": "p2maps/content.md", "theme": "source", "title": "Portal 2 Maps", "desc": "Custom community maps made for the 2011 puzzle game Portal 2"}
             ]

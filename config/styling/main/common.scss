@@ -222,15 +222,19 @@ section p {
 
 #banner {
     position: relative;
-    width: 100%;
+    width: 98%;
     height: 100vh;
     overflow: hidden;
+    margin: 1%;
+    border: $theme;
+    border-width: 2pt;
+    border-style: solid;
 }
 
 #bgvid {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 52%;
+    transform: translateX(-52%);
     height: 100vh;
     z-index: -1;
     overflow: hidden;

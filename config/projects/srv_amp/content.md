@@ -3,6 +3,8 @@ SVCS, nicknamed "Dracula's Castle", is the name given to any platform that I use
 ## Current
 In early May 2023, I was given an HP BladeSystem C3000 chassis with three HP ProLiant BL460c G8 systems installed along with many other computer parts.
 
+The HP BladeSystem setup is sometimes referred to as "The Amphetamines" in relation to the codename scheme used for the blades.
+
 ### SVCS1
 SVCS1 uses the platform designated "Methamphetamine". The system is currently used for general purpose virtualization.
 
@@ -10,7 +12,7 @@ Specifications:
 
 - System: HP ProLiant BL460c G8
 - CPUs: 2x Intel Xeon E5-2697 v2
-- Memory: 8x16GB (128GB) Micron Technology PC3-12800R 2Rx4 Registered ECC
+- Memory: 128GB (8x16GB) Micron Technology PC3-12800R 2Rx4 Registered ECC
 - Storage: 1x HGST 600GB 10000RPM 6Gb/s SAS
 
 ### SVCS2
@@ -34,4 +36,6 @@ Specifications:
 - Storage: 1x HGST 600GB 10000RPM 6Gb/s SAS
 
 ## Former
-From February 2023 to the introduction of the systems above, the motherboard ["Polyethylene"](../pc_pe/) was used.
+From February 2023 to the introduction of the systems above, the motherboard ["Polyethylene"](../pc_pe/) in a Supermicro chassis was used.
+
+Before "Polyethylene", since late 2020, various 1U/2U Dell PowerEdge and HP ProLiant series servers were used.

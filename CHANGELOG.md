@@ -1,3 +1,13 @@
+# 5.2.0 - December 31, 2023
+
+## Additions
+
+- Descriptions for project categories
+
+## Changes
+
+- Look of the About sections
+
 # 5.1.0 - December 22, 2023
 Yet another total rewrite of the website, finally adding client-side scripts for mainly cosmetic features.
 
@@ -22,7 +32,7 @@ Yet another total rewrite of the website, finally adding client-side scripts for
 
 ## Removals
 
-- RAMList was removed indefinitely, except for its configuration files
+- RAMList removed indefinitely, except for its configuration files
 
 # 4.1.1 - October 26, 2023
 

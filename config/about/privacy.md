@@ -1,4 +1,4 @@
-**Date of last modification:** December 23, 2023
+**Date of last modification:** December 31, 2023
 
 ## Definitions
 
@@ -68,7 +68,12 @@ Once again, this data is not shared with any third party and is instead used to 
 Photos taken by CTCL that contain personally identifying information or other persons are not shared or used publicy without consent of any party represented in the photo. However, such photos may be stored on CTCL systems indefinitely.
 
 ### Publicly accessible information
-CTCL may retain publicly posted information from other platforms indefinitely, even if the original post was deleted or made unavailable to the public.
+CTCL may retain publicly posted information from other platforms indefinitely, even if the original post was deleted or made unavailable to the public. This includes messages and social media posts.
 
 ### Game Servers and Other CTCL Hosted Services
 Log data and user content from game servers and other public services hosted on CTCL hardware or on a CTCL-managed VPS may be collected and stored indefinitely. This includes IP addresses, usernames and the dates of login.
+
+### CTCL managed chat services and communications
+For services hosted on CTCL systems, see Game Servers and Other CTCL Hosted Services above
+
+Messages in chat groups including Discord guilds may be recorded and stored indefinitely.
