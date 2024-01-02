@@ -6,9 +6,9 @@ It utilized the Banana Pi M64 Single Board Computer. This board was chosen over 
 In 2020, this was a massive undertaking given my skillset at the time. All of the planning was done within LaTeX formatted documents. 
 
 ## Construction
-The case was built from plywood reused from a 50-60's era phono radio system. The front bezel was reused from a digital photo frame and consisted of (presumably) solid aluminum. The case was put together using hot glue.
+The case was built from plywood reused from a 50-60's era phono radio system. The front bezel was reused from a digital photo frame and consisted of (presumably) solid aluminum. The case was put together using hot glue and wood screws.
 
-The end result was quite heavy, usually requiring two hands to hold the device. 
+The end result was quite heavy and possibly dangerous, usually requiring two hands to hold the device. 
 
 ## Legacy 
 

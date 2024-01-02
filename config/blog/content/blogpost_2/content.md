@@ -1,6 +1,5 @@
 
 ## 2023 In Review
-
 For me, personally, 2023 was quite a challenging period of time. Some of these challenges faced were related to addiction, relationships, computers and finance.
 
 I plan to significantly improve my life throughout 2024 from learning from the events in my life during 2023.
@@ -38,9 +37,7 @@ In June and September 2023, I revisited the Fort Myers Beach, Florida area after
 ### Game Design
 In 2023, I made many online friends after gaining more interest in the development of maps for the 2011 puzzle game, Portal 2. I added a page to Projects relating to this [here](../../projects/p2maps/).
 
-
 ## ctclsite-python v5
-
 Before the end of the year, I have released the fifth rewrite of the Python version of the website.
 
 During my short session at Brightpoint Community College from September to December, I learned quite a few things about web development that I applied during the development of this release.
