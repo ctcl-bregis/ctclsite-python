@@ -1,8 +1,8 @@
-# ctclsite-python - CTCL 2020-2023
+# ctclsite-python - CTCL 2020-2024
 # File: lib.py
 # Purpose: Commonly used functions used across the app. Similar to lib.rs in Rust.
 # Created: September 11, 2023
-# Modified: December 14, 2023
+# Modified: January 6, 2024
 
 import json
 import os
@@ -47,7 +47,7 @@ def loadjson(path):
     try:
         jsoncontent = json.loads(filecontent)["config"]
     except Exception as err:
-        printe(f"lib.py ERROR: Exception {err} raised")
+        printe(f"lib.py ERROR: Exception raised when processing {path}: {err}")
         return None
 
     return jsoncontent

@@ -1,9 +1,10 @@
 {% include "lite/blog_header.html" %}
-    <h2 class="center pix">Blog Posts</h2>{% for key, value in posts.items %}{% if value.content != "" %}
+    <h1 class="center pix">Blog Posts</h1>
+    <hr>{% for key, value in posts.items %}{% if value.content != "" %}
     <div class="blogpost">
-        <h3 class="nopix"><a href="{{ key }}/">{{ value.title }}</a></h2>
-        <h5>Date: {{ value.date }} - Category: {{ value.cat }}</h5>
-        <p>{{ value.desc }}</p>
+        <p class="blogtitle"><a href="{{ key }}/">{{ value.title }}</a></p>
+        <p class="bloginfo">Date: {{ value.date }} - Category: {{ value.cat }}</p>
+        <p class="blogdesc">{{ value.desc }}</p>
     </div>{% endif %}{% endfor %}
     <hr>
-{% include "lite/footer.html" %}
+{% include "footer.html" %}

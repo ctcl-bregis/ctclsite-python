@@ -1,0 +1,9 @@
+{% include "lite/services_header.html" %}
+    {% for section in sections %}
+    <section id="banner">
+        <h2 class="sectionheader pix">{{ section.title }}</h2>
+        {{ section.rendered|safe }}
+        </section>
+    </section>{% endfor %}
+    <hr>
+{% include "footer.html" %}

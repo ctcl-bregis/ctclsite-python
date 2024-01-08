@@ -3,10 +3,10 @@
     <hr>
     <h3 class="sectionheader pix">{{ value.title }}</h3>
     <p>{{ value.desc }}</p>{% for subpage in value.subpages %}
-    <div class="projectitem" style="border-color: {{ colors|get_item:subpage.theme }}">
-        <h5 style="background-color: {{ colors|get_item:subpage.theme }}"><a style="color: {{ fgcolors|get_item:subpage.theme }}" href="{{ subpage.link }}/">{{ subpage.title }}</a></h5>
+    <section class="projectitem theme-{{ subpage.theme }}">
+        <p class="projecttitle"><a href="{{ subpage.link }}/"><button>{{ subpage.title }}</button></a></h5>
         <p>{{ subpage.desc }}</p>
-    </div>{% endfor %}{% endfor %}
+    </section>{% endfor %}{% endfor %}
     </a>
     <hr>
-{% include "main/footer.html" %}
+{% include "footer.html" %}

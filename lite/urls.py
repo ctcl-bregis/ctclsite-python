@@ -9,6 +9,7 @@ from django.urls import include, path
 
 urlpatterns = [
     path("", include("lite.about.urls")),
+    path("services/", include("lite.services.urls")),
     path("projects/", include("lite.projects.urls")),
     path("blog/", include("lite.blog.urls")),
     #path("ramlist/", include("main.ramlist.urls"))

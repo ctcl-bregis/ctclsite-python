@@ -1,10 +1,11 @@
 This website itself is one of my ongoing projects.
 
+Internally and for development purposes, I use the name "ctclsite", "ctclsite-python" for the Python Flask/Django version and "ctclsite-rust" for the Rust Actix version.
+
 ## Programming
 The website's backend and frontend code was written by myself and is open source. For licensing of specific content, see [Licensing](../../licensing/).
 
 The source code to the website can be found here: [GitHub](https://github.com/ctcl-bregis/ctclsite-python)
-
 
 ## History
 
@@ -77,7 +78,7 @@ These rewrites boil down to this:
         <td>Django</td>
         <td>SCSS</td>
         <td>November 21, 2023</td>
-        <td>By 2024</td>
+        <td>December 22, 2023</td>
         <td><a href="../pc_pbt">Polybutylene Terephthalate</a></td>
     </tr>
 </table>
@@ -106,4 +107,6 @@ Development was started on May 15, 2023 and was quickly released on May 20, 2023
 This version of the website was started after being made aware of the misleading nature of RAMList on August 26, 2023. I was originally going to have a update to v3 but most of the code was "unreadable" and was rewritten in the Django web framework. Django was used because I was already used to using Django from the development of ContactList and CAMS.
 
 ### ctclsite-python v5
-ctclsite-python v5 has minor changes over the backend code of the website and was originally planned to be version "4.2.0" of the website. Instead this release was a great redesign of the general look of the website and finally added client-side scripts. 
+ctclsite-python v5 has minor changes over the backend code of the website and was originally planned to be version "4.2.0" of the website. Instead this release was a great redesign of the general look of the website and finally added client-side scripts.
+
+This release was finally put into production on December 22, 2023.

@@ -1,8 +1,8 @@
-# ctclsite-python - CTCL 2020-2023
+# ctclsite-python - CTCL 2020-2024
 # File: views.py
 # Purpose: Views for "about"
 # Created: August 30, 2023
-# Modified: December 14, 2023
+# Modified: January 6, 2024
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
@@ -34,7 +34,7 @@ def main(request):
     return HttpResponse(template.render(context, request))
 
 def pp(request):
-    template = loader.get_template("main/about_md.html")
+    template = loader.get_template("main/about_md_pp.html")
     context = lib.mkcontext(page_cfg["privacy"])
 
     try:

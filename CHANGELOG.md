@@ -1,3 +1,18 @@
+# 5.3.0 - January 7, 2024
+
+## Additions
+
+- "Services" page for offered services
+- Image icons for blog post entries
+
+## Changes
+
+- Template consolidation
+- Interface text no longer uses header types for sizing
+- Privacy Policy page no longer loads clientinfo.js
+- Animated buttons for project and blog post items
+- Various CSS and HTML fixes
+
 # 5.2.0 - December 31, 2023
 
 ## Additions

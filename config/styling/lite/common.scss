@@ -213,9 +213,11 @@ section p {
 
 #banner {
     position: relative;
-    width: 100%;
-    height: 100vh;
+    width: auto;
+    min-height: 100vh;
+    height: 100%;
     overflow: hidden;
+    border: $theme;
 }
 
 #bgvid {
@@ -253,7 +255,7 @@ section p {
     border-color: $theme;
 }
 
-.projectitem h5 {
+.projecttitle {
     background-color: $theme;
     margin-block: 0;
     margin-left: 0;
@@ -263,7 +265,22 @@ section p {
     width: fit-content;
 }
 
-.projectitem h5 a {
+.projecttitle a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.blogtitle {
+    background-color: $theme;
+    margin-block: 0;
+    margin-left: 0;
+    padding: 6pt;
+    padding-top: 4pt;
+    padding-bottom: 4pt;
+    width: fit-content;
+}
+
+.blogtitle a {
     text-decoration: none;
     color: #000000;
 }
@@ -273,21 +290,6 @@ section p {
     border-style: solid;
     border-width: 2pt;
     border-color: $theme;
-}
-
-.blogpost h3 {
-    background-color: $theme;
-    margin-block: 0;
-    margin-left: 0;
-    padding: 6pt;
-    padding-top: 4pt;
-    padding-bottom: 4pt;
-    width: fit-content;
-}
-
-.blogpost h3 a {
-    text-decoration: none;
-    color: #000000;
 }
 
 .content {
@@ -310,9 +312,11 @@ section p {
 }
 
 figure {
-    margin: 16pt;
+    margin: 8pt;
+    margin-right: 25%;
+    clear: left;
     padding: 4pt;
-    max-width: 50%;
+    width: 75%;
     background-color: #333333;
     border-style: solid;
     border-width: 1pt;
@@ -329,3 +333,7 @@ figure figcaption {
     font-size: 10pt;
 }
 
+.footertext {
+    font-size: 10pt;
+    text-align: center;
+}

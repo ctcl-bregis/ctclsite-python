@@ -1,15 +1,15 @@
-# ctclsite-python - CTCL 2020-2023
+# ctclsite-python - CTCL 2020-2024
 # File: build.py
 # Purpose: Creates various files used by the software
 # Created: September 21, 2023
-# Modified: December 14, 2023
+# Modified: January 7, 2024
 
 import os, json, sys
 from django.core.management.base import BaseCommand, CommandError
 from django.core.management.utils import get_random_secret_key
 from scss import Compiler
 from scss.namespace import Namespace
-from scss.types import String
+from scss.types import String, Map
 from csscompressor import compress
 
 # Function that keeps error messages consistent
@@ -64,12 +64,25 @@ class Command(BaseCommand):
 
         main_css = {}
         lite_css = {}
+
+        # configjson["styling_colors"] without "enabled"; {<theme>: {"color": <color>, "fgcolor": <color>}}
+        themes = {}
+        for key, value in configjson["styling_colors"].items():
+            #themevalues = Map()
+
+            themevalues = Map([(String("color"), String(value["color"])), (String("fgcolor"), String(value["fgcolor"]))])
+
+            themes[String(key)] = themevalues
+
         for key, value in configjson["styling_colors"].items():
             if value["enabled"] == "true":
                 namespace = Namespace()
                 namespace.set_variable("$theme", String(value["color"], quotes=None))
                 # "textcolor" is only for certain text elements that have a background of "theme"
                 namespace.set_variable("$fgcolor", String(value["fgcolor"], quotes=None))
+
+                # Dictionary of all themes put into a map for mainly styling blog post and project title boxes
+                namespace.set_variable("$themes", Map(list(themes.items())))
 
                 common_css = compilescss(configjson["main_scss"], namespace)
                 main_css[key] = common_css

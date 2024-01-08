@@ -1,3 +1,5 @@
+@use "sass:map";
+@use "sass:string";
 
 @font-face {
     font-family: "pix5x5";
@@ -115,21 +117,6 @@ hr {
     }
 }
 
-.btn-group-rlmenu button {
-    /* this is used unless overridden by in-line styling */
-    border: 0.5pt solid #000000;
-    margin: 0pt;
-    color: #FFFFFF;
-    padding: 10px 24px;
-    cursor: pointer;
-    width: 100%;
-    display: block;
-}
-
-.btn-group-rlmenu a {
-    text-decoration: none;
-}
-
 a {
     color: $theme;
 }
@@ -182,6 +169,10 @@ tr:nth-child(even) {
     background-color: #333333;
 }
 
+ul {
+    padding-left: 24pt;
+}
+
 li {
     list-style-type: square;
 }
@@ -191,7 +182,6 @@ li::marker {
 }
 
 section {
-    height: 100%;
     color: #FFFFFF;
 }
 
@@ -222,25 +212,28 @@ section p {
 
 #banner {
     position: relative;
-    width: 98%;
-    height: 100vh;
+    width: auto;
+    min-height: 100vh;
     overflow: hidden;
     margin: 1%;
     border: $theme;
     border-width: 2pt;
     border-style: solid;
+    box-shadow: 1px 1px 0px $theme,
+            2px 2px 0px $theme;
 }
 
 #bgvid {
     position: absolute;
-    left: 52%;
-    transform: translateX(-52%);
+    left: 50%;
+    transform: translateX(-50%);
     height: 100vh;
     z-index: -1;
     overflow: hidden;
 }
 
 .sectioncontent {
+    min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -260,47 +253,99 @@ section p {
 }
 
 .projectitem {
-    margin: 4pt;
+    margin: 6pt;
+    margin-left: 4pt;
     border-style: solid;
     border-width: 2pt;
-    border-color: $theme;
 }
 
-.projectitem h5 {
-    background-color: $theme;
+.projecttitle {
     margin-block: 0;
     margin-left: 0;
-    padding: 6pt;
-    padding-top: 4pt;
+    padding: 0;
     padding-bottom: 4pt;
     width: fit-content;
+    font-weight: bold;
 }
 
-.projectitem h5 a {
+.projecttitle a {
     text-decoration: none;
     color: #000000;
 }
 
 .blogpost {
-    margin: 4pt;
+    margin: 6pt;
+    margin-left: 4pt;
     border-style: solid;
     border-width: 2pt;
-    border-color: $theme;
+    height: 80pt;
 }
 
-.blogpost h3 {
-    background-color: $theme;
+.blogpost img {
+    float: right;
+    height: 100%;
+    border-left-style: solid;
+    border-left-width: 2pt;
+}
+
+.blogpost a {
+    display: table;
+}
+
+.blogpost a button, .projectitem a button {
+    width: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4pt;
     margin-block: 0;
     margin-left: 0;
-    padding: 6pt;
-    padding-top: 4pt;
-    padding-bottom: 4pt;
-    width: fit-content;
+    border-width: 2pt;
+    border-right-style: solid;
+    border-left-style: none;
+    border-bottom-style: solid;
+    border-top-style: none;
+    font-size: 12pt;
+    font-family: "play";
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.blogpost h3 a {
-    text-decoration: none;
-    color: #000000;
+@each $ptheme, $color in $themes {
+    .theme-#{$ptheme} {
+        border-color: unquote(map-get($color, "color"));
+        box-shadow: 1px 1px 0px unquote(map-get($color, "color")),
+            2px 2px 0px unquote(map-get($color, "color"))
+    }
+
+    .theme-#{$ptheme} img {
+        border-color: unquote(map-get($color, "color"));
+    }
+
+    .theme-#{$ptheme} a button {
+        text-decoration: none;
+        color: unquote(map-get($color, "fgcolor"));
+        background-color: unquote(map-get($color, "color"));
+        border-color: unquote(map-get($color, "color"));
+
+        &:hover {
+            transition: 0.1s linear;
+            background-color: unquote(map-get($color, "fgcolor"));
+            color: unquote(map-get($color, "color"));
+        }
+    }
+}
+
+.bloginfo {
+    margin: 4pt;
+    font-size: 10pt;
+}
+
+.blogdesc {
+    display: flex;
+    max-width: calc(100% - height);
+    margin: 4pt;
+    font-size: 12pt;
 }
 
 .content {
@@ -330,9 +375,11 @@ section p {
 }
 
 figure {
-    margin: 16pt;
+    margin: 8pt;
+    margin-right: 25%;
+    clear: left;
     padding: 4pt;
-    max-width: 50%;
+    width: 75%;
     background-color: #333333;
     border-style: solid;
     border-width: 1pt;
@@ -347,5 +394,10 @@ figure img {
 
 figure figcaption {
     font-size: 10pt;
+}
+
+.footertext {
+    font-size: 10pt;
+    text-align: center;
 }
 

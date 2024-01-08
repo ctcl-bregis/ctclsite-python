@@ -5,8 +5,8 @@ This project was started in the need for a web interface that just displays task
 The project is open source and the source code is hosted on GitHub at [this repository](https://github.com/ctcl-bregis/ToDoKiosk).
 
 <figure>
-    <img src="/static/projects/todokiosk/todokiosk_nov42023.webp" alt="ToDoKiosk v0.1.0 in action. November 4, 2023, taken on ASUS Zenfone 9, edited in GIMP">
-    <figcaption>ToDoKiosk v0.1.0 in action. November 4, 2023, taken on ASUS Zenfone 9, edited in GIMP</figcaption>
+    <img src="/static/projects/todokiosk/todokiosk_jan72024.webp">
+    <figcaption>ToDoKiosk v0.3.2 in action on <a href="../pc_r12/">SIGN1 "Dichlorodifluoromethane"</a> - January 7, 2024</figcaption>
 </figure>
 
 ### Rust Version

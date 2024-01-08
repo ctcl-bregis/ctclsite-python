@@ -8,7 +8,7 @@
             "title": "Software",
             "desc": "Computer software projects such as web applications and desktop applications.",
             "subpages": [
-                {"link": "ctclsite", "content": "ctclsite/content.md", "theme": "gold", "title": "ctclsite", "desc": "The website itself"},
+                {"link": "ctclsite", "content": "ctclsite/content.md", "theme": "gold", "title": "CTCL Website", "desc": "The website itself"},
                 {"link": "cams", "content": "cams/content.md", "theme": "red", "title": "CAMS Asset Management System", "desc": "Fully custom inventory management software"},
                 {"link": "contactlist", "content": "contactlist/content.md", "theme": "blue", "title": "ContactList", "desc": "Browser-based contact manager"},
                 {"link": "todokiosk", "content": "todokiosk/content.md", "theme": "gold", "title": "ToDoKiosk", "desc": "CalDAV tasks client"}
@@ -27,14 +27,16 @@
             "subpages": [
                 {"link": "pc_pbt", "content": "pc_pbt/content.md", "theme": "orange", "title": "WBPC - \"Polybutylene Terephthalate\"", "desc": "General-purpose desktop computer system"},
                 {"link": "pc_pc", "content": "pc_pc/content.md", "theme": "orange", "title": "WBPC - \"Polycarbonate\"", "desc": "Workbench desktop computer system"},
+                {"link": "pc_pmma", "content": "pc_pmma/content.md", "theme": "gold", "title": "MWDL - \"Polymethylmethacrylate\"", "desc": "Laptop computer system"},
                 {"link": "pc_pet", "content": "pc_pet/content.md", "theme": "qipurple", "title": "WBPC - \"Polyethylene Terephthalate\"", "desc": "Former general-purpose desktop computer system"},
                 {"link": "pc_pet2", "content": "pc_pet2/content.md", "theme": "qipurple", "title": "WBPC - \"Polyethylene Terephthalate v2\"", "desc": "Planned experimental desktop computer system"},
                 {"link": "pc_abs", "content": "pc_abs/content.md", "theme": "99red", "title": "WBPC - \"Acrylonitrile Butadiene Styrene\"", "desc": "Experimental desktop computer system"},
                 {"link": "pc_pe", "content": "pc_pe/content.md", "theme": "99green", "title": "WBPC - \"Polyethylene\"", "desc": "Former, now experimental, desktop computer system"},
-                {"link": "srv_vc", "content": "srv_vc/content.md", "theme": "gold", "title": "PRSV", "desc": "Dedicated 3D printer interface"},
+                {"link": "pc_r12", "content": "pc_r12/content.md", "theme": "gold", "title": "SIGN1 - \"Dichlorodifluoromethane\"", "desc": "Bookshelf PC for displaying a To-Do list"},
+                {"link": "srv_vc", "content": "srv_vc/content.md", "theme": "gold", "title": "PRSV - \"Vinyl Chloride\"", "desc": "Dedicated 3D printer interface"},
                 {"link": "srv_amp", "content": "srv_amp/content.md", "theme": "gold", "title": "SVCS", "desc": "Series of server systems for use with service hosting"},
-                {"link": "srv_prm", "content": "srv_prm/content.md", "theme": "gold", "title": "WBSD", "desc": "Dedicated storage server"},
-                {"link": "srv_dxm", "content": "srv_dxm/content.md", "theme": "gold", "title": "ROUTER", "desc": "Router and firewall server"}
+                {"link": "srv_prm", "content": "srv_prm/content.md", "theme": "gold", "title": "WBSD - \"Promethazine\"", "desc": "Dedicated storage server"},
+                {"link": "srv_dxm", "content": "srv_dxm/content.md", "theme": "gold", "title": "ROUTER - \"Dextromethorphan\"", "desc": "Router and firewall server"}
             ]
         },
         "automotive": {
