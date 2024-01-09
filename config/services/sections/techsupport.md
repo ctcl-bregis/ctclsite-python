@@ -1,5 +1,4 @@
-I offer various kinds of technology support and consulting.
-
+I offer various kinds of technology support and consulting remotely and within the areas of Bon Air, Chesterfield, Midlothian, Moseley, Rockwood, Hallsboro, Richmond in Virginia.
 ## Small Business and Home Technology Support
 I have experience in the management and setup of Small Office, Home Office (SOHO) environments from personal, educational and work experience.
 
@@ -10,6 +9,11 @@ I have much experience in the planning, assembly and maintenance of desktop comp
 <figure style="float: left">
     <img src="/static/projects/polyethylene_sep42023.webp">
     <figcaption><a href="../../projects/pc_pe/">"Polyethylene"</a> hardware platform after its reassembly in August 2023 - September 4, 2023</figcaption>
+</figure>
+
+<figure style="float: left">
+    <img src="/static/projects/ldx_testing_oct92023.webp">
+    <figcaption><a href="../../projects/srv_amp/">"Lisdexamfetamine"</a> hardware platform being prepared for DRAM testing - October 9, 2023</figcaption>
 </figure>
 
 This includes gaming computers which I have built many for myself and others.

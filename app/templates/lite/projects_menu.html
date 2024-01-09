@@ -1,10 +1,10 @@
-{% include "lite/projects_header.html" %}
+{% include "lite/header.html" %}
     <h2 class="center pix">Projects</h2>{% for key, value in menu.items %}
     <hr>
     <h3 class="sectionheader pix">{{ value.title }}</h3>{% for subpage in value.subpages %}
     <div class="projectitem" style="border-color: {{ colors|get_item:subpage.theme }}">
         <p class="projecttitle" style="background-color: {{ colors|get_item:subpage.theme }}"><a style="color: {{ fgcolors|get_item:subpage.theme }}" href="{{ subpage.link }}/">{{ subpage.title }}</a></h5>
-        <p>{{ subpage.desc }}</p>
+        <p class="projectdesc">{{ subpage.desc }}</p>
     </div>{% endfor %}{% endfor %}
     </a>
     <hr>

@@ -5,7 +5,7 @@
     },
     "posts": {
         "3": {"content": "blogpost_3/content.md", "icon": "/static/blog/3/blog3_icon.webp", "theme": "gold", "cat": "Personal", "date": "January 7, 2024", "title": "Week 1, 2024", "desc": "The First Week of 2024"},
-        "2": {"content": "blogpost_2/content.md", "icon": "", "theme": "gold", "cat": "Personal", "date": "December 22, 2023", "title": "2023 In Review and ctclsite-python v5", "desc": "Overview of my experience during 2023 and yet another new version of the website"},
+        "2": {"content": "blogpost_2/content.md", "icon": "", "theme": "gold", "cat": "Personal", "date": "December 22, 2023", "title": "2023 In Review", "desc": "Overview of my experience during 2023 and yet another new version of the website"},
         "1": {"content": "blogpost_1/content.md", "icon": "", "theme": "gold", "cat": "Hardware", "date": "July 11, 2023", "title": "SP7021 Part 1", "desc": "My work with the SP7021 SIP"}
     }
 }}

@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "sass:map";
 @use "sass:string";
 
@@ -11,6 +12,17 @@
     src: #{url(/static/Play-Regular.ttf) format("truetype")};
 }
 
+@function getboxshadow($shadowcolor) {
+    $bshadows: "";
+
+    @for $i from 1 through 12 {
+        $pxvalue: $i / 4 + "px";
+        $bshadows: $bshadows + ", " + $pxvalue + " " + $pxvalue + " 0px " + $shadowcolor;
+    }
+
+    @return str-slice(unquote($bshadows), 2);
+}
+
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -18,7 +30,11 @@ body {
     margin: 0pt;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     margin: 8pt;
     font-weight: bold;
 }
@@ -100,7 +116,7 @@ hr {
 
 *:before,
 *:after {
-  z-index: -1;
+    z-index: -1;
 }
 
 .menu li a {
@@ -157,7 +173,8 @@ table {
     margin: 8pt;
 }
 
-th, td {
+th,
+td {
     padding: 2pt;
     text-align: left;
     border-bottom: 1px solid #666666;
@@ -170,6 +187,10 @@ tr:nth-child(even) {
 }
 
 ul {
+    padding-left: 16pt;
+}
+
+.content ul {
     padding-left: 24pt;
 }
 
@@ -188,8 +209,7 @@ section {
 .sectionheader {
     color: #000000;
     background-color: $theme;
-    margin-block: 0;
-    margin-left: 0;
+    margin: 0;
     padding: 6pt;
     padding-top: 4pt;
     padding-bottom: 4pt;
@@ -215,12 +235,12 @@ section p {
     width: auto;
     min-height: 100vh;
     overflow: hidden;
-    margin: 1%;
+    margin: 8pt;
+    margin-left: 5pt;
     border: $theme;
     border-width: 2pt;
     border-style: solid;
-    box-shadow: 1px 1px 0px $theme,
-            2px 2px 0px $theme;
+    box-shadow: getboxshadow($theme);
 }
 
 #bgvid {
@@ -252,23 +272,53 @@ section p {
     margin-bottom: 4pt;
 }
 
+.sectionitem {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    margin: 8pt;
+    margin-left: 5pt;
+    border: $theme;
+    border-width: 2pt;
+    border-style: solid;
+    box-shadow: getboxshadow($theme);
+}
+
+.sectiontitle {
+    margin-block: 0;
+    margin: 0;
+    padding: 4pt;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 18pt;
+    background-color: $theme;
+    color: #000000;
+}
+
 .projectitem {
     margin: 6pt;
     margin-left: 4pt;
+    margin-bottom: 6pt;
+    margin-top: 6pt;
     border-style: solid;
     border-width: 2pt;
 }
 
+.projectdesc {
+    margin: 6pt;
+}
+
 .projecttitle {
     margin-block: 0;
-    margin-left: 0;
+    margin: 0;
     padding: 0;
-    padding-bottom: 4pt;
     width: fit-content;
     font-weight: bold;
+    font-size: 14pt;
 }
 
 .projecttitle a {
+    padding: 0pt;
     text-decoration: none;
     color: #000000;
 }
@@ -311,27 +361,33 @@ section p {
     cursor: pointer;
 }
 
-@each $ptheme, $color in $themes {
-    .theme-#{$ptheme} {
-        border-color: unquote(map-get($color, "color"));
-        box-shadow: 1px 1px 0px unquote(map-get($color, "color")),
-            2px 2px 0px unquote(map-get($color, "color"))
+@each $themename, $colors in $themes {
+    $boxfgcolor: unquote(map-get($colors, "fgcolor"));
+    $boxbgcolor: unquote(map-get($colors, "color"));
+
+    .theme-#{$themename} {
+        border-color: $boxbgcolor;
+        box-shadow: getboxshadow($boxbgcolor);
+
+        ::selection {
+            color: $boxfgcolor;
+            background-color: $boxbgcolor;
+        }
     }
 
-    .theme-#{$ptheme} img {
-        border-color: unquote(map-get($color, "color"));
+    .theme-#{$themename} img {
+        border-color: $boxbgcolor;
     }
 
-    .theme-#{$ptheme} a button {
-        text-decoration: none;
-        color: unquote(map-get($color, "fgcolor"));
-        background-color: unquote(map-get($color, "color"));
-        border-color: unquote(map-get($color, "color"));
+    .theme-#{$themename} a button {
+        color: $boxfgcolor;
+        background-color: $boxbgcolor;
+        border-color: $boxbgcolor;
 
         &:hover {
             transition: 0.1s linear;
-            background-color: unquote(map-get($color, "fgcolor"));
-            color: unquote(map-get($color, "color"));
+            background-color: $boxfgcolor;
+            color: $boxbgcolor;
         }
     }
 }
@@ -400,4 +456,3 @@ figure figcaption {
     font-size: 10pt;
     text-align: center;
 }
-

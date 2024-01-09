@@ -1,13 +1,13 @@
 "Polybutylene Terephthalate" is the codename given to the hardware platform that currently serves as WBPC1 for general purpose workloads. It makes use of the ECC memory support of certain AMD Ryzen desktop CPUs and motherboards that support it.
 
 ## Configuration
-Current specifications as of October 20, 2023:
+Current specifications as of January 8, 2024:
 
 - Motherboard: ASRock B550M Pro4
 - CPU: AMD Ryzen 5 5600
 - Memory: 32GB (2x16GB) DDR4-3200 Unbuffered ECC Micron MTA9ASF2G72AZ-3G2B1
 - Graphics: ASRock Challenger D AMD Radeon RX 6700 XT 12GB GDDR6 (Samsung)
-- Storage: 1TB NVMe PCIe 4.0 SSD SK hynix P41
+- Storage: 1TB NVMe PCIe 4.0 SSD SK hynix Platinum P41
 - Storage 2: 512GB NVMe PCIe 4.0 SSD Samsung PM9A1
 - Power Supply: Corsair RM850x
 - CPU Cooler: Cooler Master Hyper 212 EVO V2, with 120mm Protechnic Magic MGT12012ZB-W25

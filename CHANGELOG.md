@@ -1,3 +1,14 @@
+# 5.4.0 - [UNRELEASED]
+
+## Additions
+
+
+## Changes
+- Various SCSS/CSS and HTML fixes and improvements
+- As of the last update, Pix5x5 was split into its own project; repository
+- Template consolidation
+- Theme consistency
+
 # 5.3.0 - January 7, 2024
 
 ## Additions
