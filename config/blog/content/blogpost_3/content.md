@@ -8,7 +8,7 @@ Recently, I have been using ToDoKiosk much more and it has become a crucial tool
 Within this first week, I have made three releases of ToDoKiosk: 0.3.0 on January 2, 2024; 0.3.1 on January 5, 2024
 
 ## Website
-I have realeased version 5.3.0 of the website along with content updates including this blog post.
+I have released version 5.3.0 of the website along with content updates including this blog post.
 
 This update introduces the "Services" page for showcasing what services I offer.
 

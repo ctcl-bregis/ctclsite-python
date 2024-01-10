@@ -3,7 +3,7 @@
 # File: runner_prod
 # Purpose: Linux/BSD script for running the application in development environments
 # Created: September 21, 2023
-# Modified: November 23, 2023
+# Modified: January 9, 2024
 
 find . -name "__pycache__" -exec rm -r "{}" 2> /dev/null \;
 
@@ -11,13 +11,10 @@ export CS_DEBUG="True"
 
 function showerror {
     echo "runner_dev ERROR: Management command \"$1\" failed!"
+    # Don't continue if something fails so the app does not try to run with missing files
     exit
 }
 
-if [[ $* == *--build* ]] || [[ $* == *--collect-build* ]]
-then
-    # Don't continue if something fails so the app does not try to run with missing files
-    python3 -B manage.py build || showerror "build"
-fi
+python3 -B manage.py build || showerror "build"
 
 python3 -B manage.py runserver 0.0.0.0:8000

@@ -1,12 +1,9 @@
 {% include "lite/header.html" %}
-    <section style="height: auto">
-        <p>This is the compatibility version of the website for older browsers or browsers without JavaScript. The full website can be found <a href="/">here</a></p>
-    </section>
-    <hr>
     {% for section in sections %}
-    <section style="background-image:url({{ section.bgimg }})">
+    <section id="banner" style="background-image: url({{ section.bgimg }});">
+        <section class="sectioncontent">
         <h2 class="sectionheader pix">{{ section.title }}</h2>
         {{ section.rendered|safe }}
-    </section>
-    <hr>{% endfor %}
+        </section>
+    </section>{% endfor %}
 {% include "footer.html" %}

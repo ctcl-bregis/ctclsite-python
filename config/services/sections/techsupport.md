@@ -28,5 +28,5 @@ I have experience in the setup of local and remote servers for various games inc
 
 <figure style="float: left">
     <img src="/static/services/jan52024_mc.webp">
-    <figcaption><a href="../../projects/pc_pmma/">"Polymethylmethacrylate"</a> pictured on the left being prepared to test the server in-game - January 5, 2024</figcaption>
+    <figcaption><a href="../../projects/pc_pmma/">"Polymethylmethacrylate"</a> pictured on the left being prepared to test a Minecraft server in-game - January 5, 2024</figcaption>
 </figure>

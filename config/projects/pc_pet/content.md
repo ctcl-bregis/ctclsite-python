@@ -3,7 +3,6 @@
 ## Configuration
 
 Configuration from May 25, 2022 to January 13, 2023:
-Note: From December 4, 2021 to May 25, 2022, the system used an Intel Xeon E5-2643, other than that, the configuration was the same.
 
 - Motherboard: Supermicro X9SRA
 - CPU: 1x Intel Xeon E5-1650 v2
@@ -17,6 +16,8 @@ Note: From December 4, 2021 to May 25, 2022, the system used an Intel Xeon E5-26
 - Case: DIYPC D480 White
 - Case Fan: 3x Included RGB fans
 
+Note: From December 4, 2021 to May 25, 2022, the system used an Intel Xeon E5-2643, other than that, the configuration was the same.
+
 From December 4, 2021 to sometime in May 2022, it had both Windows 10 and Debian 11 installed
 From sometime in May 2022 to January 2023, it had both Windows 10 and Linux Mint 20.3 installed
 
@@ -25,6 +26,6 @@ All computer-bound work I have completed surrounding Fort Myers Beach island was
 
 In January 2023, the successor "Polybutylene Terephthalate" was built, replacing "Polyethylene Terephthalate" as my "main" desktop PC.
 
-On June 1, 2023, the system was permanently decomissioned after discovering that it damaged eight memory modules for unknown reasons. 
+On June 1, 2023, the system was permanently decomissioned after discovering that the motherboard damaged eight memory modules for unknown reasons. 
 
 During 2023, I started the plan for ["Polyethylene Terephthalate v2"](../pc_pet2), a redo of "Polyethylene Terephthalate". 

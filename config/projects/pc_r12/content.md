@@ -17,8 +17,10 @@ Current specifications as of January 6, 2024:
 - Power Supply: 430W Thermaltake 80+
 - Fan: 120mm fan from a DIYPC Silence-BK-Window case
 - Case: Captec Custom Mini-ITX
+- OS: Debian 11 + XFCE
 - Monitor: HannStar Display HANNS.G HL193ABBUFWK1
 
-The use of an x86 system over a common ARM-based single-board computers such as ones from Raspberry Pi or Banana Pi was because these common ARM single-board computers lack a VGA video output. The monitor has a VGA port for its only input.
+
+The use of an x86 system over a common ARM-based single-board computers such as ones from Raspberry Pi or Banana Pi was because these boards often lack a VGA video output. The monitor has a VGA port for its only input.
 
 The power usage, while not actually have been measured, is expected to be very low compared to other desktop systems making this system suitable for embedded, single-use applications such as running ToDoKiosk.

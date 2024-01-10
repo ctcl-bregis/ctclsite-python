@@ -2,6 +2,24 @@
 @use "sass:map";
 @use "sass:string";
 
+/* box shadow size, in pt */
+$boxshadowsize: 2;
+/* box shadow resolution; how many steps per pt */
+$boxshadowres: 4;
+/* margin to use on most type of sections */
+$sectionmargin: 7;
+
+@function getboxshadow($shadowcolor) {
+    $bshadows: "";
+
+    @for $i from 1 through ($boxshadowsize * $boxshadowres) {
+        $ptvalue: $i / $boxshadowres + "pt";
+        $bshadows: $bshadows + ", " + $ptvalue + " " + $ptvalue + " 0pt " + $shadowcolor;
+    }
+
+    @return str-slice(unquote($bshadows), 2);
+}
+
 @font-face {
     font-family: "pix5x5";
     src: #{url(/static/Pixel-5x5.ttf) format("truetype")};
@@ -12,17 +30,6 @@
     src: #{url(/static/Play-Regular.ttf) format("truetype")};
 }
 
-@function getboxshadow($shadowcolor) {
-    $bshadows: "";
-
-    @for $i from 1 through 12 {
-        $pxvalue: $i / 4 + "px";
-        $bshadows: $bshadows + ", " + $pxvalue + " " + $pxvalue + " 0px " + $shadowcolor;
-    }
-
-    @return str-slice(unquote($bshadows), 2);
-}
-
 body {
     background-color: #000000;
     color: #FFFFFF;
@@ -30,11 +37,7 @@ body {
     margin: 0pt;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
     margin: 8pt;
     font-weight: bold;
 }
@@ -173,8 +176,7 @@ table {
     margin: 8pt;
 }
 
-th,
-td {
+th, td {
     padding: 2pt;
     text-align: left;
     border-bottom: 1px solid #666666;
@@ -235,8 +237,22 @@ section p {
     width: auto;
     min-height: 100vh;
     overflow: hidden;
-    margin: 8pt;
-    margin-left: 5pt;
+    margin: $sectionmargin + pt;
+    margin-left: ($sectionmargin - $boxshadowsize) + pt;
+    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
+    border: $theme;
+    border-width: 2pt;
+    border-style: solid;
+    box-shadow: getboxshadow($theme);
+}
+
+#servicebanner {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    margin: $sectionmargin + pt;
+    margin-left: ($sectionmargin - $boxshadowsize) + pt;
+    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
     border: $theme;
     border-width: 2pt;
     border-style: solid;
@@ -276,8 +292,9 @@ section p {
     position: relative;
     width: auto;
     overflow: hidden;
-    margin: 8pt;
-    margin-left: 5pt;
+    margin: $sectionmargin + pt;
+    margin-left: ($sectionmargin - $boxshadowsize) + pt;
+    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
     border: $theme;
     border-width: 2pt;
     border-style: solid;
@@ -296,10 +313,9 @@ section p {
 }
 
 .projectitem {
-    margin: 6pt;
-    margin-left: 4pt;
-    margin-bottom: 6pt;
-    margin-top: 6pt;
+    margin: $sectionmargin + pt;
+    margin-left: ($sectionmargin - $boxshadowsize) + pt;
+    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
     border-style: solid;
     border-width: 2pt;
 }
@@ -324,8 +340,9 @@ section p {
 }
 
 .blogpost {
-    margin: 6pt;
-    margin-left: 4pt;
+    margin: $sectionmargin + pt;
+    margin-left: ($sectionmargin - $boxshadowsize) + pt;
+    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
     border-style: solid;
     border-width: 2pt;
     height: 80pt;
@@ -432,10 +449,10 @@ section p {
 
 figure {
     margin: 8pt;
-    margin-right: 25%;
+    margin-right: 50%;
     clear: left;
     padding: 4pt;
-    width: 75%;
+    width: 50%;
     background-color: #333333;
     border-style: solid;
     border-width: 1pt;

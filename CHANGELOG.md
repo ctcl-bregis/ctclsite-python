@@ -1,15 +1,22 @@
-# 5.4.0 - [UNRELEASED]
+# 5.4.0 - January 9, 2024
+Authored on: "Polybutylene Terephthalate", taken over on "Polymethylmethacrylate"
 
 ## Additions
-
+- common.js script, currently its only purpose is to automatically resize section headers
 
 ## Changes
 - Various SCSS/CSS and HTML fixes and improvements
 - As of the last update, Pix5x5 was split into its own project; repository
 - Template consolidation
 - Theme consistency
+- Improvements to the "lite" version
+- runner_dev now always runs the build command
+
+## Fixed
+- clientinfo.js loading when it shouldn't
 
 # 5.3.0 - January 7, 2024
+Authored on: "Polybutylene Terephthalate", "Tetrahydrocannabinol" for creating just one directory
 
 ## Additions
 
@@ -25,6 +32,7 @@
 - Various CSS and HTML fixes
 
 # 5.2.0 - December 31, 2023
+Authored on: "Polybutylene Terephthalate"
 
 ## Additions
 
@@ -35,7 +43,9 @@
 - Look of the About sections
 
 # 5.1.0 - December 22, 2023
-Yet another total rewrite of the website, finally adding client-side scripts for mainly cosmetic features.
+Authored on: "Polybutylene Terephthalate"
+
+Yet another total rewrite of the website, finally adding client-side scripts for mainly cosmetic features. 
 
 ## Additions
 

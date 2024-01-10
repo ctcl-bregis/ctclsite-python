@@ -1,10 +1,12 @@
 {"config": {
     "root": {
         "theme": "gold",
-        "title": "Welcome",
+        "title": "Services",
         "description": "Services that I offer",
         "sections": [
-            {"title": "Technical Support", "content": "config/services/sections/techsupport.md", "bgvid": "", "bgimg": "/static/bgimg/whoami.webp"}
+            {"title": "Technical Support", "content": "config/services/sections/techsupport.md"},
+            {"title": "Website Design", "content": "config/services/sections/webdesign.md"},
+            {"title": "Software", "content": "config/services/sections/software.md"}
         ]
     }
 }}

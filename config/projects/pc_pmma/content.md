@@ -11,7 +11,7 @@ Configuration as of January 8, 2024:
 - Memory: 1x16GB 2Rx8 DDR4-2400 (at DDR4-2133) Unbuffered ECC SODIMM SK hynix HMA82GS7AFR9N-UH
 - GPU: Nvidia Quadro 1000M 2GB GDDR5 (SK hynix)
 - Storage: 500GB NVMe SSD SK hynix Gold P31
-- Display: 15" Samsung IPS LCD
+- Display: 15" 1920x1080 IPS LCD Samsung
 
 The system currently dual-boots both Linux Mint and Windows 10 Professional.
 
