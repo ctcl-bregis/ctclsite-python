@@ -10,7 +10,7 @@ Planned configuration:
 - Memory: 64GB (8x8GB) Qimonda IMHH8GP22A1F2C-10F DDR3-1066 4Rx4 Registered ECC (Prod. in Dresden, Germany)
 - Graphics: AMD Radeon RX 5500 XT XFX THICC II Pro 8GB GDDR6 (Samsung)
 - Storage: **TBD**
-- Power Supply: Super Flower Leadex III ARGB 850W
+- Power Supply: Super Flower Leadex III ARGB 850W or equivalent
 - CPU Coolers: **TBD**
 - Case Fans: **TBD**
 - Case: **TBD**

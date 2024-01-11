@@ -1,5 +1,3 @@
-## WBSD
-
 WBSD, nicknamed "Belmont Hall", is a server dedicated to being a Network Attached Storage (NAS) device.
 
 The current hardware platform used for WBSD is codenamed "Promethazine":

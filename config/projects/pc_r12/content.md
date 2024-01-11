@@ -21,6 +21,6 @@ Current specifications as of January 6, 2024:
 - Monitor: HannStar Display HANNS.G HL193ABBUFWK1
 
 
-The use of an x86 system over a common ARM-based single-board computers such as ones from Raspberry Pi or Banana Pi was because these boards often lack a VGA video output. The monitor has a VGA port for its only input.
+The use of an x86 system over a common ARM-based single-board computers such as ones from Raspberry Pi or Banana Pi was because these boards often lack a VGA video output. The monitor has a VGA port for its only input. Though I could have just used a video converter, this was done more for fun.
 
 The power usage, while not actually have been measured, is expected to be very low compared to other desktop systems making this system suitable for embedded, single-use applications such as running ToDoKiosk.

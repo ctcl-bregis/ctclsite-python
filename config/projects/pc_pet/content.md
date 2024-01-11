@@ -18,8 +18,8 @@ Configuration from May 25, 2022 to January 13, 2023:
 
 Note: From December 4, 2021 to May 25, 2022, the system used an Intel Xeon E5-2643, other than that, the configuration was the same.
 
-From December 4, 2021 to sometime in May 2022, it had both Windows 10 and Debian 11 installed
-From sometime in May 2022 to January 2023, it had both Windows 10 and Linux Mint 20.3 installed
+- From December 4, 2021 to sometime in May 2022, both Windows 10 and Debian 11 installed
+- From sometime in May 2022 to January 2023, both Windows 10 and Linux Mint 20.3 installed
 
 ## Legacy
 All computer-bound work I have completed surrounding Fort Myers Beach island was done on this system.

@@ -1,4 +1,4 @@
-"Polycarbonate" is the codename system given the hardware platform used for the lab/workbench desktop system with the hostname WBPC2.
+"Polycarbonate" is the codename system given the hardware platform used for the lab/workbench desktop system with the hostname WBPC2. This system was set up in the need for a small form factor desktop to take place of the much larger ["Polyethylene"](../pc_pe) while maintaining support for ECC memory. The entire build costed less than US$100 in June 2023. 
 
 Configuration as of June 21, 2023:
 

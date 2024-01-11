@@ -2,12 +2,12 @@ This website itself is one of my ongoing projects.
 
 Internally and for development purposes, I use the name "ctclsite", "ctclsite-python" for the Python Flask/Django version and "ctclsite-rust" for the Rust Actix version.
 
-## Programming
+# Programming
 The website's backend and frontend code was written by myself and is open source. For licensing of specific content, see [Licensing](../../licensing/).
 
 The source code to the website can be found here: [GitHub](https://github.com/ctcl-bregis/ctclsite-python)
 
-## History
+# History
 
 The Rust version of the website has the codename "Atlantic Blue Crab", while the Python version has the codename "Apache Trout".
 
@@ -83,22 +83,22 @@ These rewrites boil down to this:
     </tr>
 </table>
 
-### ctclsite-python v1
+## ctclsite-python v1
 ctclsite-python v1 was the first version of the website that did not have all of the HTML content written by hand and instead had content handled by Python Flask with the Jinja2 templating engine. Before this, the website was just a collection of HTML and CSS files. 
 
 Development was presumably started in December 2021 and the release was on January 7, 2022.
 
 This version was very slow with many optimization steps I was unaware of due to my absolute beginner knowledge of Python and programming in general.
 
-### ctclsite-python v2
+## ctclsite-python v2
 ctclsite-python v2 was a rewrite that retained much of the content. Most of the backend code was rewritten because of the original code being nearly unreadable and inefficient.
 
 Development was during 2022 and was released shortly after within the same year.
 
-### ctclsite-rust v1
+## ctclsite-rust v1
 As a way to teach myself the Rust programming language after being aware of its features by colleagues. I rewrote the website in Rust, using the Actix web framework. This version seemed much faster due to the inefficent nature of how RAMList loads content.
 
-### ctclsite-python v3
+## ctclsite-python v3
 ctclsite-python v3 was a much needed rewrite of the website, adding significant performance improvements. This version continued to use Python Flask. I went back to Python due to my inability to maintain the Rust version of the website because of my limited knowledge of the Rust programming language.
 
 Development was started on May 15, 2023 and was quickly released on May 20, 2023.

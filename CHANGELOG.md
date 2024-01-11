@@ -1,3 +1,10 @@
+# 5.4.1 - January 11, 2024
+Authored on: "Polymethylmethacrylate"
+
+## Removed
+- Unused version definition
+- Django version specification in requirements
+
 # 5.4.0 - January 9, 2024
 Authored on: "Polybutylene Terephthalate", taken over on "Polymethylmethacrylate"
 

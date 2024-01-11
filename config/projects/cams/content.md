@@ -4,6 +4,10 @@ CAMS is based off the fully custom-made inventory management software, commonly 
 
 Formerly CAMS meant Computer Asset Management System but now CAMS referrs to CAMS Asset Managment System since the software can be used to manage other types of assets if configured so.
 
-It is anticipated to be the largest software project that I would work on by myself.
+# Planning
+CAMS is anticipated to be the largest software project that I would work on by myself.
+
+The project suffered from the lack of project management and and the lack of planning.
+
 
 The source code is currently hosted through GitHub at this [repository](https://github.com/ctcl-bregis/cams/).
