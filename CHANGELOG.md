@@ -1,5 +1,8 @@
 # 5.4.2 - January 14, 2024
-Authored on: "Polybutylene Terephthalate"
+Authored on: "Polybutylene Terephthalate", "Polymethylmethacrylate"
+
+## Changes
+- Removed unnecessary directories 
 
 ## Fixed
 - Major fixes to clientinfo.js

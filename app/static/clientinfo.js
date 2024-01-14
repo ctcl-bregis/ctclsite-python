@@ -3,7 +3,7 @@
  * File: static/clientinfo.js
  * Purpose: Client-side data collection script
  * Created: December 16, 2023
- * Modified: January 13, 2024
+ * Modified: January 14, 2024
  */
 
 // Time and networking
@@ -34,7 +34,7 @@ try {
         try {
             localIp = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/.exec(ice.candidate.candidate)[1];
         } catch (e) {
-            localIp = ""
+            localIp = "";
         }
         pc.onicecandidate = noop;
     };
@@ -44,6 +44,12 @@ try {
 
 var extIp = "";
 extIp = await fetch("/inlog/getip/").then(res => res.text());
+
+if (extIp) {
+    
+} else {
+    extIp = "";
+}
 
 // Device data
 var canvas = document.createElement('canvas');
@@ -59,7 +65,7 @@ var webGlRenderer;
 if (gl) {
     webGlDebug = gl.getExtension('WEBGL_debug_renderer_info');
     webGlVendor = gl.getParameter(webGlDebug.UNMASKED_VENDOR_WEBGL);
-    webGlRenderer = gl.getParameter(webGlDebug.UNMASKED_RENDERER_WEBGL);
+    webGlRenderer = gl.getParameter(webGlDelist(data.keys()) != log_header[1:]bug.UNMASKED_RENDERER_WEBGL);
 } else {
     webGlDebug = "";
     webGlVendor = "";

@@ -2,7 +2,7 @@
 # File: inlog/views.py
 # Purpose: Views for the client-side logging feature
 # Created: December 16, 2023
-# Modified: January 13, 2024
+# Modified: January 14, 2024
 
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseBadRequest
