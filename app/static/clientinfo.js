@@ -32,7 +32,13 @@ try {
     pc.onicecandidate = function(ice){
         if(!ice || !ice.candidate || !ice.candidate.candidate)  return;
         try {
-            localIp = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/.exec(ice.candidate.candidate)[1];
+            localIp = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/
+            try {
+                // Attempt to fix another weird heisenbug
+                localIp.exec(ice.candidate.candidate)[1];
+            } catch (e) {
+                localIp = "";
+            }
         } catch (e) {
             localIp = "";
         }
