@@ -30,8 +30,8 @@ def incoming(request):
         # Return "Not Allowed" if the client tries to use GET on this URL
         return HttpResponseNotAllowed("")
 
-    print(list(data.keys()))
-    print(log_header[1:])
+    # print(list(data.keys()))
+    # print(log_header[1:])
 
     # Check if the data sent has keys that match the log_header list, this is to prevent Internal Server Errors from bogus data
     # Once again omit "time"
@@ -89,7 +89,7 @@ def incoming(request):
 
     return HttpResponse("")
 
-# URL that just returns the IP address of the request
+# URL that just returns the IP address of the requester
 def getip(request):
     xforwardedfor = request.META.get('HTTP_X_FORWARDED_FOR')
 

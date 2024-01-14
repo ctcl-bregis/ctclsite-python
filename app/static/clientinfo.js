@@ -116,6 +116,11 @@ try {
 } catch (e) {
     memSize = "";
 }
+if (memSize) {
+
+} else {
+    memSize = "";
+}
 
 var maxTp = "";
 try {
