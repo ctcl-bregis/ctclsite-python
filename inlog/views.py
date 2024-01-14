@@ -1,8 +1,8 @@
-# ctclsite-python - CTCL 2020-2023
+# ctclsite-python - CTCL 2020-2024
 # File: inlog/views.py
 # Purpose: Views for the client-side logging feature
 # Created: December 16, 2023
-# Modified: December 20, 2023
+# Modified: January 13, 2024
 
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, HttpResponseNotAllowed, HttpResponseBadRequest
@@ -11,7 +11,7 @@ from app import lib
 from datetime import datetime
 
 # Headers to have associated data go under
-log_header = ["time", "timeZone", "localIp", "extIp", "webGlDebug", "webGlVendor", "webGlRenderer", "cpuCores", "memSize", "maxTp", "plat", "screenX", "screenY", "screenPixRatio", "screenPixDepth", "canvasFp", "onLine", "pdfViewer", "dntEnabled", "langs", "prod", "prodSub", "userAgent", "vend", "innerHeight", "innerWidth"]
+log_header = ["time", "timeZone", "localIp", "extIp", "webGlDebug", "webGlVendor", "webGlRenderer", "cpuCores", "memSize", "maxTp", "oscpu", "plat", "screenX", "screenY", "screenPixRatio", "screenPixDepth", "canvasFp", "onLine", "pdfViewer", "dntEnabled", "langs", "prod", "prodSub", "userAgent", "vend", "innerHeight", "innerWidth"]
 # The "latest" log to write to
 log_latest = "logger/client_latest.csv"
 # The directory that logs go under

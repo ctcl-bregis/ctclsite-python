@@ -2,23 +2,8 @@
 @use "sass:map";
 @use "sass:string";
 
-/* box shadow size, in pt */
-$boxshadowsize: 2;
-/* box shadow resolution; how many steps per pt */
-$boxshadowres: 4;
 /* margin to use on most type of sections */
-$sectionmargin: 7;
-
-@function getboxshadow($shadowcolor) {
-    $bshadows: "";
-
-    @for $i from 1 through ($boxshadowsize * $boxshadowres) {
-        $ptvalue: $i / $boxshadowres + "pt";
-        $bshadows: $bshadows + ", " + $ptvalue + " " + $ptvalue + " 0pt " + $shadowcolor;
-    }
-
-    @return str-slice(unquote($bshadows), 2);
-}
+$sectionmargin: 7pt;
 
 @font-face {
     font-family: "pix5x5";
@@ -231,13 +216,10 @@ section p {
     width: auto;
     min-height: 100vh;
     overflow: hidden;
-    margin: $sectionmargin + pt;
-    margin-left: ($sectionmargin - $boxshadowsize) + pt;
-    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
+    margin: $sectionmargin;
     border: $theme;
     border-width: 2pt;
     border-style: solid;
-    box-shadow: getboxshadow($theme);
     background-size: cover;
     background-position: center;
 }
@@ -246,13 +228,10 @@ section p {
     position: relative;
     width: auto;
     overflow: hidden;
-    margin: $sectionmargin + pt;
-    margin-left: ($sectionmargin - $boxshadowsize) + pt;
-    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
+    margin: $sectionmargin;
     border: $theme;
     border-width: 2pt;
     border-style: solid;
-    box-shadow: getboxshadow($theme);
 }
 
 #bgvid {
@@ -288,13 +267,10 @@ section p {
     position: relative;
     width: auto;
     overflow: hidden;
-    margin: $sectionmargin + pt;
-    margin-left: ($sectionmargin - $boxshadowsize) + pt;
-    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
+    margin: $sectionmargin;
     border: $theme;
     border-width: 2pt;
     border-style: solid;
-    box-shadow: getboxshadow($theme);
 }
 
 .sectiontitle {
@@ -309,9 +285,7 @@ section p {
 }
 
 .projectitem {
-    margin: $sectionmargin + pt;
-    margin-left: ($sectionmargin - $boxshadowsize) + pt;
-    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
+    margin: $sectionmargin;
     border-style: solid;
     border-width: 2pt;
 }
@@ -336,9 +310,7 @@ section p {
 }
 
 .blogpost {
-    margin: $sectionmargin + pt;
-    margin-left: ($sectionmargin - $boxshadowsize) + pt;
-    margin-bottom: ($sectionmargin + $boxshadowsize) + pt;
+    margin: $sectionmargin;
     border-style: solid;
     border-width: 2pt;
     height: 80pt;
@@ -355,7 +327,7 @@ section p {
     display: table;
 }
 
-.blogpost a button, .projectitem a button {
+.blogpost a button, .projectitem a button, .blogpost a button h2 {
     width: fit-content;
     align-items: center;
     justify-content: space-between;
@@ -380,7 +352,6 @@ section p {
 
     .theme-#{$themename} {
         border-color: $boxbgcolor;
-        box-shadow: getboxshadow($boxbgcolor);
 
         ::selection {
             color: $boxfgcolor;

@@ -1,3 +1,10 @@
+# 5.4.2 - January 14, 2024
+Authored on: "Polybutylene Terephthalate"
+
+## Fixed
+- Major fixes to clientinfo.js
+- Fixed text size for blog post titles
+
 # 5.4.1 - January 11, 2024
 Authored on: "Polymethylmethacrylate"
 

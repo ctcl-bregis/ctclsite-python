@@ -28,7 +28,6 @@ Not much of the "backend" code was changed and instead this update had its focus
 
 RAMList is no longer part of the website. Originally with the v4 update, I planned to have RAMList a written guide instead of a list of memory modules due to the misleading nature of the lists. For the time being, RAMList will not be added back to the website unless there is some interest for it.
 
-
 # Employment
 For the most of 2023, I was unemployed and instead turned to personal projects.
 
