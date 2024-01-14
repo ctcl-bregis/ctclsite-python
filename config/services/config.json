@@ -6,7 +6,8 @@
         "sections": [
             {"title": "Technical Support", "content": "config/services/sections/techsupport.md"},
             {"title": "Website Design", "content": "config/services/sections/webdesign.md"},
-            {"title": "Software", "content": "config/services/sections/software.md"}
+            {"title": "Software", "content": "config/services/sections/software.md"},
+            {"title": "Contact", "content": "config/about/sections/contact.md"}
         ]
     }
 }}

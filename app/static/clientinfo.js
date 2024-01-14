@@ -39,7 +39,12 @@ try {
         pc.onicecandidate = noop;
     };
 } catch (e) {
-    var localIp = "";
+    localIp = "";
+}
+if (localIp) {
+
+} else {
+    localIp = "";
 }
 
 var extIp = "";
@@ -65,17 +70,35 @@ var webGlRenderer;
 if (gl) {
     webGlDebug = gl.getExtension('WEBGL_debug_renderer_info');
     webGlVendor = gl.getParameter(webGlDebug.UNMASKED_VENDOR_WEBGL);
-    webGlRenderer = gl.getParameter(webGlDelist(data.keys()) != log_header[1:]bug.UNMASKED_RENDERER_WEBGL);
+    webGlRenderer = gl.getParameter(webGlDebug.UNMASKED_RENDERER_WEBGL);
 } else {
     webGlDebug = "";
     webGlVendor = "";
     webGlRenderer = "";
 }
 
+if (webGlDebug) {
+    
+} else {
+    webGlDebug = "";
+}
+
+if (webGlVendor) {
+    
+} else {
+    webGlVendor = "";
+}
+
+if (webGlRenderer) {
+    
+} else {
+    webGlRenderer = "";
+}
+
 var cpuCores = "";
 try {
     if (window.navigator.hardwareConcurrency) {
-        cpuCores = navigator.oscpu;
+        cpuCores = window.navigator.hardwareConcurrency;
     } else {
         cpuCores = "";
     }

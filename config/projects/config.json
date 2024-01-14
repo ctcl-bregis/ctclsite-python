@@ -25,7 +25,7 @@
             "title": "PC Hardware",
             "desc": "Computer systems that I use that are assembled from off-the-shelf parts.",
             "subpages": [
-                {"link": "pc_pbt", "content": "pc_pbt.md", "theme": "orange", "title": "WBPC - \"Polybutylene Terephthalate\"", "desc": "General-purpose desktop computer system"},
+                {"link": "pc_pbt", "content": "pc_pbt.md", "theme": "red", "title": "WBPC - \"Polybutylene Terephthalate\"", "desc": "General-purpose desktop computer system"},
                 {"link": "pc_pc", "content": "pc_pc.md", "theme": "orange", "title": "WBPC - \"Polycarbonate\"", "desc": "Workbench desktop computer system"},
                 {"link": "pc_pmma", "content": "pc_pmma.md", "theme": "gold", "title": "MWDL - \"Polymethylmethacrylate\"", "desc": "Laptop computer system"},
                 {"link": "pc_pet", "content": "pc_pet.md", "theme": "qipurple", "title": "WBPC - \"Polyethylene Terephthalate\"", "desc": "Former general-purpose desktop computer system"},

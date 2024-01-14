@@ -6,6 +6,7 @@ Authored on: "Polybutylene Terephthalate", "Polymethylmethacrylate"
 
 ## Fixed
 - Major fixes to clientinfo.js
+- Major fixes to common.js
 - Fixed text size for blog post titles
 
 # 5.4.1 - January 11, 2024

@@ -30,6 +30,9 @@ def incoming(request):
         # Return "Not Allowed" if the client tries to use GET on this URL
         return HttpResponseNotAllowed("")
 
+    print(list(data.keys()))
+    print(log_header[1:])
+
     # Check if the data sent has keys that match the log_header list, this is to prevent Internal Server Errors from bogus data
     # Once again omit "time"
     if list(data.keys()) != log_header[1:]:
@@ -64,10 +67,10 @@ def incoming(request):
     if count > log_max_length:
         arc_name = f"{log_dir}log_{timestr}"
 
-        # rename current log file before adding it to the archive
+        # Rename current log file before adding it to the archive
         os.rename(log_latest, f"{arc_name}.csv")
 
-        # create tar file with gzip compression
+        # Create tar file with gzip compression
         tar = tarfile.open(f"{arc_name}.tar.gz", "w:gz", compresslevel=9)
         tar.add(f"{arc_name}.csv")
         tar.close()
@@ -75,7 +78,7 @@ def incoming(request):
         # Remove the old log file
         os.remove(f"{arc_name}.csv")
 
-        # create another current log file
+        # Create another current log file
         with open(log_latest, "w", encoding='UTF8', newline='') as f:
             writer = csv.writer(f)
             writer.writerow(log_header)

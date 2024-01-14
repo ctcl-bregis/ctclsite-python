@@ -346,6 +346,18 @@ section p {
     cursor: pointer;
 }
 
+.blogpost a button h2 {
+    text-align: left;
+    font-size: 14pt;
+    margin: 0;
+}
+
+.projectitem a button h3 {
+    text-align: left;
+    font-size: 14pt;
+    margin: 0;
+}
+
 @each $themename, $colors in $themes {
     $boxfgcolor: unquote(map-get($colors, "fgcolor"));
     $boxbgcolor: unquote(map-get($colors, "color"));

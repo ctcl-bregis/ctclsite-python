@@ -8,7 +8,6 @@ The website's backend and frontend code was written by myself and is open source
 The source code to the website can be found here: [GitHub](https://github.com/ctcl-bregis/ctclsite-python)
 
 # History
-
 The Rust version of the website has the codename "Atlantic Blue Crab", while the Python version has the codename "Apache Trout".
 
 The website has gone under six rewrites since its introduction in December 2021/January 2022. The first, second and third version was written using the Python Flask framework, the third, fourth and the current version, fifth was written using Python Django.
@@ -103,10 +102,10 @@ ctclsite-python v3 was a much needed rewrite of the website, adding significant 
 
 Development was started on May 15, 2023 and was quickly released on May 20, 2023.
 
-### ctclsite-python v4
+## ctclsite-python v4
 This version of the website was started after being made aware of the misleading nature of RAMList on August 26, 2023. I was originally going to have a update to v3 but most of the code was "unreadable" and was rewritten in the Django web framework. Django was used because I was already used to using Django from the development of ContactList and CAMS.
 
-### ctclsite-python v5
+## ctclsite-python v5
 ctclsite-python v5 has minor changes over the backend code of the website and was originally planned to be version "4.2.0" of the website. Instead this release was a great redesign of the general look of the website and finally added client-side scripts.
 
 This release was finally put into production on December 22, 2023.
