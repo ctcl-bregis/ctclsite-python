@@ -14,7 +14,7 @@ On November 9, 2023, an event occured that resulted in me discontinuing the use 
 On January 15, 2024, along with the creation of this page, I added a Story post on Instagram linking to this page as it describes the future of the project.
 
 # Name 
-The name "nonmonolithic" was chosen in relation to the layout of many modern AMD x86-64 processors. A non-monolithic layout of a processor means that there are multiple silicon dies within a single package, CPU, AMD uses this for the Ryzen (some) and EPYC series of processors. As part of the theme, almost all content was edited and posted from ["Polybutylene Terephthalate"](../pc_pbt/).
+The name "nonmonolithic" was chosen in relation to the layout of many modern AMD x86-64 processors. A non-monolithic layout of a processor means that there are multiple silicon dies within a single package, CPU. AMD uses this for the Ryzen (some) and EPYC series of processors. As part of the theme, almost all content was edited and posted from ["Polybutylene Terephthalate"](../pc_pbt/).
 
 The profile picture that I used for the longest time on Instagram, later Discord was of a screenshot of the Half-Life 2 map d2_coast_09 with the AMD logo drawn on a wall made in Garry's Mod.
 
