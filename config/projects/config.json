@@ -50,7 +50,8 @@
             "title": "Creative work",
             "desc": "My creative work such as game design and photography.",
             "subpages": [
-                {"link": "p2maps", "content": "p2maps.md", "theme": "source", "title": "Portal 2 Maps", "desc": "Custom community maps made for the 2011 puzzle game Portal 2"}
+                {"link": "p2maps", "content": "p2maps.md", "theme": "source", "title": "Portal 2 Maps", "desc": "Custom community maps made for the 2011 puzzle game Portal 2"},
+                {"link": "nonmono", "content": "nonmono.md", "theme": "99gray", "title": "nonmonolithic", "desc": "Creative photography and video project"}
             ]
         }
     }
