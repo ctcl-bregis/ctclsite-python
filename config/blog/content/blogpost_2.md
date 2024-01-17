@@ -1,4 +1,4 @@
-For me, personally, 2023 was quite a challenging period of time. Some of these challenges faced were related to addiction, relationships, computers and finance.
+For me, personally, 2023 was quite a challenging period of time. Some of these challenges faced were related to relationships, computers and finance.
 
 I plan to significantly improve my life throughout 2024 from learning from the events in my life during 2023.
 

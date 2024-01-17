@@ -33,6 +33,7 @@
                 {"link": "pc_abs", "content": "pc_abs.md", "theme": "99red", "title": "WBPC - \"Acrylonitrile Butadiene Styrene\"", "desc": "Experimental desktop computer system"},
                 {"link": "pc_pe", "content": "pc_pe.md", "theme": "99green", "title": "WBPC - \"Polyethylene\"", "desc": "Former, now experimental, desktop computer system"},
                 {"link": "pc_r12", "content": "pc_r12.md", "theme": "gold", "title": "SIGN1 - \"Dichlorodifluoromethane\"", "desc": "Bookshelf PC for displaying a To-Do list"},
+                {"link": "pc_thc", "content": "pc_thc.md", "theme": "gold", "title": "Phone - \"Tetrahydrocannabinol\"", "desc": "Main smartphone"},
                 {"link": "srv_vc", "content": "srv_vc.md", "theme": "gold", "title": "PRSV - \"Vinyl Chloride\"", "desc": "Dedicated 3D printer interface"},
                 {"link": "srv_amp", "content": "srv_amp.md", "theme": "gold", "title": "SVCS", "desc": "Series of server systems for use with service hosting"},
                 {"link": "srv_prm", "content": "srv_prm.md", "theme": "gold", "title": "WBSD - \"Promethazine\"", "desc": "Dedicated storage server"},
