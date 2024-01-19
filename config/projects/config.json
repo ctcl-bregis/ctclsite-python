@@ -18,7 +18,8 @@
             "title": "Hardware Design",
             "desc": "Projects with custom circuit design and firmware.",
             "subpages": [
-                {"link": "mct_1", "content": "mct_1.md", "theme": "mediacow", "title": "MediaCow Touch 1", "desc": "Android tablet experiment"}
+                {"link": "mct_1", "content": "mct_1.md", "theme": "mediacow", "title": "MediaCow Touch 1", "desc": "Android tablet experiment"},
+                {"link": "mathpad", "content": "mathpad.md", "theme": "gold", "title": "MathPad", "desc": "Calculator keypad peripheral device"}
             ]
         },
         "pchardware": {
