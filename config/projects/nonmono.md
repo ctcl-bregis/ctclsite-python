@@ -166,7 +166,7 @@ The caption was chosen arbitrarily, refering to the shopping carts in the photo
 
 - Authored: ["Polybutylene Terephthalate"](../pc_pbt/) (ASRock B550M Pro4, AMD x86-64)
 
-## Post 16 - August 16, 2023
+## Post 16 - August 15, 2023
 "Department
 
 ASUS Zenfone 9 - August 15, 2023"
@@ -784,8 +784,8 @@ The caption refers to the elevators shown in the first slide.
 ## Post 82 - November 6, 2023
 "Pool closed
 
-First slide: Apple iPhone X - August 20, 2018
-Slide 2-4: Apple iPhone XS - August 6, 2020
+First slide: Apple iPhone X - August 20, 2018  
+Slide 2-4: Apple iPhone XS - August 6, 2020  
 Rotated and cropped with GIMP"
 
 The caption was chosen arbitrarily, in relation to the first slide.
