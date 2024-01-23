@@ -1,6 +1,6 @@
 
 ## Matterport and Photography
-I have a great amount of experience in completing Matterport 3D scans of small to large buildings.
+I have a great amount of experience in completing [Matterport](https://matterport.com/) 3D scans of small to large buildings in professional environments.
 
 I also have experience in photographing the interiors and exteriors of buildings for the purposes of surveying building damage.
 
