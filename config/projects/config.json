@@ -11,7 +11,8 @@
                 {"link": "ctclsite", "content": "ctclsite.md", "theme": "gold", "title": "CTCL Website", "desc": "The website itself"},
                 {"link": "cams", "content": "cams.md", "theme": "red", "title": "CAMS Asset Management System", "desc": "Fully custom inventory management software"},
                 {"link": "contactlist", "content": "contactlist.md", "theme": "blue", "title": "ContactList", "desc": "Browser-based contact manager"},
-                {"link": "todokiosk", "content": "todokiosk.md", "theme": "gold", "title": "ToDoKiosk", "desc": "CalDAV tasks client"}
+                {"link": "todokiosk", "content": "todokiosk.md", "theme": "gold", "title": "ToDoKiosk", "desc": "CalDAV tasks client"},
+                {"link": "slag", "content": "slag.md", "theme": "99gray", "title": "SLAG", "desc": "Custom Discord bot"}
             ]
         },
         "hardware": {
@@ -31,7 +32,7 @@
                 {"link": "pc_pmma", "content": "pc_pmma.md", "theme": "gold", "title": "MWDL - \"Polymethylmethacrylate\"", "desc": "Laptop computer system"},
                 {"link": "pc_pet", "content": "pc_pet.md", "theme": "qipurple", "title": "WBPC - \"Polyethylene Terephthalate\"", "desc": "Former general-purpose desktop computer system"},
                 {"link": "pc_pet2", "content": "pc_pet2.md", "theme": "qipurple", "title": "WBPC - \"Polyethylene Terephthalate v2\"", "desc": "Planned experimental desktop computer system"},
-                {"link": "pc_abs", "content": "pc_abs.md", "theme": "99red", "title": "WBPC - \"Acrylonitrile Butadiene Styrene\"", "desc": "Experimental desktop computer system"},
+                {"link": "pc_pp", "content": "pc_pp.md", "theme": "99red", "title": "WBPC - \"Polypropylene\"", "desc": "Experimental desktop computer system"},
                 {"link": "pc_pe", "content": "pc_pe.md", "theme": "99green", "title": "WBPC - \"Polyethylene\"", "desc": "Former, now experimental, desktop computer system"},
                 {"link": "pc_r12", "content": "pc_r12.md", "theme": "gold", "title": "SIGN1 - \"Dichlorodifluoromethane\"", "desc": "Bookshelf PC for displaying a To-Do list"},
                 {"link": "pc_thc", "content": "pc_thc.md", "theme": "gold", "title": "Phone - \"Tetrahydrocannabinol\"", "desc": "Main smartphone"},
