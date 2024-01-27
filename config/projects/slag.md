@@ -9,4 +9,6 @@ The bot currently uses the [discord.py library](https://github.com/Rapptz/discor
 
 The project was started on January 24, 2024.
 
-The bot follows the [Privacy Policy](../../privacy) on this website.
+# Privacy Policy
+
+The data collected and how it is used is covered under the [Privacy Policy](../../privacy).
