@@ -1,3 +1,8 @@
+# 5.4.3 - January 28, 2024
+
+## Fixed
+- Link fixes in templates
+
 # 5.4.2 - January 14, 2024
 Authored on: "Polybutylene Terephthalate", "Polymethylmethacrylate"
 
