@@ -59,7 +59,7 @@ Log data and user content from game servers and other public services hosted on 
 Messages in chat groups including Discord "servers" with CTCL-managed chat bots may be recorded and stored indefinitely. As stated before, if these chat services are hosted by CTCL, all data from these chat services may be recorded and stored indefinitely.
 
 ### Discord bots
-Messages and other data in Discord "servers" with CTCL-managed bots such as [SLAG](../) may be recorded and stored indefinitely.
+Messages and other data in Discord "servers" with CTCL-managed bots such as [SLAG](../projects/slag/) may be recorded and stored indefinitely.
 
 This includes but not limited to:
 
