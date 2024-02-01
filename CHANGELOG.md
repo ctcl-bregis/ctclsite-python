@@ -1,3 +1,9 @@
+# 5.5.1 - January 31, 2024
+
+## Fixes
+
+- HTML descriptions are no longer present if the description is empty
+
 # 5.5.0 - January 31, 2024
 
 ## Additions

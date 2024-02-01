@@ -16,7 +16,9 @@
         <meta property="og:title" content="{{ title }}">
         <meta property="og:locale" content="en_US">
         <meta name="theme-color" content="{{ themecolor }}">
+        {% if desc != "" %}
         <meta property="og:description" content="{{ desc }} - CTCL">
+        {% endif %}
         <style>
 {{ styling|safe }}
         </style>
