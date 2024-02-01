@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'inlog',
     # Website "apps"
     'lite',
-    'main',
+    'main'
 ]
 
 MIDDLEWARE = [

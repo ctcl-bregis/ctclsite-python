@@ -52,10 +52,21 @@ def loadjson(path):
 
     return jsoncontent
 
+def getthemecolors():
+    colors = {}
+    fgcolors = {}
+    for key, value in global_cfg["styling_colors"].items():
+        colors[key] = value["color"]
+        fgcolors[key] = value["fgcolor"]
+
+    return (colors, fgcolors)
+
 # Function for pre-filling a dictionary used as the context for templates
 def mkcontext(subpageindex, lite = False):
     context = subpageindex
     theme = subpageindex["theme"]
+    context["themecolor"] = getthemecolors()[0][subpageindex["theme"]]
+
     if lite:
         try:
             context["styling"] = lite_css[theme]
@@ -70,12 +81,3 @@ def mkcontext(subpageindex, lite = False):
             context["styling"] = main_css["gold"]
 
     return context
-
-def getthemecolors():
-    colors = {}
-    fgcolors = {}
-    for key, value in global_cfg["styling_colors"].items():
-        colors[key] = value["color"]
-        fgcolors[key] = value["fgcolor"]
-
-    return (colors, fgcolors)

@@ -6,7 +6,7 @@ Since January 2022, I dabbled in the creation of maps for games utilizing Valve'
 The first map I made for Portal 2 is called ["Laser Router"](https://steamcommunity.com/sharedfiles/filedetails/?id=3068699712) and was released on November 16, 2023. The map was also my first published map that was made using Valve's included Hammer software. The style of the map was of the original Portal from 2007 as I prefer this aesthetic over Portal 2's aesthetic. As this was my first ever map, the puzzle was not that great and the map had multiple flaws.
 
 ## Laser Router 2
-With valuable feedback from the Portal Mapping and Modding community, I begun working on the successor called "Laser Router 2". This map has significant improvements over Laser Router with more test elements and secrets.
+With valuable feedback, I begun working on the successor called "Laser Router 2". This map has significant improvements over Laser Router with more test elements and secrets.
 
 This map has more of a non-linear approach, the player can either get the redirection cubes to the main test chamber first or activate the laser (Thermal Discouragement Beam) with the energy ball first.
 

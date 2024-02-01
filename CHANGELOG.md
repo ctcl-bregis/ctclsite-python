@@ -1,3 +1,14 @@
+# 5.5.0 - January 31, 2024
+
+## Additions
+
+- "bcc_cc" app relating to pages for use by a college club
+- Link to home page in the footer
+
+## Fixes
+
+- Theme color for embeds should now be defined
+
 # 5.4.3 - January 28, 2024
 
 ## Fixed

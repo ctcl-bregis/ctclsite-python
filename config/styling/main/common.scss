@@ -457,3 +457,62 @@ figure figcaption {
     font-size: 10pt;
     text-align: center;
 }
+
+.linklist {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.linklist h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 16pt;
+}
+
+.linkitem {
+    margin-right: 64pt;
+    margin-left: 64pt;
+    margin-bottom: $sectionmargin;
+    margin-top: $sectionmargin;
+    border-style: solid;
+    border-width: 2pt;
+}
+
+.linkitem a button {
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    padding: 8pt;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+    text-align: center;
+}
+
+
+@each $themename, $colors in $themes {
+    $boxfgcolor: unquote(map-get($colors, "fgcolor"));
+    $boxbgcolor: unquote(map-get($colors, "color"));
+
+    .linkitem-theme-#{$themename} {
+        border-color: $boxbgcolor;
+
+        ::selection {
+            color: $boxfgcolor;
+            background-color: $boxbgcolor;
+        }
+    }
+
+    .linkitem-theme-#{$themename} a button {
+        color: $boxfgcolor;
+        background-color: rgba(0, 0, 0, 0);
+        border-color: $boxbgcolor;
+
+        &:hover {
+            transition: 0.1s linear;
+            background-color: $boxbgcolor;
+            color: $boxfgcolor;
+        }
+    }
+}

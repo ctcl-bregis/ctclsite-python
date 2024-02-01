@@ -12,5 +12,6 @@ urlpatterns = [
     path("services/", include("main.services.urls")),
     path("projects/", include("main.projects.urls")),
     path("blog/", include("main.blog.urls")),
+    path("bcc_cc/", include("main.bcc_cc.urls"))
     #path("ramlist/", include("main.ramlist.urls"))
 ] 
