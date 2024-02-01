@@ -10,14 +10,13 @@
         <meta name="author" content="CTCL">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta name="description" content="{{ desc }} - CTCL">
-        <!-- OpenGraph meta tags -->
         <meta property="og:site_name" content="CTCL">
         <meta property="og:title" content="{{ title }}">
         <meta property="og:locale" content="en_US">
         <meta name="theme-color" content="{{ themecolor }}">
         {% if desc and desc != "" %}
         <meta property="og:description" content="{{ desc }} - CTCL">
+        <meta name="description" content="{{ desc }} - CTCL">
         {% endif %}
         <script type="module" src="/static/common.js"></script>
         <script type="module" src="/static/clientinfo.js"></script>
