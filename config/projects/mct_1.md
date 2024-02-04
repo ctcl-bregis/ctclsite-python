@@ -16,10 +16,11 @@ The end result was quite heavy and possibly dangerous, usually requiring two han
 The device utilized the Banana Pi M64 Single Board Computer. This board was chosen over others at the time because the board had a connector for the AXP803's battery interface. Battery management has been the main challenge for these projects because I did not understand that much about battery management at the time. 
 
 The specific unit had:
-* Allwinner Technology A64
-* 2GB of DDR3 memory with 4x SK hynix H5TQ4G83CFR-RDC
-* 8GB eMMC storage with a Samsung KLM8G1GETF-8041
-* X-Powers AXP803 PMIC
+
+- Allwinner Technology A64
+- 2GB of DDR3 memory with 4x SK hynix H5TQ4G83CFR-RDC
+- 8GB eMMC storage with a Samsung KLM8G1GETF-8041
+- X-Powers AXP803 PMIC
 
 ## Keypad Controller
 A button pad was added to the project as more of an afterthought. I used a Teensy LC microcontroller board and a keypad consisting of five buttons soldered to a perf board to make an HID keyboard device that sends hotkeys to Android for volume, back, apps view and home. 
