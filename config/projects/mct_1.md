@@ -31,7 +31,7 @@ I did not know how to modify or even understand the device tree or any internals
 The device uses a 7" LCD with capacitive touch provided by Banana Pi for use with the M64 and other compatible boards. Rubber padding was used to mount the display panel between the outer metallic frame and wooden case.
 
 # Software
-Sometime in November 2020, I ended up having to use Allwinner's PheonixSuite software to flash the Android 8.0 image provided by Banana Pi to the device's eMMC storage.
+Sometime in November 2020, I ended up having to use Allwinner's PheonixSuite software to flash the Android 7.0 image provided by Banana Pi to the device's eMMC storage.
 
 # Legacy 
 On February 3, 2024, the device was booted for the first time since presumably July 2022 and all functionality continued to be present.
