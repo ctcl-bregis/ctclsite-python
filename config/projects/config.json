@@ -1,7 +1,8 @@
 {"config": {
     "menu": {
         "theme": "gold",
-        "title": "Projects"
+        "title": "Projects",
+        "desc": "List of personal projects including PC hardware, hardware design, software and art projects"
     },
     "cats": {
         "software": {
@@ -12,14 +13,15 @@
                 {"link": "cams", "content": "cams.md", "theme": "red", "title": "CAMS Asset Management System", "desc": "Fully custom inventory management software"},
                 {"link": "contactlist", "content": "contactlist.md", "theme": "blue", "title": "ContactList", "desc": "Browser-based contact manager"},
                 {"link": "todokiosk", "content": "todokiosk.md", "theme": "gold", "title": "ToDoKiosk", "desc": "CalDAV tasks client"},
-                {"link": "slag", "content": "slag.md", "theme": "99gray", "title": "SLAG", "desc": "Custom Discord bot"}
+                {"link": "slag", "content": "slag.md", "theme": "slag", "title": "SLAG", "desc": "Custom Discord bot"}
             ]
         },
         "hardware": {
             "title": "Hardware Design",
             "desc": "Projects with custom circuit design and firmware.",
             "subpages": [
-                {"link": "mct_1", "content": "mct_1.md", "theme": "mediacow", "title": "MediaCow Touch 1", "desc": "Android tablet experiment"},
+                {"link": "mct_1", "content": "mct_1.md", "theme": "mediacow", "title": "MediaCow Touch - \"Nashville\"", "desc": "Android tablet experiment"},
+                {"link": "mct_2", "content": "mct_2.md", "theme": "white", "title": "MediaCow Touch 2 - \"Paris\"", "desc": "Android tablet experiment idea"},
                 {"link": "mathpad", "content": "mathpad.md", "theme": "gold", "title": "MathPad", "desc": "Calculator keypad peripheral device"}
             ]
         },

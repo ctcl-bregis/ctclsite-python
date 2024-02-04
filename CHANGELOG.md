@@ -1,3 +1,12 @@
+# 5.5.2 - February 4, 2024
+Content updates along with this update include: Addition of description to pages that did not have one, blog post, theme color changes, project details and link fixes.
+
+## Fixes
+
+- Overall fixes to templates
+- Improvements to the link page for the college club
+- Improvments to SCSS
+
 # 5.5.1 - January 31, 2024
 
 ## Fixes

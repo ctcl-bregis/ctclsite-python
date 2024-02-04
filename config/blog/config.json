@@ -1,9 +1,11 @@
 {"config": {
     "menu": {
         "theme": "gold",
-        "title": "Blog Menu"
+        "title": "Blog Posts",
+        "desc": "List of the blog posts on the website"
     },
     "posts": {
+        "7": {"content": "blogpost_7.md", "icon": "/static/blog/7/blog7_icon.webp", "theme": "gold", "cat": "Personal", "date": "February 4, 2024", "title": "Week 5, 2024", "desc": "The fifth week of 2024"},
         "6": {"content": "blogpost_6.md", "icon": "/static/blog/6/blog6_icon.webp", "theme": "gold", "cat": "Personal", "date": "January 27, 2024", "title": "Week 4, 2024", "desc": "The fourth week of 2024"},
         "5": {"content": "blogpost_5.md", "icon": "/static/blog/5/blog5_icon.webp", "theme": "gold", "cat": "Personal", "date": "January 21, 2024", "title": "Week 3, 2024", "desc": "The third week of 2024"},
         "4": {"content": "blogpost_4.md", "icon": "/static/blog/4/blog4_icon.webp", "theme": "gold", "cat": "Personal", "date": "January 14, 2024", "title": "Week 2, 2024", "desc": "The Second Week of 2024"},

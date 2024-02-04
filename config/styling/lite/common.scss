@@ -15,10 +15,12 @@ $sectionmargin: 7pt;
     src: #{url(/static/Play-Regular.ttf) format("truetype")};
 }
 
+$body-font: "play";
+
 body {
     background-color: #000000;
     color: #FFFFFF;
-    font-family: "play";
+    font-family: $body-font;
     margin: 0pt;
 }
 
@@ -203,7 +205,10 @@ section h3 {
 
 section li {
     color: #FFFFFF;
-    margin: 8pt;
+    margin-left: 8pt;
+    margin-right: 8pt;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
 }
 
 section p {
@@ -340,7 +345,7 @@ section p {
     border-bottom-style: solid;
     border-top-style: none;
     font-size: 12pt;
-    font-family: "play";
+    font-family: $body-font;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;

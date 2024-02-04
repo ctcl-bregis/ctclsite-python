@@ -15,10 +15,12 @@ $sectionmargin: 7pt;
     src: #{url(/static/Play-Regular.ttf) format("truetype")};
 }
 
+$body-font: "play";
+
 body {
     background-color: #000000;
     color: #FFFFFF;
-    font-family: "play";
+    font-family: $body-font;
     margin: 0pt;
 }
 
@@ -131,27 +133,27 @@ p {
 }
 
 ::selection {
-    color: #FFFFFF;
+    color: $fgcolor;
     background-color: $theme;
 }
 
 ::-moz-selection {
-    color: #FFFFFF;
+    color: $fgcolor;
     background-color: $theme;
 }
 
 ::-o-selection {
-    color: #FFFFFF;
+    color: $fgcolor;
     background-color: $theme;
 }
 
 ::-ms-selection {
-    color: #FFFFFF;
+    color: $fgcolor;
     background-color: $theme;
 }
 
 ::-webkit-selection {
-    color: #FFFFFF;
+    color: $fgcolor;
     background-color: $theme;
 }
 
@@ -209,7 +211,10 @@ section h3 {
 
 section li {
     color: #FFFFFF;
-    margin: 8pt;
+    margin-left: 8pt;
+    margin-right: 8pt;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
 }
 
 section p {
@@ -345,7 +350,7 @@ section p {
     border-bottom-style: solid;
     border-top-style: none;
     font-size: 14pt;
-    font-family: "play";
+    font-family: $body-font;
     font-weight: bold;
     text-decoration: none;
     cursor: pointer;
@@ -472,8 +477,8 @@ figure figcaption {
 }
 
 .linkitem {
-    margin-right: 64pt;
-    margin-left: 64pt;
+    margin-right: 10vw;
+    margin-left: 10vw;
     margin-bottom: $sectionmargin;
     margin-top: $sectionmargin;
     border-style: solid;

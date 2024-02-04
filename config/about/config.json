@@ -2,7 +2,7 @@
     "root": {
         "theme": "gold",
         "title": "Welcome",
-        "description": "Welcome to the website",
+        "desc": "About the website and myself",
         "sections": [
             {"title": "About Me", "content": "config/about/sections/whoami.md", "bgvid": "/static/bgimg/whoami.webm", "bgimg": "/static/bgimg/whoami.webp"},
             {"title": "Work Experience", "content": "config/about/sections/workexp.md", "bgvid": "/static/bgimg/workexp.webm", "bgimg": "/static/bgimg/workexp.webp"},
@@ -14,13 +14,13 @@
     "privacy": {
         "theme": "gold",
         "title": "Privacy Policy",
-        "description": "Privacy policy of the website",
+        "desc": "Privacy policy of the website",
         "content": "config/about/privacy.md"
     },
     "licensing": {
         "theme": "gold",
         "title": "Licensing",
-        "description": "Licensing information for CTCL content on and off of the website",
+        "desc": "Licensing information for CTCL content on and off of the website",
         "content": "config/about/licensing.md"
     }
 }}
