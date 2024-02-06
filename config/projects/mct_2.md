@@ -9,7 +9,7 @@ As of February 4, 2024, there may be a chance that I would start the development
 # Hardware
 
 ## System on Module
-For MediaCow Touch 2 "Paris", I did not plan to use actual BGA package devices in my design and instead I made use of readily available System on Modules (SoM).
+For MediaCow Touch 2 "Paris", I did not plan to design around the SoC itself and instead I made use of readily available System on Modules (SoM).
 
 The carrier board, that the System on Module connects to, would be designed by myself. 
 

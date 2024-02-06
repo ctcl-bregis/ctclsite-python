@@ -6,7 +6,7 @@ In early May 2023, I was given an HP BladeSystem C3000 chassis with three HP Pro
 The HP BladeSystem setup is sometimes referred to as "The Amphetamines" in relation to the codename scheme specific to the server blades.
 
 ## SVCS1
-SVCS1 uses the platform designated "Methamphetamine". The system is currently used for general purpose virtualization.
+SVCS1 uses the platform designated "Levoamphetamine". The system is currently used for general purpose virtualization.
 
 Specifications:
 
@@ -15,8 +15,10 @@ Specifications:
 - Memory: 128GB (8x16GB) Micron Technology PC3-12800R 2Rx4 Registered ECC
 - Storage: 1x HGST 600GB 10000RPM 6Gb/s SAS
 
+The codename for this device was formerly "Methamphetamine" but was changed on February 6, 2024 as a guideline was put into place that codenames of chiral compounds must use its enantiomers. The codename "Levoamphetamine" was chosen to better match the codenames of the other systems being used.
+
 ## SVCS2
-SVCS2 uses the hardware platform "Dextroamphetamine". I could not actually get the system to boot from the hard drive. Since SVCS1 "Methamphetamine" and SVCS3 "Lisdexamfetamine" are more than enough for my current needs, I have not put this system in production yet.
+SVCS2 uses the hardware platform "Dextroamphetamine". I could not actually get the system to boot from the hard drive. Since SVCS1 "Levoamphetamine" and SVCS3 "Lisdexamfetamine" are more than enough for my current needs, I have not put this system in production yet.
 
 Specifications:
 
