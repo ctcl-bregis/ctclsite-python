@@ -1,5 +1,5 @@
 <figure>
-    <img src="/static/projects/slag_logo_414x90.webp">
+    <img src="/static/projects/slag_logo.svg">
     <figcaption>SLAG logo - January 25, 2024</figcaption>
 </figure>
 

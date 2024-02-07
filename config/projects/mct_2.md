@@ -41,7 +41,7 @@ Former plans from 2021 to 2022 described the case being 3D printed from white PE
 ### Ports
 Like MediaCow Touch "Nashville", the device would have full-size USB Type-A ports and an RJ-45 Ethernet jack.
 
-Full list of connectors planned to be available:
+Full list of connectors:
 
 - At least one USB Type-A with USB 3.0 support
 - At least one USB Type-A with USB 2.0 support
@@ -61,5 +61,6 @@ This allows the Wi-Fi and Bluetooth radios to be swapped or disconnected for use
 MediaCow Touch 2 may include a single back-facing camera connected using the MIPI CSI interface.
 
 # Software
+Like MediaCow Touch "Nashville", the device would run the Android mobile operating system with a version that is at least Android 12. 
 
-Like MediaCow Touch "Nashville", the device would run the Android mobile operating system with a version that is at least Android 12. It is most likely I would have to prepare and compile the Android image myself for use on the device.
+Most likely, a customized Android image would have to be built for use on the device.
