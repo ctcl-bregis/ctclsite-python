@@ -13,7 +13,7 @@
                 {"link": "cams", "content": "cams.md", "theme": "red", "title": "CAMS Asset Management System", "desc": "Fully custom inventory management software"},
                 {"link": "contactlist", "content": "contactlist.md", "theme": "blue", "title": "ContactList", "desc": "Browser-based contact manager"},
                 {"link": "todokiosk", "content": "todokiosk.md", "theme": "gold", "title": "ToDoKiosk", "desc": "CalDAV tasks client"},
-                {"link": "slag", "content": "slag.md", "theme": "slag", "title": "SLAG", "desc": "Custom Discord bot"}
+                {"link": "slag", "content": "slag.md", "theme": "99gray", "title": "SLAG", "desc": "Custom Discord bot"}
             ]
         },
         "hardware": {

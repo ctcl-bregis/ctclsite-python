@@ -8,7 +8,6 @@
         "gold": {"color": "#f0d000", "fgcolor": "#000000", "enabled": "true"},
         "red": {"color": "#ff0000", "fgcolor": "#000000", "enabled": "true"},
         "bcc_green": {"color": "#00cc00", "fgcolor": "#ffffff", "enabled": "true"},
-        "slag": {"color": "#575762", "fgcolor": "#ffffff", "enabled": "true"},
         "white": {"color": "#ffffff", "fgcolor": "#000000", "enabled": "true"},
         "99gray": {"color": "#999999", "fgcolor": "#000000", "enabled": "true"},
         "99green": {"color": "#009900", "fgcolor": "#000000", "enabled": "true"},
