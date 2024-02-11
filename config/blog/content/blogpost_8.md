@@ -59,7 +59,7 @@ The guideline states: "Starting February 6, 2024, codenames relating to chiral c
 
 This invalidates the codename "Methamphetamine" though "Levomethamphetamine" and "Dextromethamphetamine" remain valid codenames that may be used if I ever decide to add more HP blade servers.
 
-The codename "Levoamphetamine" was chosen because of it being much more related to the codenames already being used for the other two HP servers; "Dextroamphetamine" and "Lisdexamfetamine". 
+The codename "Levoamphetamine" was chosen because of it being much more related to the codenames already being used for the other two HP servers; "Dextroamphetamine" and "Lisdexamfetamine". This change is also attributed to my ever growing interest in psychopharmacology and organic chemistry.
 
 # Work
 I have been getting some work within the last month. 
