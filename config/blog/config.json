@@ -5,6 +5,7 @@
         "desc": "List of the blog posts on the website"
     },
     "posts": {
+        "8": {"content": "blogpost_8.md", "icon": "/static/blog/8/blog8_icon.webp", "theme": "gold", "cat": "Personal", "date": "February 11, 2024", "title": "Week 6, 2024", "desc": "The sixth week of 2024"},
         "7": {"content": "blogpost_7.md", "icon": "/static/blog/7/blog7_icon.webp", "theme": "gold", "cat": "Personal", "date": "February 4, 2024", "title": "Week 5, 2024", "desc": "The fifth week of 2024"},
         "6": {"content": "blogpost_6.md", "icon": "/static/blog/6/blog6_icon.webp", "theme": "gold", "cat": "Personal", "date": "January 27, 2024", "title": "Week 4, 2024", "desc": "The fourth week of 2024"},
         "5": {"content": "blogpost_5.md", "icon": "/static/blog/5/blog5_icon.webp", "theme": "gold", "cat": "Personal", "date": "January 21, 2024", "title": "Week 3, 2024", "desc": "The third week of 2024"},
