@@ -10,7 +10,7 @@ On Friday, February 9, 2024, I have gotten SLAG to a somewhat usable state where
 SLAG is *almost* production-ready and I started hosting it on ["Lisdexamfetamine"](../../projects/srv_amp/).
 
 #### Micron Cog
-During the week, I added the ability for SLAG to search for FBGA codes (also known as the "D9" code for SDRAM devices) on Micron DRAM and flash memory devices. Unlike former implementations of FBGA lookup, this time I added caching ytilizing an SQLite3 database for storing known part numbers associated with the FBGA code. Caching and storing results can significantly decrease the amount of requests to the Micron Technology website.
+During the week, I added the ability for SLAG to search for FBGA codes (also known as the "D9" code for SDRAM devices) on Micron DRAM and flash memory devices. Unlike former implementations of FBGA lookup, this time I added caching utilizing an SQLite3 database for storing known part numbers associated with the FBGA code. Caching and storing results can significantly decrease the amount of requests to the Micron Technology website.
 
 <figure>
     <img src="/static/blog/8/slag_micron_1.webp">
