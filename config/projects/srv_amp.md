@@ -15,7 +15,7 @@ Specifications:
 - Memory: 128GB (8x16GB) Micron Technology PC3-12800R 2Rx4 Registered ECC
 - Storage: 1x HGST 600GB 10000RPM 6Gb/s SAS
 
-The codename for this device was formerly "Methamphetamine" but was changed on February 6, 2024 as a guideline was put into place that codenames of chiral compounds must use its enantiomers. The codename "Levoamphetamine" was chosen to better match the codenames of the other systems being used. See [Week 6, 2024 blog post](../../blog/8/).
+The codename for this device was formerly "Methamphetamine" but was changed to "Levoamphetamine" on February 6, 2024 as a guideline was put into place for codenames. See [Week 6, 2024 blog post](../../blog/8/).
 
 ## SVCS2
 SVCS2 uses the hardware platform "Dextroamphetamine". I could not actually get the system to boot from the hard drive. Since SVCS1 "Levoamphetamine" and SVCS3 "Lisdexamfetamine" are more than enough for my current needs, I have not put this system in production yet.
