@@ -41,5 +41,14 @@ I do not have that much experience in these programming languages in the listed 
         - [This Website - ctclsite-python](../projects/ctclsite/)
 - C - Embedded
     - AVR (Atmel/Microchip ATMEGA), ARMv6-M (NXP/Freescale Kinetis)
-        - [MediaCow Touch "Nashville"](../projects/mct1/) 
+        - [MediaCow Touch "Nashville"](../projects/mct_1/) 
         - Various school projects
+
+## Web Design Experience
+
+I can design and develop websites and web software of varying complexities by hand, with web frameworks or with web editors.
+
+This entire website is designed, developed and maintained by myself. The project page related to it can be found [here](../projects/ctclsite/).
+
+I have released a couple other web application projects so far called [ContactList](../projects/contactlist/) and [ToDoKiosk](../projects/todokiosk).
+
