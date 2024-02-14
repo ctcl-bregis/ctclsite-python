@@ -8,3 +8,4 @@ These are available upon legitimate request:
 
 - Cash App
 - Phone Number
+- Personal Email

@@ -421,11 +421,12 @@ section p {
 
 figure {
     margin: 8pt;
-    margin-right: 50%;
+    margin-right: 75%;
     clear: left;
     padding: 4pt;
     width: 50%;
-    background-color: #333333;
+    max-width: 360pt;
+    background-color: #101010;
     border-style: solid;
     border-width: 1pt;
     border-color: #999999;

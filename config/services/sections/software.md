@@ -23,7 +23,7 @@ I have some experience with these programming languages in these applications.
 - C# - Game development
     - So far only used in the context of making mods for games using the Unity game engine
 - Python - Embedded
-    - MicroPython, CircuitPython for ARMv7E-M (Atmel/Microchip SAMD51), ARMv6-M (Raspberry Pi RP2040)
+    - MicroPython, CircuitPython
         - Modifications to the [Adafruit "EZ Make Oven"](https://learn.adafruit.com/ez-make-oven/installing-the-code) code
         - Some experimentation with the Raspberry Pi Pico
 
@@ -34,15 +34,13 @@ I do not have that much experience in these programming languages in the listed 
     - Actix Web
         - [ctclsite-rust](../projects/ctclsite/)
 - Rust - Embedded
-    - ARMv7E-M (Atmel/Microchip SAMD51)
-        - So far just hardware experimentation, no use in projects yet
+    - So far just hardware experimentation, no use in projects yet
 - JavaScript - Web applications
     - Minimal general use within web applications, sometimes with jQuery
         - [This Website - ctclsite-python](../projects/ctclsite/)
 - C - Embedded
-    - AVR (Atmel/Microchip ATMEGA), ARMv6-M (NXP/Freescale Kinetis)
-        - [MediaCow Touch "Nashville"](../projects/mct_1/) 
-        - Various school projects
+    - [MediaCow Touch "Nashville"](../projects/mct_1/) 
+    - Various school projects
 
 ## Web Design Experience
 
@@ -51,4 +49,3 @@ I can design and develop websites and web software of varying complexities by ha
 This entire website is designed, developed and maintained by myself. The project page related to it can be found [here](../projects/ctclsite/).
 
 I have released a couple other web application projects so far called [ContactList](../projects/contactlist/) and [ToDoKiosk](../projects/todokiosk).
-

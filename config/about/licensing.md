@@ -5,8 +5,6 @@ The content of this website is licensed under a [Creative Commons Attribution 4.
 
 The website's source code is licensed under the MIT License and can be viewed at the [publicly available GitHub repository](https://github.com/ctcl-bregis/ctclsite-python).
 
-RAMList content is licensed under a [Creative Commons Public Domain Mark 1.0 License](http://creativecommons.org/publicdomain/mark/1.0/).
-
 ## Use of CTCL content from social media platforms
 Content posted on social platforms such as Instagram or Discord is assumed to be public information and can be freely used.
 
