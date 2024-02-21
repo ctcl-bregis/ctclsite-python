@@ -1,6 +1,6 @@
 WBSD, nicknamed "Belmont Hall", is a server dedicated to being a Network Attached Storage (NAS) device.
 
-The current hardware platform used for WBSD is codenamed "Promethazine":
+The current hardware platform used for WBSD is codenamed "Promethazine" (Shorthand "PRM"):
 
 - Motherboard: Supermicro X8SIE-LN4
 - CPU: 1x Intel Xeon X3460

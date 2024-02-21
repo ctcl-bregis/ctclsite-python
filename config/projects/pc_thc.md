@@ -1,4 +1,4 @@
-"Tetrahydrocannabinol" or "THC" is the codename given to my smartphone that I use for day-to-day tasks and communication. 
+"Tetrahydrocannabinol" (shorthand "THC") is the codename given to my smartphone that I use for day-to-day tasks and communication. 
 
 In April 2023, I decided to make the switch from the Apple iPhone XR that was given to me by a friend in early 2021. I did not trust Apple and the device lacked a headphone jack, requiring me to use a separate device for music. 
 

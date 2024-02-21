@@ -1,4 +1,4 @@
-"Polybutylene Terephthalate" is the codename given to the hardware platform that currently serves as WBPC1 for general purpose workloads. It makes use of the ECC memory support of certain AMD Ryzen desktop CPUs and motherboards that support it. This system is able to handle workloads such as EDA, CAD and software compilation while performing well in computer gaming.
+"Polybutylene Terephthalate" (shorthand "PBT) is the codename given to the hardware platform that currently serves as WBPC1 for general purpose workloads. It makes use of the ECC memory support of certain AMD Ryzen desktop CPUs and motherboards that support it. This system is able to handle workloads such as EDA, CAD and software compilation while performing well in computer gaming.
 
 # Configuration
 Current specifications as of January 13, 2024:

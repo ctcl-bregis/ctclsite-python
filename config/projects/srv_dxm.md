@@ -1,6 +1,6 @@
 ROUTER is the hostname given to a server dedicated to acting as a firewall and router.
 
-The current hardware platform used for ROUTER is codenamed "Dextromethorphan":
+The current hardware platform used for ROUTER is codenamed "Dextromethorphan" (shorthand "DXM"):
 
 - Motherboard: Supermicro X8SIE-LN4
 - CPU: 1x Intel Xeon X3460

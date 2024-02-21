@@ -1,4 +1,4 @@
-"Dichlorodifluoromethane" (aka "R12") is the small Intel desktop system currently used as SIGN1 with the current main purpose of running the [ToDoKiosk software](../todokiosk) to display tasks on a monitor on the bookshelf next to my desk.
+"Dichlorodifluoromethane" (shorthand "R12") is the small Intel desktop system currently used as SIGN1 with the current main purpose of running the [ToDoKiosk software](../todokiosk) to display tasks on a monitor on the bookshelf next to my desk.
 
 This system was put into production on May 13, 2023 while the system was officially given a codename on January 6, 2024.
 

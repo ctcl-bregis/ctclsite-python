@@ -1,4 +1,4 @@
-"Polyethylene Terephthalate" is a desktop system that I put together in late 2021. It served as the "main" desktop for all of 2022. It had a variety of workloads such as running PC games, virtualization, EDA and running the Xactimate estimating software.
+"Polyethylene Terephthalate" (shorthand "PET") is a desktop system that I put together in late 2021. It served as the "main" desktop for all of 2022. It had a variety of workloads such as running PC games, virtualization, EDA and running the Xactimate estimating software.
 
 ## Configuration
 
