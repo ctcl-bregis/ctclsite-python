@@ -5,6 +5,13 @@
         "desc": "List of personal projects including PC hardware, hardware design, software and art projects"
     },
     "cats": {
+        "codename": {
+            "title": "Naming Scheme",
+            "desc": "Guides for the naming of my projects",
+            "subpages": [
+                {"link": "codenames", "content": "codenames.md", "theme": "gold", "title": "Codename Guide", "desc": "Guide about the codenames used for software and hardware projects."}
+            ]
+        },
         "software": {
             "title": "Software",
             "desc": "Computer software projects such as web applications and desktop applications.",
