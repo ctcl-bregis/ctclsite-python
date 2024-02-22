@@ -34,7 +34,7 @@ Another example, with lisdexamfetamine, the INN name is used over L-lysine-dextr
 ## Chlorofluorocarbons and Hydrochlorofluorocarbon 
 Starting June 2, 2023, Chlorofluorocarbon and Hydrochlorofluorocarbon codenames are reserved for Intel systems without ECC memory support. This excludes devices originally classified as a Chromebook or Chromebox, as they may get a chromium compound codename. Intel systems with ECC memory support may get a plastics-related codename instead. 
 
-On January 19, 2024, he categories for Chlorofluorocarbons and Hydrochlorofluorocarbons were extended to include Chlorofluoroolefins and Hydrochlorofluoroolefins respectively.
+On January 19, 2024, the categories for Chlorofluorocarbons and Hydrochlorofluorocarbons were extended to include Chlorofluoroolefins and Hydrochlorofluoroolefins respectively.
 
 ### Chlorofluorocarbons/Chlorofluoroolefins 
 Chlorofluorocarbon/Chlorofluoroolefin codenames are used for desktops
@@ -183,11 +183,11 @@ Hallucinogenic drug-related compounds are generally for use with non-embedded ne
 Sedative drug-related compounds are generally for use with non-embedded storage servers.
 
 - Alprazolam - AZM
-- [Promethazine](../srv_pm/) - PM
+- [Promethazine](../srv_pm/) - PM or PRM
 - Diphenhydramine - DPH
 
 ## Thiols 
-Thiol-related codenames are reserved for AMD Ryzen systems without motherboard ECC memory support. AMD Ryzen systems with ECC memory support may get a plastics-related codename instead. This includes devices with customized AMD processors using the Zen series CPU architecture such as the Valve Steam Deck's APU.
+Thiol-related codenames are reserved for AMD Ryzen systems without motherboard ECC memory support. AMD Ryzen systems with ECC memory support may get a plastics-related codename instead. This includes devices with customized AMD processors using the Zen series CPU architecture such as the Valve Steam Deck's APU. Unlike the HCFC/CFC theme for Intel-based devices, codenames for these devices are chosen regardless to their form factor.
 
 - **Butanethiol** - BTH
 - Decanethiol - DTH
@@ -226,12 +226,12 @@ Chromium-based compound codenames are reserved for x86-64 systems originally des
 - Lead Chromate - CrL
 - Strontium Chromate - CrR
 
-ARM-based Chromebook and Chromebox systems are excluded from codenaming as there is no known way to replace their Google-developed firmware.
+ARM-based Chromebook and Chromebox systems are excluded from codenaming as there is currently no known way to replace their Google-developed firmware.
 
 ## Special 
-Special chemical compound names are reserved for very rare hardware platforms.
+Special chemical compound names are reserved for rare hardware platforms.
 
-Devices that would have a "special" codename include:
+Devices that would have a "special" codename include but is obviously not limited to:
 
 - Contains an SoC part of the MagicEyes MMSP series
 - Contains an SoC part of the Ingenic Jz47xx series outside of development kits

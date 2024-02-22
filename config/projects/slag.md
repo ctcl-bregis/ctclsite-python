@@ -1,6 +1,6 @@
 <figure>
-    <img src="/static/projects/slag_logo.svg">
-    <figcaption>SLAG logo - February 6, 2024</figcaption>
+    <img src="/static/projects/slag_logo_600.png">
+    <figcaption>SLAG logo - February 22, 2024</figcaption>
 </figure>
 
 # Introduction
