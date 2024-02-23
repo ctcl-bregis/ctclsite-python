@@ -1,3 +1,15 @@
+# 5.5.3 - February 23, 2024
+This update brings some minor fixes and functionality relating to styling and links.
+
+## Additions
+
+- Added "bookmark" functionality to automatically scroll to a specific section. For example: ctcl-tech.com/#contact would scroll to the Contact section.
+
+## Fixes
+
+- Use of "id" attributes for styling
+- Right border of section buttons when automatically set to full width by common.js
+
 # 5.5.2 - February 4, 2024
 Content updates along with this update include: Addition of description to pages that did not have one, blog post, theme color changes, project details and link fixes.
 

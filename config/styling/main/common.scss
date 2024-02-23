@@ -222,7 +222,7 @@ section p {
     margin: 8pt;
 }
 
-#banner {
+.banner {
     position: relative;
     width: auto;
     min-height: 100vh;
@@ -233,7 +233,7 @@ section p {
     border-style: solid;
 }
 
-#servicebanner {
+.servicebanner {
     position: relative;
     width: auto;
     overflow: hidden;
@@ -244,7 +244,7 @@ section p {
 
 }
 
-#bgvid {
+.bgvid {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
