@@ -261,15 +261,17 @@ Projects that surround the testing or demonstration of computer DRAM are named a
 # Software 
 Standalone software projects use the names of animals. Embedded software written for hardware projects do not receive their own codename. Software written for specific hardware not developed by CTCL may receive their own codename.
 
-## Crabs 
-Codenames using the names of **crustaceans** are used for projects that mainly use the Rust programming language. The inspiration of using crustaceans for Rust-based projects is from the term "Rustacean" and the unofficial mascot of Rust named Ferris.
+## Rust
+
+### Web Software
+Codenames using the names of **crabs** are used for web software projects that utilize the Rust programming language. The inspiration of using crustaceans for Rust-based projects is from the term "Rustacean" and the unofficial mascot of Rust named Ferris.
 
 - [Atlantic Blue Crab - ctclsite-rust](../ctclsite/)
 
-## Fish 
+## Python
 Starting January 30, 2024, codenames of fish would be used for any Python-based project as started with the trout theme for web applications.
 
-### Trout 
+### Web Software
 Projects using the codenames of **trout** are used for projects using the Django or Flask web framework and the Python programming language. The idea of using the names of trout for codenames started with CAMS in which was inspired by excursions to fish farms during summer camp in 2018 and 2019.
 
 - Adriatic Trout
@@ -290,7 +292,7 @@ Projects using the codenames of **trout** are used for projects using the Django
 - Silver Trout
 - Tiger Trout
 
-### Catfish (Siluriformes/Nematognathi) 
-Starting January 30, 2024, projects using the codenames of **catfish** are used for Python-based projects that are chat bots. The use of catfish for such codenames is a reference to the built-in user "Rocket.Cat" from the Rocket.Chat software and is a play on the term "catfishing".
+### Chat bots
+Starting January 30, 2024, projects using the codenames of '''catfish''' (Siluriformes/Nematognathi) are used for Python-based projects that are chat bots. The use of catfish for such codenames is a reference to the built-in user "Rocket.Cat" from the Rocket.Chat software and is a play on the term "catfishing".
 
 - [Channel Catfish - SLAG](../slag/) (Python version)

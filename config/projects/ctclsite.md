@@ -109,3 +109,6 @@ This version of the website was started after being made aware of the misleading
 ctclsite-python v5 has minor changes over the backend code of the website and was originally planned to be version "4.2.0" of the website. Instead this release was a great redesign of the general look of the website and finally added client-side scripts.
 
 This release was finally put into production on December 22, 2023.
+
+## ctclsite-rust v2
+On February 18, 2024, I have set up the ctclsite-rust repository for a potential rewrite using the Rust framework. Actual development has not started yet.
