@@ -293,6 +293,6 @@ Projects using the codenames of **trout** are used for projects using the Django
 - Tiger Trout
 
 ### Chat bots
-Starting January 30, 2024, projects using the codenames of '''catfish''' (Siluriformes/Nematognathi) are used for Python-based projects that are chat bots. The use of catfish for such codenames is a reference to the built-in user "Rocket.Cat" from the Rocket.Chat software and is a play on the term "catfishing".
+Starting January 30, 2024, projects using the codenames of **catfish** (Siluriformes/Nematognathi) are used for Python-based projects that are chat bots. The use of catfish for such codenames is a reference to the built-in user "Rocket.Cat" from the Rocket.Chat software and is a play on the term "catfishing".
 
 - [Channel Catfish - SLAG](../slag/) (Python version)
