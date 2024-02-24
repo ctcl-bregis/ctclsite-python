@@ -7,8 +7,8 @@ Throughout lists below, any codename that has a link and/or is in **bold** is cu
 
 # Rules for codenames 
 
-- As of February 22, 2022, codenames shall no longer be *directly* related to real persons. With some exceptions such as "Paris" used by MediaCow Touch 2.
-- Codenames should not be longer than 30 characters but with some execeptions when seen fit such as "Polyoxybenzylmethyleneglycolanhydride"
+- As of February 22, 2022, codenames shall no longer be *directly* related to real persons. Though the codename "Paris" will continue to be used by MediaCow Touch 2.
+- Codenames should not be longer than 30 characters but with some exceptions when seen fit such as "polyoxybenzylmethylenglycolanhydride"
 
 ## Specific to embedded device project codenames
 - Codenames for embedded device projects must have codenames of real places and not fictional ones. (e.g. Lakewood Plaza Turbo)
@@ -23,6 +23,8 @@ Chemical compounds are used for any device codename. This is different from hard
 
 - The existence of a chemical compound must be verified to exist
 - Starting February 6, 2024, codenames relating to chiral chemical compounds must use the names of its optical rotations
+
+Codenames do not differeniate devices on a network; they are not hostnames or part of hostnames. Hostnames are short descriptions of what purpose the device currently serves and are seen on the network by that name, such as "SVCS" for virtualization systems.
 
 ## Names to Use 
 Chemical compounds may have multiple ways to name their chemical structures. Generally, the most common chemical name for a substance is used.
@@ -68,8 +70,8 @@ Hydrochlorofluorocarbon/Hydrochlorofluoroolefin codenames are used for laptops
 - Chlorodifluoroethane - R142
 - **Chlorofluoroethane** - R151
 
-## Plastics 
-Plastics-related codenames are reserved for workstations with ECC memory support.
+## Polymers 
+Polymer-related codenames, specifically plastics, are reserved for workstations with ECC memory support.
 
 Uncategorized polymer codenames are for general use at the moment.
 
@@ -108,11 +110,6 @@ Codenames of acrylic-family polymers are used for laptops that have support for 
 - Polysec-butylacrylate - PSBA
 - Polystearylacrylate - PSA
 - Polytert-butylacrylate - PTBA
-
-### Polyamides 
-Polyamide-family polymers are reserved for future use
-
-- Polyazanediyl-1,4-phenyleneazanediylterephthaloyl - "Kevlar"
 
 ### Polyesters 
 Polyester-family polymers are used for general-purpose workstation systems designated as WBPC1. This started with **Polyethylene Terephthalate** in 2021.
@@ -158,7 +155,7 @@ Stimulant codenames and related prodrugs in the methylphenidate family are reser
 - **Serdexmethylphenidate** - SDX
 
 #### Xanthine exception
-Codenames that are of stimulants under the xanthine/methylxanthine family are not used for servers and are instead used with certain mobile devices.
+ Codenames that are of stimulants under the xanthine/methylxanthine family are not used for servers and are instead used with certain mobile devices. This is inconsistent as stimulant names are used for servers but the use of xanthine names started with a former Samsung Galaxy S7 (SM-G930F) that I used from September 2022 to April 2023 codenamed "Trimethylxanthine". 
 
 - Tetramethylxanthine - QMX, Methylcaffeine
 - **Trimethylxanthine** - TMX, Caffeine

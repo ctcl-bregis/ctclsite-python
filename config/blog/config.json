@@ -5,6 +5,7 @@
         "desc": "List of the blog posts on the website"
     },
     "posts": {
+        "11": {"content": "blogpost_11.md", "icon": "/static/blog/11/blog11_icon.webp", "theme": "gold", "cat": "Personal", "date": "February 25, 2024", "title": "Week 8, 2024", "desc": "The eighth week of 2024"},
         "10": {"content": "blogpost_10.md", "icon": "/static/blog/10/blog10_icon.webp", "theme": "99green", "cat": "Software", "date": "February 18, 2024", "title": "A message about RAMList", "desc": "The status and plans for the RAMList section of the website."},
         "9": {"content": "blogpost_9.md", "icon": "/static/blog/9/blog9_icon.webp", "theme": "gold", "cat": "Personal", "date": "February 18, 2024", "title": "Week 7, 2024", "desc": "The seventh week of 2024"},
         "8": {"content": "blogpost_8.md", "icon": "/static/blog/8/blog8_icon.webp", "theme": "gold", "cat": "Personal", "date": "February 11, 2024", "title": "Week 6, 2024", "desc": "The sixth week of 2024"},
