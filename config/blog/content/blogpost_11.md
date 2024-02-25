@@ -13,4 +13,4 @@ Due to the lack of financing, I do not plan to start working on any circuit desi
 As mentioned above, I have been working on selling some Lenovo ThinkPads from 2011-2014 in order to raise funding for projects. Surprisingly, I have been short on memory modules to prepare laptops with.
 
 # Personal
-On February 24, 2024, I helped set up and move some servers at the [High Performance Computing section of VCU (Virginia Commonwealth University)](https://research.vcu.edu/cores/hprc/facilities/). Past experience with datacenter hardware with my employment at 2nd Life Inc was greatly helpful for what I worked on.
+On February 24, 2024, I helped set up and move some servers at the [High Performance Computing section of VCU (Virginia Commonwealth University)](https://research.vcu.edu/cores/hprc/facilities/). Past experience with datacenter hardware with my employment at 2nd Life Inc and management of [SVCS](../../projects/srv_amp/) was greatly helpful for what I worked on.
