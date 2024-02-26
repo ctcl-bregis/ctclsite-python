@@ -56,7 +56,7 @@ This job was quite important for me, parts of the building reminded me of certai
 
 <figure>
     <img src="/static/blog/9/sml_2.webp">
-    <figcaption>A couple of Bluegill (my knowledge on specific species is limited so this may or may not be correct) seen at the Smith Mountain Lake State Park - February 15, 2024 - ASUS Zenfone 9</figcaption>
+    <figcaption>A couple of Green Sunfish seen at the Smith Mountain Lake State Park - February 15, 2024 - ASUS Zenfone 9</figcaption>
 </figure>
 
 <figure>

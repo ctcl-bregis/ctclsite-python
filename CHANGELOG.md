@@ -1,3 +1,10 @@
+# 5.5.4 - February 26, 2024
+Development of the second ctclsite-rust rewrite has started. Another small feature has been added for the time being.
+
+## Additons
+
+- HTML image titles; mouseover text on Blog icons
+
 # 5.5.3 - February 23, 2024
 This update brings some minor fixes and functionality relating to styling and links.
 
